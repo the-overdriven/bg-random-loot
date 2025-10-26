@@ -1,0 +1,608 @@
+// all items within the same COPY_RANDOM block will be randomly swapped
+
+// change this number if you want a different random arrangement
+// warning: changing midgame will change your equipped items
+// warning: adding more items to item pools will also do that
+RANDOM_SEED 3
+
+// non-magical weapons
+// mages can wield swords!
+COPY_RANDOM 
+     ~AX1H01.ITM~ //
+     ~BLUN01.ITM~ //
+     ~BLUN02.ITM~ //
+     ~BLUN04.ITM~ //
+     ~BLUN06.ITM~ //
+     ~DAGG01.ITM~ //
+     ~HALB01.ITM~ //
+     ~HAMM01.ITM~ //
+     ~SPER01.ITM~ //
+     ~STAF01.ITM~ //
+     ~SW1H01.ITM~ // bastard sword
+     ~SW1H04.ITM~ // long sword
+     ~SW1H07.ITM~ // short sword
+     ~SW1H46.ITM~ // wakizashi
+     ~SW2H01.ITM~ // 2h sword
+
+// non-magical ranged weapons
+// COPY_RANDOM 
+//      ~BOW01.ITM~ // COMPOSITE
+//      ~BOW03.ITM~ // LONGBOW
+//      ~BOW05.ITM~ // SHORTBOW
+//      ~SLNG01.ITM~ // SLING
+//      ~BOW01.ITM~ // COMPOSITE
+
+// non-magical ammo
+// COPY_RANDOM   
+//      ~BOLT01.ITM~ //
+//      ~AROW01.ITM~ //
+//      ~BULL01.ITM~ // BULLETS
+//      ~DAGG05.ITM~ // THROWING DAGGER
+//      ~DART01.ITM~ //
+
+// magical arrows
+     // TODO, but not sure if it's a good idea tbh   
+
+// all melee weapons +1
+COPY_RANDOM 
+     ~AX1H02.ITM~ // axe +1
+     ~AX1H18.ITM~ // EE Beruel's Retort
+     ~AX1H19.ITM~ // EE Golden Axe +1
+     // ~BDBLUN02.ITM~ //
+     // ~BDBONE02.ITM~ //
+     // ~BDAX1H04.ITM~ //
+     // ~BDAX1H05.ITM~ //
+     // ~BDAX1HGH.ITM~ //
+     // ~BDDAGG02.ITM~ //
+     // ~BDDAGG03.ITM~ //
+     // ~BDDAGG04.ITM~ //
+     // ~BDDAGG07.ITM~ //
+     // ~BDHALB02.ITM~ //
+     // ~BDHAMM04.ITM~ //
+     // ~BDSEMAHL.ITM~ //
+     // ~BDSW1H03.ITM~ //
+     // ~BDSW1H04.ITM~ //
+     // ~BDSW1HEL.ITM~ //
+     // ~BDSW1HGh.ITM~ //
+     // ~BDSW1HX5.ITM~ //
+     // ~BDSW2H02.ITM~ //
+     // ~BDSW2HGH.ITM~ //
+     ~BLUN03.ITM~ //
+     ~BLUN05.ITM~ //
+     ~BLUN07.ITM~ //
+     ~BLUN10.ITM~ //
+     ~BLUN36.ITM~ // EE Club +1
+     ~BLUN38.ITM~ // EE Night Club +1
+     ~BLUN41.ITM~ // EE The Stupefier +1
+     ~COMPS02.ITM~ //
+     ~COMPS03.ITM~ //
+     ~DAGG02.ITM~ //
+     ~DAGG09.ITM~ //
+     ~HALB02.ITM~ //
+     ~HAMM02.ITM~ //
+     ~HAMM04.ITM~ //
+     ~HAMM13.ITM~ //
+     ~HGBER01.ITM~ //
+     ~PLYFLIND.ITM~ //
+     ~SHARSWD.ITM~ //
+     ~SKELWASU.ITM~ //
+     ~SPER02.ITM~ //
+     ~SW1H02.ITM~ //
+     ~SW1H03.ITM~ //
+     ~SW1H05.ITM~ //
+     // ~SW1H05S.ITM~ //
+     ~SW1H08.ITM~ //
+     ~SW1H14.ITM~ //
+     // ~SW1H19.ITM~ // cursed
+     ~SW1H22.ITM~ // EE Scimitar +1
+     ~SW1H24.ITM~ //
+     ~SW1H34.ITM~ // EE Albruin +1
+     ~SW1H44.ITM~ // EE Katana +1
+     ~SW1H47.ITM~ // EE Wakizashi +1
+     ~SW1H49.ITM~ // EE Ninja-To +1
+     ~SW1H78.ITM~ //
+     ~SW1H79.ITM~ // EE long sword +1 (+3 vs undead)
+     ~SW1H98.ITM~ //
+     ~SW2H02.ITM~ //
+     ~SW2H22.ITM~ //
+     // ~SW2HD1.ITM~ // Rancor (Dorn's sword)
+     // ~THDAGG02.ITM~ //
+     ~TTSWORD1.ITM~ //
+
+// all ranged bows and crossbows +1
+// COPY_RANDOM 
+//      ~BOW02.ITM~ //
+//      ~BOW04.ITM~ //
+//      ~BOW06.ITM~ //
+//      ~XBOW02.ITM~ //
+//      ~XBOW05.ITM~ //
+
+// all magical darts
+COPY_RANDOM 
+     ~DART11.ITM~ //
+     ~DART09.ITM~ //
+     ~DART10.ITM~ //
+     ~DART03.ITM~ //
+     ~DART04.ITM~ //
+
+// new unique items added by EE:
+COPY_RANDOM 
+     ~BLUN37.ITM~ // EE Mighty Oak +2
+     ~HALB13.ITM~ // EE The Chesley Crusher +2
+     ~STAF18.ITM~ // EE Quarterstaff +2
+     ~SLNG11.ITM~ // EE Sling of Unerring Accuracy (improves THAC0 but lowers dmg)
+     ~SPER05.ITM~ // EE Spear +2
+     ~HAMM13.ITM~ // EE Hammer of Dawn +1
+     ~LEAT25.ITM~ // EE Rugged Leathers +2
+     ~CHAN12.ITM~ // EE Elven Chain Mail
+     ~SHLD33.ITM~ // EE Buckley's Buckler (+1 CON)
+     ~AMUL25.ITM~ // EE Amulet of Spell Warding (+2 to saves vs spells)
+     ~BELT16.ITM~ // EE Belt of Antipode (100% resist frost, but -100% to fire)
+     ~RSBRAC.ITM~ // EE Glimmering Bands (+2 to hit bonus)
+     ~NEBELT01.ITM~ // EE Adoy's Belt (+5 to saves vs polymorph/pertification) 
+     ~BELT15.ITM~ // EE Big-Fisted Belt (cursed, 19 str, 6 int)
+     ~SW1H23.ITM~ // EE Rashad's Talon (Scimitar +2)
+     ~HELM02.ITM~ // EE Helmet of Opposite Alignment (added earlier but droppable in EE)
+
+// best unique items
+COPY_RANDOM 
+     // best buyable magical items (Beregost: smith & Feldepost, High Hedge, Sorcerer Soundries, Ulgoth's Beard)
+     ~CLCK15.ITM~ // Robe of the Good Archmagi
+     ~CLCK16.ITM~ // Robe of the Neutral Archmagi
+     ~CLCK17.ITM~ // Robe of the Evil Archmagi
+     ~MISC72.ITM~ // Claw of Kazgaroth
+     ~MISC73.ITM~ // Horn of Kazgaroth
+     ~PLAT04.ITM~ // Full Plate Armor
+     ~LEAT08.ITM~ // Shadow Armor +3
+     ~MISC75.ITM~ // Dagger of Venom +2
+     ~BLUN39.ITM~ // EE The Thresher +2
+     ~CLCK03.ITM~ // Cloak of Displacement
+     ~STAF08.ITM~ // Aule'a Staff +3
+     ~MISC2P.ITM~ // the captive audience
+     ~RING05.ITM~ // sandthief's ring
+     // ~AMUL17.ITM~ // greenstone amulet, do not use, has only one charge
+     ~AMUL14.ITM~ // protector +1
+     ~BOW02.ITM~ // composite longbow +1
+     ~XBOW06.ITM~ // Light Crossbow of Speed (the army scythe +1)
+     ~XBOW03.ITM~ // Heavy Crossbow of Accuracy
+
+     // non-buyable
+     ~SW1H15.ITM~ // Drizzt's Icingdeath
+     ~SW1H16.ITM~ // Drizzt's Twinkle
+     ~HAMM03.ITM~ // Ashideena (best hammer)
+     ~SW1H06.ITM~ // Varscona (best longblade)
+     ~SW2H06.ITM~ // Spider's Bane (best two-handed weapon)
+     ~SW2H07.ITM~ // World's Edge (2h weapon from Durlag's tower)
+     ~CLCK08.ITM~ // Algernon's Cloak
+     ~CHAN06.ITM~ // Mithral Chain Mail +4
+     ~HELM07.ITM~ // Helm of Balduran
+     ~CLCK05.ITM~ // Cloak of Balduran
+     ~SW1H18.ITM~ // Sword of Balduran
+     ~HELM03.ITM~ // Helm of the Noble +1
+     ~BOOT01.ITM~ // Boots of Speed
+     ~PLAT08.ITM~ // The Practical Defense +3
+     ~CHAN03.ITM~ // Mail of the Dead +2
+     ~RING02.ITM~ // Batalista's Passport
+     ~HELM04.ITM~ // Gift of Peace
+     ~SW1H10.ITM~ // The Shadow's Blade +3 (Slythe)
+     ~STAF05.ITM~ // Staff of Striking +3
+     ~BOW07.ITM~ // The Dead Shot +2
+     ~BRAC10.ITM~ // Gauntlets of Weapon Expertise
+     ~BLUN09.ITM~ // Kiel's Morning Star +3
+     // ~HALB07.ITM~ // Halberd +2
+     ~RING09.ITM~ // Ring of Free Action
+     ~BRAC06.ITM~ // Gauntlets of Ogre Power (Hands of Takkok)
+     ~AX1H05.ITM~ // Throwing Axe +2
+     ~AX1H07.ITM~ // Bala's Axe: Wizard Slayer
+     ~AX1H03.ITM~ // Battle Axe +2
+     ~BELT02.ITM~ // Golden Girdle (+3 vs slashing)
+     ~PLAT05.ITM~ // Plate of the Dark (full plate mail +1)
+     ~AMUL01.ITM~ // Necklace of Missiles: The One Gift Lost
+     // ~BDMIRR01.ITM~ // Gentrus' Hand Mirror (3x identify per day)
+     // ~BDBOOT01.ITM~ // Soft Feet (Move Silently: +25% + Immunity to Grease, Entangle, and Web)
+     // ~DWBLUN01.ITM~ // Drow Flail +3
+     // ~SHLD30.ITM~ // Large Shield +2
+     // ~BDSW1H22.ITM~ // Severance +2
+     // ~BAG31.ITM~ // Bag of Holding - do not try! it will crash the game
+     ~PLAT24.ITM~ // EE The Magma Bulwark +2
+
+     // tomes
+     ~BOOK03.ITM~ // con
+     ~BOOK04.ITM~ // str
+     ~BOOK05.ITM~ // dex
+     ~BOOK06.ITM~ // int
+     ~BOOK07.ITM~ // char
+     ~BOOK08.ITM~ // wis
+
+// wands (all except magic missile wand)
+COPY_RANDOM 
+     ~WAND11.ITM~ // 
+     ~WAND08.ITM~ // 
+     ~WAND09.ITM~ // 
+     ~WAND04.ITM~ // 
+     ~WAND10.ITM~ // 
+     ~WAND07.ITM~ // 
+     ~WAND06.ITM~ // 
+     ~WAND05.ITM~ // 
+     ~WAND02.ITM~ // 
+
+// less powerful items 
+COPY_RANDOM 
+     // items that don't appear in game (to reduce item spam)
+     // some of these items won't appear in game at all
+     ~MISC61.ITM~ // wine
+     ~MISC91.ITM~ // grapes
+     ~MISC02.ITM~ // mirror
+     ~MISC74.ITM~ // candle
+     // ~BDMISC40.ITM~ // sack of grain
+     // OTHER
+     ~WAND12.ITM~ // magic missiles
+     ~WAND03.ITM~ // magic missiles
+     ~HELM05.ITM~ // helm of infravision
+     ~DAGG02.ITM~ // dagger +1
+     ~SHLD17.ITM~ // buckler +1
+     ~CLCK09.ITM~ // Mage Robe of...
+     ~CLCK11.ITM~ // Mage Robe of...
+     ~CLCK11.ITM~ // Mage Robe of...
+     ~CLCK13.ITM~ // traveler's robe
+     ~CLCK01.ITM~ // cloak of protection +1
+     // ~BDAMUL24.ITM~ // amulet of protection +1
+     // ~CHAN02.ITM~ // chain mail +1
+     // ~BDBRAC09.ITM~ // gauntlets of weapon skill
+     // ~LEAT05.ITM~ // studded leather armor +1
+     // ~BDBOOT02.ITM~ // boots charisma +1
+     ~CLCK04.ITM~ // polymorph into a wolf
+     // ~BDCLCK02.ITM~ // sable cloak
+     ~CLCK06.ITM~ // cloak of non-detectability
+     ~RING21.ITM~ // ring of infravision
+     ~SLNG02.ITM~ // sling +1
+
+// scrolls per lvl
+COPY_RANDOM 
+     // ~BDALNT01.ITM~ // 
+     // ~BDALNT02.ITM~ // 
+     // ~BDALNT03.ITM~ // 
+     // ~BDALNT04.ITM~ // 
+     // ~BDALNT05.ITM~ // 
+     // ~BDALNT06.ITM~ // 
+     // ~BDALNT07.ITM~ // 
+     // ~BDBFLYE2.ITM~ // 
+     // ~BDBFLYER.ITM~ // 
+     // ~BDMISC21.ITM~ // 
+     // ~BDMISC24.ITM~ // 
+     // ~BDMISC27.ITM~ // 
+     // ~BDMISC28.ITM~ // 
+     // ~BDMISC41.ITM~ // 
+     // ~BDMISC42.ITM~ // 
+     // ~BDMISC43.ITM~ // 
+     // ~BDMISC50.ITM~ // 
+     // ~BDMISC56.ITM~ // 
+     // ~BDMISC61.ITM~ // 
+     // ~BDMISC63.ITM~ // 
+     // ~BDMISC65.ITM~ // 
+     // ~BDSCRL01.ITM~ // 
+     // ~BDSCRL02.ITM~ // 
+     // ~BDSCRL03.ITM~ // 
+     // ~BDSCRL04.ITM~ // 
+     // ~BDSCRL1.ITM~ // 
+     // ~BDSCRL1A.ITM~ // 
+     // ~BDSCRL1B.ITM~ // 
+     // ~BDSCRL2A.ITM~ // 
+     // ~BDSCRL3A.ITM~ // 
+     // ~BDSCRL3B.ITM~ // 
+     // ~BDSHKORO.ITM~ // 
+     // ~BDSHPAM1.ITM~ // 
+     // ~BDSHPAM2.ITM~ // 
+     // ~BDSHSARE.ITM~ // 
+     // ~BDURE2A.ITM~ // 
+     // ~BDURE3A.ITM~ // 
+     // ~BPNOTE1.ITM~ // 
+     // ~DEFROST.ITM~ // 
+     // ~MISC78.ITM~ // 
+     ~RESTORE.ITM~ // 
+     // ~RSNOTE1.ITM~ // 
+     // ~RSNOTE2.ITM~ // 
+     // ~RSNOTE3.ITM~ // 
+     // ~SCRL02.ITM~ // 
+     // prot
+     ~SCRL03.ITM~ // 
+     ~SCRL04.ITM~ // 
+     ~SCRL05.ITM~ // 
+     ~SCRL06.ITM~ // 
+     ~SCRL07.ITM~ // 
+     ~SCRL08.ITM~ // 
+     ~SCRL09.ITM~ // 
+     // cursed prot
+     ~SCRL10.ITM~ // 
+     ~SCRL11.ITM~ // 
+     ~SCRL12.ITM~ // 
+     ~SCRL13.ITM~ // 
+     ~SCRL14.ITM~ // 
+     ~SCRL15.ITM~ // not cursed
+     ~SCRL16.ITM~ // 
+     ~SCRL17.ITM~ // 
+     ~SCRL18.ITM~ // 
+     // magic
+     ~SCRL1B.ITM~ // 
+     ~SCRL1C.ITM~ // 
+     ~SCRL1D.ITM~ // 
+     ~SCRL1E.ITM~ // 
+     ~SCRL1F.ITM~ // 
+     ~SCRL1G.ITM~ // 
+     ~SCRL1H.ITM~ // 
+     ~SCRL1I.ITM~ // 
+     ~SCRL1J.ITM~ // 
+     ~SCRL1K.ITM~ // 
+     ~SCRL1L.ITM~ // 
+     ~SCRL1M.ITM~ // 
+     ~SCRL1N.ITM~ // 
+     ~SCRL1O.ITM~ // 
+     ~SCRL1P.ITM~ // 
+     ~SCRL1Q.ITM~ // 
+     ~SCRL1R.ITM~ // 
+     ~SCRL1S.ITM~ // 
+     ~SCRL1T.ITM~ // 
+     ~SCRL1U.ITM~ // 
+     ~SCRL1V.ITM~ // 
+     ~SCRL1W.ITM~ // 
+     ~SCRL1X.ITM~ // 
+     ~SCRL1Y.ITM~ // 
+     ~SCRL1Z.ITM~ // 
+     ~SCRL2A.ITM~ // 
+     ~SCRL2B.ITM~ // 
+     ~SCRL2D.ITM~ // 
+     ~SCRL2E.ITM~ // 
+     ~SCRL2F.ITM~ // 
+     ~SCRL2G.ITM~ // 
+     ~SCRL2H.ITM~ // 
+     // letters
+     // ~SCRL2I.ITM~ // 
+     // ~SCRL2J.ITM~ // 
+     // ~SCRL2K.ITM~ // 
+     // ~SCRL2L.ITM~ // 
+     // ~SCRL2M.ITM~ // 
+     // ~SCRL2N.ITM~ // 
+     // ~SCRL2O.ITM~ // 
+     // ~SCRL2P.ITM~ // 
+     // ~SCRL2Q.ITM~ // 
+     // ~SCRL2R.ITM~ // 
+     // ~SCRL2S.ITM~ // 
+     // ~SCRL2T.ITM~ // 
+     // ~SCRL2U.ITM~ // 
+     // ~SCRL2V.ITM~ // 
+     // ~SCRL2W.ITM~ // 
+     // ~SCRL2X.ITM~ // 
+     // ~SCRL2Y.ITM~ // 
+     // ~SCRL2Z.ITM~ // 
+     // ~SCRL3A.ITM~ // 
+     // ~SCRL3B.ITM~ // 
+     // ~SCRL3C.ITM~ // 
+     // ~SCRL3D.ITM~ // 
+     // ~SCRL3E.ITM~ // 
+
+     ~SCRL3G.ITM~ // 
+     ~SCRL3H.ITM~ // 
+     // ~SCRL3I.ITM~ // Mirianne
+     // ~SCRL3Z.ITM~ // 
+     ~SCRL56.ITM~ // 
+     ~SCRL58.ITM~ // 
+     ~SCRL59.ITM~ // 
+     ~SCRL5A.ITM~ // 
+     ~SCRL5B.ITM~ // 
+     ~SCRL5C.ITM~ // 
+     ~SCRL5D.ITM~ // 
+     ~SCRL5E.ITM~ // 
+     ~SCRL5F.ITM~ // 
+     ~SCRL5G.ITM~ // 
+     ~SCRL5H.ITM~ // 
+     ~SCRL5I.ITM~ // 
+     ~SCRL5J.ITM~ // 
+     ~SCRL5K.ITM~ // 
+     ~SCRL5L.ITM~ // 
+     ~SCRL5M.ITM~ // 
+     ~SCRL5N.ITM~ // 
+     ~SCRL5O.ITM~ // 
+     ~SCRL5P.ITM~ // 
+     ~SCRL5Q.ITM~ // 
+     // ~SCRL5R.ITM~ // Andris' Journal
+     // ~SCRL5S.ITM~ // Dezkiel
+     ~SCRL5T.ITM~ // 
+     ~SCRL5U.ITM~ // 
+     // ~SCRL5W.ITM~ // 
+     // ~SCRL5X.ITM~ // 
+     // ~SCRL5Y.ITM~ // 
+     ~SCRL5Z.ITM~ // 
+     ~SCRL61.ITM~ // 
+     ~SCRL62.ITM~ // 
+     ~SCRL63.ITM~ // 
+     ~SCRL66.ITM~ // 
+     ~SCRL67.ITM~ // 
+     ~SCRL68.ITM~ // 
+     ~SCRL69.ITM~ // 
+     ~SCRL6D.ITM~ // 
+     ~SCRL6E.ITM~ // 
+     ~SCRL6F.ITM~ // 
+     ~SCRL6G.ITM~ // 
+     ~SCRL6H.ITM~ // 
+     ~SCRL6I.ITM~ // 
+     ~SCRL6J.ITM~ // 
+     ~SCRL6K.ITM~ // 
+     ~SCRL6L.ITM~ // 
+     ~SCRL6M.ITM~ // 
+     ~SCRL6N.ITM~ // 
+     ~SCRL6O.ITM~ // 
+     ~SCRL6P.ITM~ // 
+     ~SCRL6R.ITM~ // 
+     ~SCRL6S.ITM~ // 
+     ~SCRL6T.ITM~ // 
+     ~SCRL6U.ITM~ // 
+     ~SCRL6V.ITM~ // 
+     ~SCRL6W.ITM~ // 
+     ~SCRL6X.ITM~ // 
+     ~SCRL6Y.ITM~ // 
+     ~SCRL6Z.ITM~ // 
+     ~SCRL70.ITM~ // 
+     ~SCRL71.ITM~ // 
+     ~SCRL72.ITM~ // 
+     ~SCRL73.ITM~ // 
+     ~SCRL75.ITM~ // 
+     ~SCRL76.ITM~ // 
+     ~SCRL77.ITM~ // 
+     ~SCRL78.ITM~ // 
+     ~SCRL79.ITM~ // 
+     ~SCRL7B.ITM~ // 
+     ~SCRL7C.ITM~ // 
+     ~SCRL7D.ITM~ // 
+     // ~SCRL7E.ITM~ // 
+     // ~SCRL7F.ITM~ // 
+     // ~SCRL7G.ITM~ // 
+     // ~SCRL7H.ITM~ // 
+     // ~SCRL7I.ITM~ // 
+     // ~SCRL7J.ITM~ // 
+     // ~SCRL7K.ITM~ // 
+     // ~SCRL7L.ITM~ // 
+     // ~SCRL7M.ITM~ // 
+     // ~SCRL7O.ITM~ // 
+     // ~SCRL7P.ITM~ // 
+     // ~SCRL7Q.ITM~ // 
+     // ~SCRL7R.ITM~ // 
+     // ~SCRL7S.ITM~ // 
+     // ~SCRL7T.ITM~ // 
+     // ~SCRL7U.ITM~ // 
+     // ~SCRL7V.ITM~ // 
+     // ~SCRL7W.ITM~ // 
+     // ~SCRL7X.ITM~ // 
+     // ~SCRL7Y.ITM~ // 
+     // ~SCRL7Z.ITM~ // 
+     ~SCRL80.ITM~ // 
+     ~SCRL81.ITM~ // 
+     ~SCRL82.ITM~ // 
+     ~SCRL83.ITM~ // 
+     ~SCRL84.ITM~ // 
+     ~SCRL85.ITM~ // 
+     ~SCRL86.ITM~ // 
+     ~SCRL87.ITM~ // 
+     ~SCRL89.ITM~ // 
+     // ~SCRL8A.ITM~ // 
+     // ~SCRL8B.ITM~ // 
+     // ~SCRL8C.ITM~ // 
+     // ~SCRL8X.ITM~ // 
+     ~SCRL90.ITM~ // 
+     ~SCRL91.ITM~ // 
+     ~SCRL92.ITM~ // 
+     ~SCRL93.ITM~ // 
+     ~SCRL94.ITM~ // 
+     ~SCRL95.ITM~ // 
+     ~SCRL96.ITM~ // 
+     ~SCRL97.ITM~ // 
+     ~SCRL98.ITM~ // 
+     ~SCRL99.ITM~ // 
+     ~SCRLA1.ITM~ // 
+     ~SCRLA2.ITM~ // 
+     ~SCRLA3.ITM~ // 
+     ~SCRLA5.ITM~ // 
+     ~SCRLA6.ITM~ // 
+     ~SCRLA7.ITM~ // 
+     ~SCRLA8.ITM~ // 
+     ~SCRLAI.ITM~ // 
+     ~SCRLAJ.ITM~ // 
+     ~SCRLAL.ITM~ // 
+     ~SCRLAUTO.ITM~ // autograph xd
+     ~SCRLB1.ITM~ // 
+     ~SCRLB2.ITM~ // 
+     ~SCRLB4.ITM~ // 
+     // ~SCRLDRA.ITM~ // 
+     // ~SCRLJALA.ITM~ // 
+     // ~SCRLKAR.ITM~ // 
+     // ~SCRLNEI.ITM~ // 
+     ~SCRLPET.ITM~ // 
+     // ~SCRLTAR.ITM~ // 
+     // ~SCRLVAIL.ITM~ // 
+     // ~SCRLZHA.ITM~ // 
+     // ~SCRLZY.ITM~ // 
+     // ~SCRLZZ.ITM~ // 
+     ~TTSCRL01.ITM~ // 
+     ~TTSCRL02.ITM~ // 
+
+// reshuffle selected potions
+COPY_RANDOM 
+     ~POTN02.ITM~ // 
+     ~POTN09.ITM~ // 
+     ~POTN10.ITM~ // 
+     ~POTN11.ITM~ // 
+     ~POTN14.ITM~ // 
+     ~POTN18.ITM~ // 
+     ~POTN21.ITM~ // 
+     ~POTN26.ITM~ // 
+     ~POTN27.ITM~ // 
+     ~POTN33.ITM~ // 
+     ~POTN34.ITM~ // 
+     ~POTN35.ITM~ // 
+     ~POTN38.ITM~ // 
+     ~POTN42.ITM~ // 
+     ~POTN45.ITM~ // 
+
+// replace fake and weak potions with antidotes (POTN20) and scrolls
+COPY_EXISTING ~POTN20.ITM~ ~override/POTN32.ITM~ WRITE_SHORT 0x38 80  // antidote
+COPY_EXISTING ~TTSCRL02.ITM~ ~override/POTN15.ITM~ WRITE_SHORT 0x38 80  // red potion
+COPY_EXISTING ~TTSCRL01.ITM~ ~override/POTN16.ITM~ WRITE_SHORT 0x38 80  // violet potion
+COPY_EXISTING ~SCRLB4.ITM~ ~override/POTN19.ITM~ WRITE_SHORT 0x38 80  // agility
+COPY_EXISTING ~SCRLB2.ITM~ ~override/POTN23.ITM~ WRITE_SHORT 0x38 80  // speed
+COPY_EXISTING ~SCRLB1.ITM~ ~override/POTN25.ITM~ WRITE_SHORT 0x38 80  // healing
+COPY_EXISTING ~SCRLAL.ITM~ ~override/POTN28.ITM~ WRITE_SHORT 0x38 80  // fortitude
+COPY_EXISTING ~SCRLAJ.ITM~ ~override/POTN30.ITM~ WRITE_SHORT 0x38 80  // infravision
+COPY_EXISTING ~SCRLAI.ITM~ ~override/POTN41.ITM~ WRITE_SHORT 0x38 80  // power
+COPY_EXISTING ~SCRLA8.ITM~ ~override/POTN43.ITM~ WRITE_SHORT 0x38 80  // insight
+COPY_EXISTING ~SCRL99.ITM~ ~override/POTN44.ITM~ WRITE_SHORT 0x38 80  // strength
+COPY_EXISTING ~SCRL98.ITM~ ~override/POTN29.ITM~ WRITE_SHORT 0x38 80  // genius
+COPY_EXISTING ~SCRL97.ITM~ ~override/POTN36.ITM~ WRITE_SHORT 0x38 80  // master thievery
+COPY_EXISTING ~SCRL96.ITM~ ~override/POTN37.ITM~ WRITE_SHORT 0x38 80  // mind focus
+COPY_EXISTING ~SCRL95.ITM~ ~override/POTN39.ITM~ WRITE_SHORT 0x38 80  // perception
+
+// GEMS
+COPY_RANDOM 
+     ~MISC41.ITM~ // Saphire (2k)
+     ~MISC43.ITM~ // Emerald (1.5k)
+     ~MISC42.ITM~ // Diamond (1k)
+     ~MISC40.ITM~ // Moonbar (375)
+     ~MISC39.ITM~ // Water Opal (350)
+     ~MISC38.ITM~ // Black Opal (300)
+
+// replace Aquamarine (MISC33, worth 150) with something better (300+)
+COPY_EXISTING ~MISC38.ITM~ ~override/MISC33.ITM~
+
+// replace most cheap gems, necklaces and rings with broken shield/armor/weapon and other junk
+COPY_EXISTING ~MISC56.ITM~ ~override/MISC19.ITM~ WRITE_SHORT 0x38 80  // Turquoise Gem  5    
+COPY_EXISTING ~MISC56.ITM~ ~override/MISC16.ITM~ WRITE_SHORT 0x38 80  // Fire Agate Gem 10   
+COPY_EXISTING ~MISC56.ITM~ ~override/MISC17.ITM~ WRITE_SHORT 0x38 80  // Lynx Eye Gem   15   
+COPY_EXISTING ~MISC56.ITM~ ~override/MISC18.ITM~ WRITE_SHORT 0x38 80  // Sunstone Gem   25   
+COPY_EXISTING ~MISC56.ITM~ ~override/MISC22.ITM~ WRITE_SHORT 0x38 80  // Andar Gem 30   
+COPY_EXISTING ~MISC56.ITM~ ~override/MISC23.ITM~ WRITE_SHORT 0x38 80  // Jasper Gem     35   
+COPY_EXISTING ~MISC56.ITM~ ~override/MISC24.ITM~ WRITE_SHORT 0x38 80  // Tchazar Gem    35   
+COPY_EXISTING ~MISC56.ITM~ ~override/MISC26.ITM~ WRITE_SHORT 0x38 80  // Iol Gem   40   
+COPY_EXISTING ~MISC56.ITM~ ~override/MISC25.ITM~ WRITE_SHORT 0x38 80  // Zircon Gem     45   
+COPY_EXISTING ~MISC56.ITM~ ~override/MISC20.ITM~ WRITE_SHORT 0x38 80  // Bloodstone Gem 50   
+COPY_EXISTING ~MISC57.ITM~ ~override/MISC27.ITM~ WRITE_SHORT 0x38 80  // Moonstone Gem  50   
+COPY_EXISTING ~MISC57.ITM~ ~override/MISC28.ITM~ WRITE_SHORT 0x38 80  // Waterstar Gem  80   
+COPY_EXISTING ~MISC57.ITM~ ~override/MISC31.ITM~ WRITE_SHORT 0x38 80  // Star Diopside Gem   95   
+COPY_EXISTING ~MISC57.ITM~ ~override/MISC35.ITM~ WRITE_SHORT 0x38 80  // Horn Coral Gem 125
+COPY_EXISTING ~MISC57.ITM~ ~override/AMUL04.ITM~ WRITE_SHORT 0x38 80  //
+COPY_EXISTING ~MISC57.ITM~ ~override/AMUL05.ITM~ WRITE_SHORT 0x38 80  //
+COPY_EXISTING ~MISC57.ITM~ ~override/AMUL06.ITM~ WRITE_SHORT 0x38 80  //
+COPY_EXISTING ~MISC57.ITM~ ~override/AMUL07.ITM~ WRITE_SHORT 0x38 80  //
+COPY_EXISTING ~MISC57.ITM~ ~override/AMUL08.ITM~ WRITE_SHORT 0x38 80  //
+COPY_EXISTING ~SCRL63.ITM~ ~override/AMUL09.ITM~ WRITE_SHORT 0x38 80  // random spell scroll
+COPY_EXISTING ~SCRL3G.ITM~ ~override/AMUL10.ITM~ WRITE_SHORT 0x38 80  // random spell scroll
+COPY_EXISTING ~BLUN01.ITM~ ~override/AMUL11.ITM~ WRITE_SHORT 0x38 80  // random melee weapon
+COPY_EXISTING ~BLUN02.ITM~ ~override/AMUL12.ITM~ WRITE_SHORT 0x38 80  // random melee weapon
+COPY_EXISTING ~SCRL58.ITM~ ~override/AMUL13.ITM~ WRITE_SHORT 0x38 80  // random spell scroll
+COPY_EXISTING ~MISC58.ITM~ ~override/RING10.ITM~ WRITE_SHORT 0x38 80  //
+COPY_EXISTING ~MISC58.ITM~ ~override/RING11.ITM~ WRITE_SHORT 0x38 80  //
+COPY_EXISTING ~MISC58.ITM~ ~override/RING12.ITM~ WRITE_SHORT 0x38 80  //
+COPY_EXISTING ~MISC58.ITM~ ~override/RING13.ITM~ WRITE_SHORT 0x38 80  //
+COPY_EXISTING ~MISC58.ITM~ ~override/RING14.ITM~ WRITE_SHORT 0x38 80  //
+COPY_EXISTING ~MISC58.ITM~ ~override/RING15.ITM~ WRITE_SHORT 0x38 80  //
+COPY_EXISTING ~BOOT06.ITM~ ~override/RING16.ITM~ WRITE_SHORT 0x38 80  // worn-out boots
+COPY_EXISTING ~BOOT06.ITM~ ~override/RING17.ITM~ WRITE_SHORT 0x38 80  // worn-out boots
+COPY_EXISTING ~BOOT06.ITM~ ~override/RING18.ITM~ WRITE_SHORT 0x38 80  // worn-out boots
+COPY_EXISTING ~BOOT06.ITM~ ~override/RING19.ITM~ WRITE_SHORT 0x38 80  // worn-out boots

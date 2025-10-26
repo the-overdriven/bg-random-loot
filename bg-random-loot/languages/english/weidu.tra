@@ -1,0 +1,6 @@
+@69   = ~Random Loot (reshuffle items within the same tier, based on RANDOM_SEED in random.tpa)~
+
+// game and weidu share the 0-70 range; use 1000s for weidu and 2000s for game going forward
+
+@1002 = ~The functionality of this component is already provided by another mod~
+@1003 = ~This component has been deprecated.~
