@@ -86,7 +86,7 @@ COPY_RANDOM
      ~HAMM04.ITM~ // kneecapper (+1, +4 vs. giant humanoids, i.e. ogres, half-ogres, ogrillons)
      ~HAMM13.ITM~ // hammer of dawn +1
      // ~HGBER01.ITM~ // 2h sword +1
-     ~PLYFLIND.ITM~ // halberd +1
+     // ~PLYFLIND.ITM~ // halberd +1
      // ~SHARSWD.ITM~ // bastard sword +1
      // ~SKELWASU.ITM~ // 2h sword +1
      ~SPER02.ITM~ // spear +1
@@ -162,7 +162,7 @@ COPY_RANDOM
      ~CLCK03.ITM~ // Cloak of Displacement
      ~STAF08.ITM~ // Aule'a Staff +3
      ~MISC2P.ITM~ // the captive audience
-     ~RING05.ITM~ // sandthief's ring
+     // ~RING05.ITM~ // sandthief's ring, one charge only!
      // ~AMUL17.ITM~ // greenstone amulet, do not use, has only one charge
      ~AMUL14.ITM~ // protector +1
      ~BOW02.ITM~ // composite longbow +1
