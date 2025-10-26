@@ -1,13 +1,6 @@
 BACKUP ~weidu_external/bg-random-loot/backup~
 SUPPORT ~https://www.nexusmods.com/baldursgate/mods/107~
 
-// ALWAYS
-//   ACTION_IF NOT VARIABLE_IS_SET cd_iwd2_ease_always THEN BEGIN // check to make this happen only once per install
-//     OUTER_SET cd_iwd2_ease_always = 1
-//     INCLUDE ~bg-random-loot/lib/always.tpa~
-//   END
-// END  
-
 VERSION ~v1~
 
 README ~bg-random-loot/docs/readme-bg-random-loot.txt~
@@ -19,21 +12,8 @@ LANGUAGE
   ~english~ 
   ~bg-random-loot/languages/english/weidu.tra~
   ~bg-random-loot/languages/english/game.tra~
-//LANGUAGE 
-//  ~bg-random-loot/languages/english/weidu.tra~
-//  ~bg-random-loot/languages/english/game.tra~
-
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////                                                  \\\\\
-///// Random Loot                                      \\\\\
-/////                                                  \\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
-/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\/////\\\\\
 
 BEGIN @69 DESIGNATED 22
 LABEL ~ww_bg_random_loot~
 
 INCLUDE ~bg-random-loot/lib/random.tpa~
-
-// always keep random loot last in the tp2 for compat reasons
