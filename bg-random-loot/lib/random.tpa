@@ -8,21 +8,24 @@ RANDOM_SEED 3
 // non-magical weapons
 // mages can wield swords!
 COPY_RANDOM 
-     ~AX1H01.ITM~ //
-     ~BLUN01.ITM~ //
-     ~BLUN02.ITM~ //
-     ~BLUN04.ITM~ //
-     ~BLUN06.ITM~ //
-     ~DAGG01.ITM~ //
-     ~HALB01.ITM~ //
-     ~HAMM01.ITM~ //
-     ~SPER01.ITM~ //
-     ~STAF01.ITM~ //
+     ~AX1H01.ITM~ // battle axe
+     ~BLUN01.ITM~ // club
+     ~BLUN02.ITM~ // flail
+     ~BLUN04.ITM~ // mace
+     ~BLUN06.ITM~ // morning star
+     ~HAMM01.ITM~ // war hammer
+     ~STAF01.ITM~ // staff
+     ~SPER01.ITM~ // spear
+     ~HALB01.ITM~ // halberd
+     ~DAGG01.ITM~ // dagger
      ~SW1H01.ITM~ // bastard sword
      ~SW1H04.ITM~ // long sword
      ~SW1H07.ITM~ // short sword
-     ~SW1H46.ITM~ // wakizashi
      ~SW2H01.ITM~ // 2h sword
+     ~SW1H20.ITM~ // scimitar
+     ~SW1H43.ITM~ // katana
+     ~SW1H46.ITM~ // wakizashi
+     ~SW1H48.ITM~ // ninjato
 
 // non-magical ranged weapons
 // COPY_RANDOM 
@@ -43,7 +46,6 @@ COPY_RANDOM
 // magical arrows
      // TODO, but not sure if it's a good idea tbh   
 
-// TODO: fix duplicates
 // all melee weapons +1
 COPY_RANDOM 
      ~AX1H02.ITM~ // axe +1
