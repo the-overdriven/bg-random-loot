@@ -84,7 +84,6 @@ COPY_RANDOM
      ~HALB02.ITM~ // halberd +1
      ~HAMM02.ITM~ // war hammer +1
      ~HAMM04.ITM~ // kneecapper (+1, +4 vs. giant humanoids, i.e. ogres, half-ogres, ogrillons)
-     ~HAMM13.ITM~ // hammer of dawn +1
      // ~HGBER01.ITM~ // 2h sword +1
      // ~PLYFLIND.ITM~ // halberd +1
      // ~SHARSWD.ITM~ // bastard sword +1
