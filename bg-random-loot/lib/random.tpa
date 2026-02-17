@@ -233,7 +233,7 @@ COPY_RANDOM
      // items that don't appear in game (to reduce item spam)
      // some of these items won't appear in game at all
      ~MISC61.ITM~ // wine
-     ~MISC91.ITM~ // grapes
+     // ~MISC91.ITM~ // grapes
      ~MISC02.ITM~ // mirror
      ~MISC74.ITM~ // candle
      // ~BDMISC40.ITM~ // sack of grain
