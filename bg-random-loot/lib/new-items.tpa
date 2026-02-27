@@ -1,0 +1,63 @@
+// Mace
+COPY ~bg-random-loot/itm/RLBLUN05.ITM~ ~override~
+  SAY NAME1 @1
+  SAY NAME2 @2
+  SAY UNIDENTIFIED_DESC @3
+  SAY DESC @4
+
+// Halberd
+COPY ~bg-random-loot/itm/RLHALB02.ITM~ ~override~
+  SAY NAME1 @5
+  SAY NAME2 @6
+  SAY UNIDENTIFIED_DESC @7
+  SAY DESC @8
+
+// Spear
+COPY ~bg-random-loot/itm/RLSPER02.ITM~ ~override~
+  SAY NAME1 @9
+  SAY NAME2 @10
+  SAY UNIDENTIFIED_DESC @11
+  SAY DESC @12
+
+// Staff
+COPY ~bg-random-loot/itm/RLSTAF02.ITM~ ~override~
+  SAY NAME1 @13
+  SAY NAME2 @14
+  SAY UNIDENTIFIED_DESC @15
+  SAY DESC @16
+
+// Bastard Sword
+COPY ~bg-random-loot/itm/RLSW1H02.ITM~ ~override~
+  SAY NAME1 @17
+  SAY NAME2 @18
+  SAY UNIDENTIFIED_DESC @19
+  SAY DESC @20
+
+// Scimitar
+COPY ~bg-random-loot/itm/RLSW1H22.ITM~ ~override~
+  SAY NAME1 @21
+  SAY NAME2 @22
+  SAY UNIDENTIFIED_DESC @23
+  SAY DESC @24
+
+// Katana
+COPY ~bg-random-loot/itm/RLSW1H44.ITM~ ~override~
+  SAY NAME1 @25
+  SAY NAME2 @26
+  SAY UNIDENTIFIED_DESC @27
+  SAY DESC @28
+
+// Wakizashi
+COPY ~bg-random-loot/itm/RLSW1H47.ITM~ ~override~
+  SAY NAME1 @29
+  SAY NAME2 @30
+  SAY UNIDENTIFIED_DESC @31
+  SAY DESC @32
+
+// Ninjato
+COPY ~bg-random-loot/itm/RLSW1H49.ITM~ ~override~
+  SAY NAME1 @33
+  SAY NAME2 @34
+  SAY UNIDENTIFIED_DESC @35
+  SAY DESC @36
+

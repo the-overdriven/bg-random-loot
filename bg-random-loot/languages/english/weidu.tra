@@ -1,6 +1,304 @@
 @69   = ~Random Loot (reshuffle items within the same tier, based on RANDOM_SEED in random.tpa)~
+@70   = ~Add new items (+1 weapons) and randomize loot including new items~
 
 // game and weidu share the 0-70 range; use 1000s for weidu and 2000s for game going forward
 
 @1002 = ~The functionality of this component is already provided by another mod~
 @1003 = ~This component has been deprecated.~
+
+//----------------------//----------------------NEW ITEMS------------------------//----------------------
+
+// ---------------mace
+@1 = ~Mace~
+@2 = ~Grave-Warden Mace~
+@3 = ~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 10~
+@4 = ~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with an iron head mounted on the end. In this case, the head is pyramidal and seems to glow with an inner blue light as it sits atop a polished oak shaft.
+
+STATISTICS:
+
+Equipped abilities:
+– prevents permanent death
+- +3 to saving throws vs death
+
+THAC0: +1
+Damage: 1d6+2 (crushing)
+Speed Factor: 6
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 8~
+
+// ---------------halberd
+@5 = ~Halberd~
+@6 = ~Halberd of Grudge~
+@7 = ~By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10 (slashing or piercing, whichever is better)
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15~
+@8 = ~Like others of its type, this halberd consists of a cleaver-like axe blade mounted on a staff approximately six feet in length. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat. Its keen blade, for instance, will shear through your opponent's flesh to find the bone while its barbed tip will seek out gaps in their armor.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d10+1 (slashing or piercing, whichever is better), +5 vs humans
+Speed Factor: 8
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 14~
+
+// ---------------spear
+@9 = ~Spear~
+@10 = ~Bone-Hungry Spear~
+@11 = ~One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d6 (piercing)
+Speed Factor: 6
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5~
+@12 = ~One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types. This spear is slightly different though, as it has been imbued with certain magical properties.
+
+STATISTICS:
+
+THAC0: +1, +5 vs skeletons
+Damage: 1d6+1 (piercing)
+Speed Factor: 5
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5~
+
+// ---------------staff
+@13 = ~Quarterstaff~
+@14 = ~Rod of Insight~
+@15 = ~The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4~
+@16 = ~The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. This one is particularly special as it has been imbued with magical properties.
+
+STATISTICS:
+
+Equipped abilities:
+– allows memorizing two additional wizard spells
+– +10 Lore
+
+THAC0: +1
+Damage: 1d6+1 (crushing)
+Speed Factor: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4~
+
+// ---------------bastard sword
+@17 = ~Bastard Sword~
+@18 = ~Ironblood Bastard Sword~
+@19 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
+
+STATISTICS:
+
+Damage: 2d4 (slashing)
+Speed Factor: 8
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 10~
+@20 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. This is a magical bastard sword.
+
+STATISTICS:
+
+Equipped abilities:
+– +1 Constitution
+
+THAC0: +1
+Damage: 2d4+1 (slashing)
+Speed Factor: 7
+Proficiency Type: Bastard Sword
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 9~
+
+// ---------------scimitar
+@21 = ~Scimitar~
+@22 = ~Scimitar of Ember~
+@23 = ~The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 4~
+@24 = ~The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat. This particular weapon has been enhanced magically to complement the skill of the wielder.
+
+STATISTICS:
+
+Equipped abilities:
+– +20 Fire Resistance
+
+THAC0: +1
+Damage: 1d8+1 (slashing)
+Speed Factor: 4
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 3~
+
+// ---------------katana
+@25 = ~Katana~
+@26 = ~Katana of Composure~
+@27 = ~The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 4
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 6~
+@28 = ~To enchant a katana is no simple process. Unlike conventional weapons, the katana is already a near-perfect fighting sword. To improve it usually requires a sacrifice, perhaps a dying samurai might beg a Wu Jen to infuse his fighting spirit into the spirit of the katana.
+
+STATISTICS:
+
+Equipped abilities:
+– +1 to all saving throws
+
+THAC0: +1
+Damage: 1d10+1 (slashing)
+Speed Factor: 3
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 5~
+
+// ---------------wakizashi
+@29 = ~Wakizashi~
+@30 = ~Wakizashi of Shadow~
+@31 = ~The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi, a shorter sword with a length between twelve and twenty-four inches, is a dangerous weapon in the hands of a skilled user.
+
+STATISTICS:
+
+Damage: 1d8 (piercing)
+Speed Factor: 3
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+@32 = ~The wakizashi, or companion sword, is extremely important to the samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night.
+
+STATISTICS:
+
+Equipped abilities:
+– +20 to Hide in Shadows
+
+THAC0: +1
+Damage: 1d8+1 (piercing)
+Speed Factor: 2
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 2~
+
+// ---------------ninjato
+@33 = ~Ninjatō~
+@34 = ~Unbound Ninjatō~
+@35 = ~The sword of the ninja, the ninjatō, is of lower quality than other Kara-Turan blades such as the katana. The ninjatō is short with a straight blade, making it ideal for subterfuge. The ninjatō is also more suited to fighting in closed places, sometimes giving the ninja an advantage over the longer blades that the samurai use.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 4
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 5~
+@36 = ~The sword of the ninja, the ninjatō, is of lower quality than other Kara-Turan blades such as the katana. The ninjatō is short with a straight blade, making it ideal for subterfuge. The ninjatō is also more suited to fighting in closed places, sometimes giving the ninja an advantage over the longer blades that the samurai use.
+
+STATISTICS:
+
+Equipped abilities:
+– Protects the wielder from any magics that affect movement, such as Hold and Web.
+
+THAC0: +1
+Damage: 1d8+1 (slashing)
+Speed Factor: 3
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4~
+
+
+
+
+
+
+// ---------------example
+// @33 = ~Ninjatō~
+// @34 = ~Unbound_Ninjatō~
+// @35 = ~Description_unidentified~
+// @36 = ~Description_identified~

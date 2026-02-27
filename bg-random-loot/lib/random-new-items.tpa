@@ -1,0 +1,83 @@
+// all items within the same COPY_RANDOM block will be randomly swapped
+
+// change this number if you want a different random arrangement
+// warning: changing midgame will change your equipped items
+// warning: adding more items to item pools will also do that
+RANDOM_SEED 3
+
+// all melee weapons +1
+COPY_RANDOM 
+     ~AX1H02.ITM~ // axe +1
+     ~AX1H18.ITM~ // EE Beruel's Retort
+     ~AX1H19.ITM~ // EE Golden Axe +1
+     // ~BDBLUN02.ITM~ //
+     // ~BDBONE02.ITM~ //
+     // ~BDAX1H04.ITM~ //
+     // ~BDAX1H05.ITM~ //
+     // ~BDAX1HGH.ITM~ //
+     // ~BDDAGG02.ITM~ //
+     // ~BDDAGG03.ITM~ //
+     // ~BDDAGG04.ITM~ //
+     // ~BDDAGG07.ITM~ //
+     // ~BDHALB02.ITM~ //
+     // ~BDHAMM04.ITM~ //
+     // ~BDSEMAHL.ITM~ //
+     // ~BDSW1H03.ITM~ //
+     // ~BDSW1H04.ITM~ //
+     // ~BDSW1HEL.ITM~ //
+     // ~BDSW1HGh.ITM~ //
+     // ~BDSW1HX5.ITM~ //
+     // ~BDSW2H02.ITM~ //
+     // ~BDSW2HGH.ITM~ //
+     ~BLUN03.ITM~ // flail +1
+     ~BLUN05.ITM~ // mace +1
+     ~BLUN07.ITM~ // morning star +1
+     ~BLUN10.ITM~ // club +1 (+3 vs. unnatural creatures, basically all except "humanoids" and "animals")
+     ~BLUN36.ITM~ // EE Club +1
+     ~BLUN38.ITM~ // EE Night Club +1
+     ~BLUN41.ITM~ // EE The Stupefier +1
+     // ~COMPS02.ITM~ // bastard sword +1
+     // ~COMPS03.ITM~ // Kondar +1
+     ~DAGG02.ITM~ // dagger +1
+     ~DAGG09.ITM~ // dagger werebane +1 (+1, +4 vs. lycanthropes)
+     ~HALB02.ITM~ // halberd +1
+     ~HAMM02.ITM~ // war hammer +1
+     ~HAMM04.ITM~ // kneecapper (+1, +4 vs. giant humanoids, i.e. ogres, half-ogres, ogrillons)
+     // ~HGBER01.ITM~ // 2h sword +1
+     // ~PLYFLIND.ITM~ // halberd +1
+     // ~SHARSWD.ITM~ // bastard sword +1
+     // ~SKELWASU.ITM~ // 2h sword +1
+     ~SPER02.ITM~ // spear +1
+     ~SW1H02.ITM~ // bastard sword +1
+     ~SW1H03.ITM~ // Kondar +1
+     ~SW1H05.ITM~ // long sword +1
+     // ~SW1H05S.ITM~ //
+     ~SW1H08.ITM~ // short sword +1
+     // ~SW1H14.ITM~ // short sword +1
+     // ~SW1H19.ITM~ // cursed
+     ~SW1H22.ITM~ // EE Scimitar +1
+     ~SW1H24.ITM~ // long sword +1 (+2 vs regenerating creatures, +3 vs cold-using creatures, +4 vs undead)
+     ~SW1H34.ITM~ // EE Albruin +1
+     ~SW1H44.ITM~ // EE Katana +1
+     ~SW1H47.ITM~ // EE Wakizashi +1
+     ~SW1H49.ITM~ // EE Ninja-To +1
+     // ~SW1H78.ITM~ // Drusus, long sword +1
+     ~SW1H79.ITM~ // EE long sword +1 (+3 vs undead)
+     // ~SW1H98.ITM~ // short sword +1
+     ~SW2H02.ITM~ // 2h sword +1
+     ~SW2H22.ITM~ // EE 2h sword, gold digger +1
+     // ~SW2HD1.ITM~ // Rancor (Dorn's sword)
+     // ~THDAGG02.ITM~ //
+     // ~TTSWORD1.ITM~ // long sword +1
+
+     //------------------------------------new items--------------------------------------
+
+     ~RLBLUN05.ITM~
+     ~RLHALB02.ITM~
+     ~RLSPER02.ITM~
+     ~RLSTAF02.ITM~
+     ~RLSW1H22.ITM~
+     ~RLSW1H02.ITM~
+     ~RLSW1H44.ITM~
+     ~RLSW1H47.ITM~
+     ~RLSW1H49.ITM~
