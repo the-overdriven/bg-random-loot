@@ -14,20 +14,47 @@ LANGUAGE
   ~bg-random-loot/languages/english/game.tra~
 
 //////////////////////////////////////////////////
-// Component 1 – Randomize Loot with base game items
+// Component 1: Randomize Loot with base game items
 //////////////////////////////////////////////////
 
-BEGIN @69 DESIGNATED 22
+BEGIN @69 DESIGNATED 21
 LABEL ~ww_bg_random_loot~
 
 INCLUDE ~bg-random-loot/lib/random.tpa~
 
 //////////////////////////////////////////////////
-// Component 2 – Add new items and randomize loot including new items
+// Component 2: Add new items and re-randomize loot including new items
 //////////////////////////////////////////////////
 
-BEGIN @70 DESIGNATED 21
+BEGIN @70 DESIGNATED 22
 LABEL ~ww_bg_random_loot_new_items~
 
 INCLUDE ~bg-random-loot/lib/new-items.tpa~
 INCLUDE ~bg-random-loot/lib/random-new-items.tpa~
+
+//////////////////////////////////////////////////
+// Component 3: Replace fake and weak potions
+//////////////////////////////////////////////////
+
+BEGIN @71 DESIGNATED 23
+LABEL ~ww_bg_random_loot_replace_weak_potions~
+
+INCLUDE ~bg-random-loot/lib/replace-weak-potions.tpa~
+
+//////////////////////////////////////////////////
+// Component 4: Randomize gems
+//////////////////////////////////////////////////
+
+BEGIN @72 DESIGNATED 24
+LABEL ~ww_bg_random_loot_random_gems~
+
+INCLUDE ~bg-random-loot/lib/random-gems.tpa~
+
+//////////////////////////////////////////////////
+// Component 5: Replace cheap items with junk
+//////////////////////////////////////////////////
+
+BEGIN @73 DESIGNATED 25
+LABEL ~ww_bg_random_loot_replace_cheap_items~
+
+INCLUDE ~bg-random-loot/lib/replace-cheap-items.tpa~
