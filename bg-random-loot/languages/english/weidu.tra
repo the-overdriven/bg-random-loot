@@ -1,5 +1,8 @@
 @69   = ~Random Loot (reshuffle items within the same tier, based on RANDOM_SEED in random.tpa)~
-@70   = ~Add new items (+1 weapons) and randomize loot including new items~
+@70   = ~Add new items (+1 weapons) and re-randomize loot including these new items~
+@71   = ~Replace fake and weak potions with antidotes (POTN20) and scrolls~
+@72   = ~Randomize gems~
+@73   = ~Replace most cheap gems, necklaces and rings with broken shield/armor/weapon and other junk~
 
 // game and weidu share the 0-70 range; use 1000s for weidu and 2000s for game going forward
 

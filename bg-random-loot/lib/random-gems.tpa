@@ -1,0 +1,10 @@
+COPY_RANDOM 
+     ~MISC41.ITM~ // Saphire (2k)
+     ~MISC43.ITM~ // Emerald (1.5k)
+     ~MISC42.ITM~ // Diamond (1k)
+     ~MISC40.ITM~ // Moonbar (375)
+     ~MISC39.ITM~ // Water Opal (350)
+     ~MISC38.ITM~ // Black Opal (300)
+
+// replace Aquamarine (MISC33, worth 150) with something better (300+)
+COPY_EXISTING ~MISC38.ITM~ ~override/MISC33.ITM~
