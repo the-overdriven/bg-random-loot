@@ -258,6 +258,7 @@ COPY_RANDOM
      ~CLCK06.ITM~ // cloak of non-detectability
      ~RING21.ITM~ // ring of infravision
      ~SLNG02.ITM~ // sling +1
+     ~BRAC07.ITM~ // Brawling Hands (dex: 18)
 
 // scrolls per lvl
 COPY_RANDOM 
@@ -480,7 +481,7 @@ COPY_RANDOM
      ~SCRL81.ITM~ // 
      ~SCRL82.ITM~ // 
      ~SCRL83.ITM~ // 
-     ~SCRL84.ITM~ // 
+     // ~SCRL84.ITM~ // Wish
      ~SCRL85.ITM~ // 
      ~SCRL86.ITM~ // 
      ~SCRL87.ITM~ // 
@@ -517,7 +518,7 @@ COPY_RANDOM
      // ~SCRLJALA.ITM~ // 
      // ~SCRLKAR.ITM~ // 
      // ~SCRLNEI.ITM~ // 
-     ~SCRLPET.ITM~ // 
+     // ~SCRLPET.ITM~ // 
      // ~SCRLTAR.ITM~ // 
      // ~SCRLVAIL.ITM~ // 
      // ~SCRLZHA.ITM~ // 
