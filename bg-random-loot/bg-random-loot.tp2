@@ -1,9 +1,9 @@
 BACKUP ~weidu_external/bg-random-loot/backup~
 SUPPORT ~https://www.nexusmods.com/baldursgate/mods/107~
 
-VERSION ~v1~
+VERSION ~v2.2~
 
-README ~bg-random-loot/docs/readme-bg-random-loot.txt~
+README ~bg-random-loot/readme-bg-random-loot.url~
   
 AUTO_TRA ~bg-random-loot/languages/%s~
 
@@ -20,6 +20,8 @@ LANGUAGE
 BEGIN @69 DESIGNATED 21
 LABEL ~ww_bg_random_loot~
 
+PRINT @68
+
 INCLUDE ~bg-random-loot/lib/random.tpa~
 
 //////////////////////////////////////////////////
@@ -28,6 +30,8 @@ INCLUDE ~bg-random-loot/lib/random.tpa~
 
 BEGIN @70 DESIGNATED 22
 LABEL ~ww_bg_random_loot_new_items~
+
+REQUIRE_COMPONENT ~bg-random-loot.tp2~ 21 @1005
 
 INCLUDE ~bg-random-loot/lib/new-items.tpa~
 INCLUDE ~bg-random-loot/lib/random-new-items.tpa~
@@ -39,6 +43,8 @@ INCLUDE ~bg-random-loot/lib/random-new-items.tpa~
 BEGIN @71 DESIGNATED 23
 LABEL ~ww_bg_random_loot_replace_weak_potions~
 
+REQUIRE_COMPONENT ~bg-random-loot.tp2~ 21 @1005
+
 INCLUDE ~bg-random-loot/lib/replace-weak-potions.tpa~
 
 //////////////////////////////////////////////////
@@ -47,6 +53,8 @@ INCLUDE ~bg-random-loot/lib/replace-weak-potions.tpa~
 
 BEGIN @72 DESIGNATED 24
 LABEL ~ww_bg_random_loot_random_gems~
+
+REQUIRE_COMPONENT ~bg-random-loot.tp2~ 21 @1005
 
 INCLUDE ~bg-random-loot/lib/random-gems.tpa~
 
@@ -57,4 +65,18 @@ INCLUDE ~bg-random-loot/lib/random-gems.tpa~
 BEGIN @73 DESIGNATED 25
 LABEL ~ww_bg_random_loot_replace_cheap_items~
 
+REQUIRE_COMPONENT ~bg-random-loot.tp2~ 21 @1005
+
 INCLUDE ~bg-random-loot/lib/replace-cheap-items.tpa~
+
+//////////////////////////////////////////////////
+// Component 6: Add new items to stores (Nashkel and Carnival)
+//////////////////////////////////////////////////
+
+BEGIN @74 DESIGNATED 26
+LABEL ~ww_bg_random_loot_add_items_to_stores~
+
+REQUIRE_COMPONENT ~bg-random-loot.tp2~ 21 @1005
+REQUIRE_COMPONENT ~bg-random-loot.tp2~ 22 @1004
+
+INCLUDE ~bg-random-loot/lib/add-items-to-stores.tpa~

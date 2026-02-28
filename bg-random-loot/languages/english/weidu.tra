@@ -1,8 +1,11 @@
-@69   = ~Random Loot (reshuffle items within the same tier, based on RANDOM_SEED in random.tpa)~
+@68   = ~You're about to install Random Loot by korootz. Please remember that (re)installing with different seeds will change your equipped items in existing old saves. It will be playable, but expect mess - you may need to re-equip most items. Starting a new game is highly recommended. Visit https://nexusmods.com/baldursgate/mods/107 for questions or suggestions.~
+
+@69   = ~Random Loot (reshuffle items within the same tier)~
 @70   = ~Add new items (+1 weapons) and re-randomize loot including these new items~
 @71   = ~Replace fake and weak potions with antidotes (POTN20) and scrolls~
 @72   = ~Randomize gems~
 @73   = ~Replace most cheap gems, necklaces and rings with broken shield/armor/weapon and other junk~
+@74   = ~Add new items to stores (Nashkel and Carnival)~
 
 @80   = ~Please enter a number for the random seed to randomize base game items (for example, 3):~
 @81   = ~Please enter a number for the random seed to re-randomize base game items with new items:~
@@ -11,10 +14,12 @@
 
 @1002 = ~The functionality of this component is already provided by another mod~
 @1003 = ~This component has been deprecated.~
+@1004 = ~This component requires the new items component~
+@1005 = ~This component requires the core component~
 
 //----------------------//----------------------NEW ITEMS------------------------//----------------------
 
-// ---------------mace
+// ---------------mace RLBLUN05.ITM
 @1 = ~Mace~
 @2 = ~Grave-Warden Mace +1~
 @3 = ~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies: Some are spiked, others flanged, and still others have pyramidal knobs.
@@ -47,7 +52,7 @@ Requires:
 
 Weight: 8~
 
-// ---------------halberd
+// ---------------halberd RLHALB02.ITM
 @5 = ~Halberd~
 @6 = ~Halberd of Grudge +1~
 @7 = ~By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
@@ -76,7 +81,7 @@ Requires:
 
 Weight: 14~
 
-// ---------------spear
+// ---------------spear RLSPER02.ITM
 @9 = ~Spear~
 @10 = ~Bone-Hungry Spear +1~
 @11 = ~One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
@@ -105,7 +110,7 @@ Requires:
 
 Weight: 5~
 
-// ---------------staff
+// ---------------staff RLSTAF02.ITM
 @13 = ~Quarterstaff~
 @14 = ~Rod of Insight +1~
 @15 = ~The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
@@ -138,9 +143,9 @@ Requires:
 
 Weight: 4~
 
-// ---------------bastard sword
+// ---------------bastard sword RLSW1H02.ITM
 @17 = ~Bastard Sword~
-@18 = ~Ironblood Bastard Sword +1~
+@18 = ~Ironvein Bastard Sword +1~
 @19 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred. The overall length of the bastard sword ranges between four feet and four feet ten inches.
 
 STATISTICS:
@@ -170,7 +175,7 @@ Requires:
 
 Weight: 9~
 
-// ---------------scimitar
+// ---------------scimitar RLSW1H22.ITM
 @21 = ~Scimitar~
 @22 = ~Scimitar of Ember +1~
 @23 = ~The long, curved, single-edged blade is characteristic of both the saber and the scimitar, even though their origins lie in different parts of Faerûn. Whereas the saber was intended chiefly for horsemen, mainly due to its versatility, the scimitar has a heavier oriental influence. The "shamshir," as it was originally called, is larger, more highly curved, and tapered to an elongated, sharp point. This makes the weapon slightly slower but more effective and deadly in combat.
@@ -202,7 +207,7 @@ Requires:
 
 Weight: 3~
 
-// ---------------katana
+// ---------------katana RLSW1H44.ITM
 @25 = ~Katana~
 @26 = ~Katana of Composure +1~
 @27 = ~The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
@@ -234,7 +239,7 @@ Requires:
 
 Weight: 5~
 
-// ---------------wakizashi
+// ---------------wakizashi RLSW1H47.ITM
 @29 = ~Wakizashi~
 @30 = ~Wakizashi of Shadow +1~
 @31 = ~The wakizashi, or companion sword, is extremely important to samurai. It is worn at all times, even indoors, and is near the samurai when he sleeps at night. As finely made as the katana, the wakizashi, a shorter sword with a length between twelve and twenty-four inches, is a dangerous weapon in the hands of a skilled user.
@@ -266,7 +271,7 @@ Requires:
 
 Weight: 2~
 
-// ---------------ninjato
+// ---------------ninjato RLSW1H49.ITM
 @33 = ~Ninjatō~
 @34 = ~Unbound Ninjatō +1~
 @35 = ~The sword of the ninja, the ninjatō, is of lower quality than other Kara-Turan blades such as the katana. The ninjatō is short with a straight blade, making it ideal for subterfuge. The ninjatō is also more suited to fighting in closed places, sometimes giving the ninja an advantage over the longer blades that the samurai use.
