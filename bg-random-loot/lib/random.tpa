@@ -50,6 +50,8 @@ COPY_RANDOM
 // magical arrows
      // TODO, but not sure if it's a good idea tbh   
 
+// _______________________________________________________________________________________
+
 // all melee weapons +1
 COPY_RANDOM 
      ~AX1H02.ITM~ // axe +1
@@ -123,6 +125,8 @@ COPY_RANDOM
 //      ~XBOW02.ITM~ //
 //      ~XBOW05.ITM~ //
 
+// _______________________________________________________________________________________
+
 // all magical darts
 COPY_RANDOM 
      ~DART11.ITM~ //
@@ -130,6 +134,8 @@ COPY_RANDOM
      ~DART10.ITM~ //
      ~DART03.ITM~ //
      ~DART04.ITM~ //
+
+// _______________________________________________________________________________________
 
 // new unique items added by EE:
 COPY_RANDOM 
@@ -149,6 +155,8 @@ COPY_RANDOM
      ~BELT15.ITM~ // EE Big-Fisted Belt (cursed, 19 str, 6 int)
      ~SW1H23.ITM~ // EE Rashad's Talon (Scimitar +2)
      ~HELM02.ITM~ // EE Helmet of Opposite Alignment (added earlier but droppable in EE)
+
+// _______________________________________________________________________________________
 
 // best unique items
 COPY_RANDOM 
@@ -220,6 +228,8 @@ COPY_RANDOM
      ~BOOK07.ITM~ // char
      ~BOOK08.ITM~ // wis
 
+// _______________________________________________________________________________________
+
 // wands (all except magic missile wand)
 COPY_RANDOM 
      ~WAND11.ITM~ // 
@@ -231,6 +241,8 @@ COPY_RANDOM
      ~WAND06.ITM~ // 
      ~WAND05.ITM~ // 
      ~WAND02.ITM~ // 
+
+// _______________________________________________________________________________________
 
 // less powerful items 
 COPY_RANDOM 
@@ -263,6 +275,8 @@ COPY_RANDOM
      ~RING21.ITM~ // ring of infravision
      ~SLNG02.ITM~ // sling +1
      ~BRAC07.ITM~ // Brawling Hands (dex: 18)
+
+// _______________________________________________________________________________________
 
 // scrolls per lvl
 COPY_RANDOM 
@@ -505,7 +519,7 @@ COPY_RANDOM
      ~SCRL98.ITM~ // 
      ~SCRL99.ITM~ // 
      ~SCRLA1.ITM~ // 
-     ~SCRLA2.ITM~ // 
+     ~SCRLA2.ITM~ //
      ~SCRLA3.ITM~ // 
      ~SCRLA5.ITM~ // 
      ~SCRLA6.ITM~ // 
@@ -530,6 +544,8 @@ COPY_RANDOM
      // ~SCRLZZ.ITM~ // 
      ~TTSCRL01.ITM~ // 
      ~TTSCRL02.ITM~ // 
+
+// _______________________________________________________________________________________
 
 // reshuffle selected potions
 COPY_RANDOM 
