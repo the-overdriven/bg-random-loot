@@ -9,6 +9,31 @@ ACTION_READLN user_seed
 // Use the variable provided by the user
 RANDOM_SEED %user_seed%
 
+// melee weapons
+COPY_RANDOM 
+     ~AX1H01.ITM~ // battle axe
+     ~BLUN01.ITM~ // club
+     ~BLUN02.ITM~ // flail
+     ~BLUN04.ITM~ // mace
+     ~BLUN06.ITM~ // morning star
+     ~HAMM01.ITM~ // war hammer
+     ~STAF01.ITM~ // staff
+     ~SPER01.ITM~ // spear
+     ~HALB01.ITM~ // halberd
+     ~DAGG01.ITM~ // dagger
+     ~SW1H01.ITM~ // bastard sword
+     ~SW1H04.ITM~ // long sword
+     ~SW1H07.ITM~ // short sword
+     ~SW2H01.ITM~ // 2h sword
+     ~SW1H20.ITM~ // scimitar
+     ~SW1H43.ITM~ // katana
+     ~SW1H46.ITM~ // wakizashi
+     ~SW1H48.ITM~ // ninjato
+
+     //------------------------------------new items--------------------------------------
+     ~AX2H01.ITM~ // two-handed axe
+
+// _______________________________________________________________________________________
 // all melee weapons +1
 COPY_RANDOM 
      ~AX1H02.ITM~ // axe +1
