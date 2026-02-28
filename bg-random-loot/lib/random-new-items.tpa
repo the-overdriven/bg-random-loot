@@ -1,6 +1,6 @@
 // all items within the same COPY_RANDOM block will be randomly swapped
 
-// change this number if you want a different random arrangement
+// change RANDOM_SEED if you want a different random arrangement
 // warning: changing midgame will change your equipped items
 // warning: adding more items to item pools will also do that
 PRINT @81
