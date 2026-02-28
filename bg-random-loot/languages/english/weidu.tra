@@ -4,6 +4,9 @@
 @72   = ~Randomize gems~
 @73   = ~Replace most cheap gems, necklaces and rings with broken shield/armor/weapon and other junk~
 
+@80   = ~Please enter a number for the random seed to randomize base game items (for example, 3):~
+@81   = ~Please enter a number for the random seed to re-randomize base game items with new items:~
+
 // game and weidu share the 0-70 range; use 1000s for weidu and 2000s for game going forward
 
 @1002 = ~The functionality of this component is already provided by another mod~

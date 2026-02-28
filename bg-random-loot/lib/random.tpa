@@ -3,7 +3,11 @@
 // change this number if you want a different random arrangement
 // warning: changing midgame will change your equipped items
 // warning: adding more items to item pools will also do that
-RANDOM_SEED 3
+PRINT @80
+ACTION_READLN user_seed
+
+// Use the variable provided by the user
+RANDOM_SEED %user_seed%
 
 // non-magical weapons
 // mages can wield swords!
