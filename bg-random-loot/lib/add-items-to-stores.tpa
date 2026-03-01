@@ -2,3 +2,4 @@ COPY ~bg-random-loot/sto/STO4803.STO~ ~override~
 COPY ~bg-random-loot/sto/STO4901.STO~ ~override~
 COPY ~bg-random-loot/sto/STO4908.STO~ ~override~
 COPY ~bg-random-loot/sto/STO4909.STO~ ~override~
+COPY ~bg-random-loot/sto/STOBLACK.STO~ ~override~
