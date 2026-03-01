@@ -61,9 +61,131 @@ COPY ~bg-random-loot/itm/RLSW1H49.ITM~ ~override~
   SAY UNIDENTIFIED_DESC @35
   SAY DESC @36
 
+//______________________________Icewind Dale items______________________________
+
 // two-handed axe
 COPY ~bg-random-loot/itm/I2HAXE.BAM~ ~override~
 COPY ~bg-random-loot/itm/AX2H01.ITM~ ~override~
   SAY NAME1 @37
   SAY NAME2 @38
   SAY UNIDENTIFIED_DESC @39
+
+// ELFGLOV.ITM
+COPY ~bg-random-loot/itm/GBRAC06.BAM~ ~override~
+COPY ~bg-random-loot/itm/IBRAC11.BAM~ ~override~
+COPY ~bg-random-loot/itm/ELFGLOV.ITM~ ~override~
+  SAY NAME1 @40
+  SAY NAME2 @41
+  SAY UNIDENTIFIED_DESC @42
+
+// SERPSCA.ITM potion
+COPY ~bg-random-loot/itm/IMISC76.BAM~ ~override~
+COPY ~bg-random-loot/itm/SERPSCA.ITM~ ~override~
+  SAY NAME1 @44
+  SAY NAME2 @45
+  SAY UNIDENTIFIED_DESC @46
+  SAY DESC @47
+
+// BELTBEA.ITM
+COPY ~bg-random-loot/itm/IBELTBEA.BAM~ ~override~
+COPY ~bg-random-loot/itm/BELTBEA.ITM~ ~override~
+  SAY NAME1 @48
+  SAY NAME2 @49
+  SAY UNIDENTIFIED_DESC @50
+  SAY DESC @51
+
+// cdwuff.ITM Cloak of the Winter Wolf
+COPY ~bg-random-loot/itm/cdwuff.BAM~ ~override~
+COPY ~bg-random-loot/itm/cdwuff.ITM~ ~override~
+  SAY NAME1 @52
+  SAY NAME2 @53
+  SAY UNIDENTIFIED_DESC @54
+  SAY DESC @55
+
+// KAYGLOV.ITM
+COPY ~bg-random-loot/itm/IBRAC18.BAM~ ~override~
+COPY ~bg-random-loot/itm/KAYGLOV.ITM~ ~override~
+  SAY NAME1 @56
+  SAY NAME2 @57
+  SAY UNIDENTIFIED_DESC @58
+  SAY DESC @59
+
+// MYSTERY.ITM shield
+COPY ~bg-random-loot/itm/IMYSTERY.BAM~ ~override~
+COPY ~bg-random-loot/itm/MYSTERY.ITM~ ~override~
+  SAY NAME1 @60
+  SAY NAME2 @61
+  SAY UNIDENTIFIED_DESC @62
+  SAY DESC @63
+
+// ARGENT.ITM shield
+COPY ~bg-random-loot/itm/IARGENT.BAM~ ~override~
+COPY ~bg-random-loot/itm/ARGENT.ITM~ ~override~
+  SAY NAME1 @64
+  SAY NAME2 @65
+  SAY UNIDENTIFIED_DESC @66
+  SAY DESC @67
+
+// WATCHER.ITM robe
+COPY ~bg-random-loot/itm/IWATCHER.BAM~ ~override~
+COPY ~bg-random-loot/itm/WATCHER.ITM~ ~override~
+  SAY NAME1 @68
+  SAY NAME2 @69
+  SAY UNIDENTIFIED_DESC @70
+  SAY DESC @71
+
+// RINGELF.ITM
+COPY ~bg-random-loot/itm/IRINGELF.BAM~ ~override~
+COPY ~bg-random-loot/itm/RINGELF.ITM~ ~override~
+  SAY NAME1 @72
+  SAY NAME2 @73
+  SAY UNIDENTIFIED_DESC @74
+  SAY DESC @75
+
+// BOOTMOA.ITM
+COPY ~bg-random-loot/itm/IBOOTMOA.BAM~ ~override~
+COPY ~bg-random-loot/itm/BOOTMOA.ITM~ ~override~
+  SAY NAME1 @76
+  SAY NAME2 @77
+  SAY UNIDENTIFIED_DESC @78
+  SAY DESC @79
+
+// BOOTFOX.ITM
+COPY ~bg-random-loot/itm/IBOOTFOX.BAM~ ~override~
+COPY ~bg-random-loot/itm/BOOTFOX.ITM~ ~override~
+  SAY NAME1 @80
+  SAY NAME2 @81
+  SAY UNIDENTIFIED_DESC @82
+  SAY DESC @83
+
+// AMULDEF.ITM
+COPY ~bg-random-loot/itm/IAMULDEF.BAM~ ~override~
+COPY ~bg-random-loot/itm/AMULDEF.ITM~ ~override~
+  SAY NAME1 @84
+  SAY NAME2 @85
+  SAY UNIDENTIFIED_DESC @86
+  SAY DESC @87
+
+// BELTGON.ITM
+COPY ~bg-random-loot/itm/IBELTGON.BAM~ ~override~
+COPY ~bg-random-loot/itm/BELTGON.ITM~ ~override~
+  SAY NAME1 @88
+  SAY NAME2 @89
+  SAY UNIDENTIFIED_DESC @90
+  SAY DESC @91
+
+// SWANARM.ITM armor
+COPY ~bg-random-loot/itm/ISWANARM.BAM~ ~override~
+COPY ~bg-random-loot/itm/SWANARM.ITM~ ~override~
+  SAY NAME1 @92
+  SAY NAME2 @93
+  SAY UNIDENTIFIED_DESC @94
+  SAY DESC @95
+
+// CHAINBM.ITM armor
+COPY ~bg-random-loot/itm/ICHAINBM.BAM~ ~override~
+COPY ~bg-random-loot/itm/CHAINBM.ITM~ ~override~
+  SAY NAME1 @96
+  SAY NAME2 @97
+  SAY UNIDENTIFIED_DESC @98
+  SAY DESC @99

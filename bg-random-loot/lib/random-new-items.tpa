@@ -3,7 +3,7 @@
 // change RANDOM_SEED if you want a different random arrangement
 // warning: changing midgame will change your equipped items
 // warning: adding more items to item pools will also do that
-PRINT @81
+PRINT @1081
 ACTION_READLN user_seed
 
 // Use the variable provided by the user
@@ -24,7 +24,7 @@ COPY_RANDOM
      ~SW1H01.ITM~ // bastard sword
      ~SW1H04.ITM~ // long sword
      ~SW1H07.ITM~ // short sword
-     ~SW2H01.ITM~ // 2h sword
+     ~SW2H01.ITM~ // two-handed sword
      ~SW1H20.ITM~ // scimitar
      ~SW1H43.ITM~ // katana
      ~SW1H46.ITM~ // wakizashi

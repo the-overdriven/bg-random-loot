@@ -1,14 +1,14 @@
-@68   = ~You're about to install Random Loot by korootz. Please remember that (re)installing with different seeds will change your equipped items in existing old saves. It will be playable, but expect mess - you may need to re-equip most items. Starting a new game is highly recommended. Visit https://nexusmods.com/baldursgate/mods/107 for questions or suggestions.~
+@1068 = ~You're about to install Random Loot by korootz. Please remember that (re)installing with different seeds will change your equipped items in existing old saves. It will be playable, but expect mess - you may need to re-equip most items. Starting a new game is highly recommended. Visit https://nexusmods.com/baldursgate/mods/107 for questions or suggestions.~
 
-@69   = ~Random Loot (reshuffle items within the same tier)~
-@70   = ~Add new items (+1 weapons) and re-randomize loot including these new items~
-@71   = ~Replace fake and weak potions with antidotes (POTN20) and scrolls~
-@72   = ~Randomize gems~
-@73   = ~Replace most cheap gems, necklaces and rings with broken shield/armor/weapon and other junk~
-@74   = ~Add new items to stores (Nashkel and Carnival)~
+@1069 = ~Random Loot (reshuffle items within the same tier)~
+@1070 = ~Add new items (+1 weapons) and re-randomize loot including these new items~
+@1071 = ~Replace fake and weak potions with antidotes (POTN20) and scrolls~
+@1072 = ~Randomize gems~
+@1073 = ~Replace most cheap gems, necklaces and rings with broken shield/armor/weapon and other junk~
+@1074 = ~Add new items to stores (Nashkel and Carnival)~
 
-@80   = ~Please enter a number for the random seed to randomize base game items (for example, 3):~
-@81   = ~Please enter a number for the random seed to re-randomize base game items with new items:~
+@1080 = ~Please enter a number for the random seed to randomize base game items (for example, 3):~
+@1081 = ~Please enter a number for the random seed to re-randomize base game items with new items:~
 
 // game and weidu share the 0-70 range; use 1000s for weidu and 2000s for game going forward
 
@@ -17,7 +17,7 @@
 @1004 = ~This component requires the new items component~
 @1005 = ~This component requires the core component~
 
-//----------------------//----------------------NEW ITEMS------------------------//----------------------
+//____________________________________________NEW ITEMS____________________________________________
 
 // ---------------mace RLBLUN05.ITM
 @1 = ~Mace~
@@ -319,7 +319,308 @@ Requires:
  15 Strength
 
 Weight: 10~
-// @40 = ~Description_identified~
+
+//---------------ELFGLOV
+@40 = ~Elven Sewn Gloves~
+@41 = ~Elven Sewn Gloves~
+@42 = ~These gloves have been made from the highest-quality cloth and furs available in the land. Hand sewn by talented elven tailors, these gloves were very common among the people of the Seldarine's Hand. Outsiders have also found it appealing, as they provide ample warmth and protection from the harsh cold of the North.
+
+STATISTICS:
+
+Equipped abilities:
+– Cold Resistance: +5%
+
+Weight: 2~
+// @43 = ~Description_identified~
+
+//---------------SERPSCA
+@44 = ~Potion~
+@45 = ~Oil of the Serpent's Scales~
+@46 = ~Potions are typically found in ceramic, crystal, glass, or metal flasks or vials. Flasks or other containers generally contain enough fluid to provide one person with one complete dose to achieve the effects of the potion.
+
+STATISTICS:
+
+Weight: 1~
+@47 = ~The creation of this useful oil is quite dangerous, involving the extraction of venom from five live ophidians and the removal of twenty or more scales from each of the same. The scales are left to soak in a mixture of venom, ground poppies, and a variety of other strange ingredients for a full month. At the end of this time, the scales are burned and rolled in another mixture of oils and powders until it takes on the consistency of thick butter. A variety of spells are then cast upon the mixture to give the oil its full powers. When used, the target's skin becomes tough, green, and scaly. While the oil is extremely useful, it takes a full round to adequately smear it over the recipient's body.
+
+STATISTICS:
+
+Special: Target has +2 Armor Class for 6 rounds (non-cumulative)
+Takes a full round to use.
+
+Weight: 1~
+
+//---------------BELTBEA
+@48 = ~Girdle~
+@49 = ~Girdle of Beatification~
+@50 = ~Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2~
+@51 = ~Priests of Helm in Berdusk consecrated this belt and gave it to the warrior Thom Wainwright, who had performed a number of great services for the church, including the destruction of the Unseeing Eye and the cult that followed him, the Blinded Acolytes. Thom wore the girdle proudly until he fell into severe debt in his later years. To his undying regret, he auctioned it off to a well-known priest of Mask.
+
+STATISTICS:
+
+Equipped abilities:
+– Bless on wearer
+
+Weight: 2~
+
+//---------------cdwuff
+@52 = ~Cloak~
+@53 = ~Cloak of the Winter Wolf~
+@54 = ~This beautiful fur cloak is made from the pelts of winter wolves. The cloak was sewn by the local seamstress in Kuldahar, and it retains some of the natural resistances inherent to the wolves thanks to Orrick's enchantments.
+
+STATISTICS:
+
+Weight: 1~
+@55 = ~This beautiful fur cloak is made from the pelts of winter wolves. The cloak was sewn by the local seamstress in Kuldahar, and it retains some of the natural resistances inherent to the wolves thanks to Orrick's enchantments.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1 vs. crushing attacks
+– Cold Resistance: +10%
+– Immunity to Winter Wolf Breath Attack
+
+Weight: 1~
+
+//---------------KAYGLOV
+@56 = ~Gloves~
+@57 = ~Kaylessa's Gloves~
+@58 = ~A pair of supple leather gloves.
+
+STATISTICS:
+
+Weight: 3~
+@59 = ~Worn by Kaylessa, weapons master of the Seldarine's Hand. Her prowess in archery only bested by her beauty, Kaylessa was devoted to honing the battle skills of any elf under her. If there were any heroes at the Battle of Seldarine's Hand, Kaylessa was one of them. She was a shining example of courage in the face of impending doom as she fearlessly led her people against orc and goblin hordes. Even after the fall of the Hand, her commitment to battle and her people remained strong. Her last wish was to die in glorious battle.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Dexterity: +1
+
+Weight: 3~
+
+//---------------MYSTERY
+@60 = ~Large Shield~
+@61 = ~Mystery of the Dead +3~
+@62 = ~The body shield, also known as the kite or tower shield, is a massive metal or wooden shield reaching nearly from the chin to the toe of the user. It must be firmly fastened to the forearm, and the shield hand must firmly grip it at all times. Naturally, this precludes use of the shield hand for anything but holding the body shield in place.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1, an extra +1 vs. missile attacks
+
+Requires:
+ 15 Strength
+
+Weight: 15~
+@63 = ~This front of this huge steel shield is decorated with black enameled patterns and a single skull set in the center. The interior of the shield is etched with encrypted ancient writings. The only legible words are at the top and read, "AND WHAT OF THE DEAD?" The history of the item is completely hidden from divination.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +4, an extra +1 vs. missile attacks
+– Immunity to Finger of Death and Power Word, Kill
+
+Requires:
+ 15 Strength
+
+Weight: 20~
+
+//---------------ARGENT
+@64 = ~Medium Shield~
+@65 = ~The Argent Shield +2~
+@66 = ~A medium shield is carried in the same manner as a small shield. Unlike the small shield, however, its weight prevents the character from using <PRO_HISHER> shield hand for anything other than carrying the medium shield. Medium shields are usually made of metal, range from three to four feet in diameter, and can be of any shape, from round to square to a dragon's spread wings. A typical medieval shield resembles a triangle with one point facing downward.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+
+Requires:
+ 12 Strength
+
+Weight: 7~
+@67 = ~This silver shield once resided in the Hand of the Seldarine, where it was used to protect its bearer from harmful magic and attacks. Because of its racial attunement, the marauding orcs and goblins left it in the tower. Maiden Ilmadia grabbed it from the ruins.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +3
+– Magic Resistance: +25%
+
+Requires:
+ 12 Strength
+
+Weight: 5~
+
+//---------------WATCHER
+@68 = ~Robe~
+@69 = ~Robe of the Watcher~
+@70 = ~Since the age of Netheril, mages have learned to bestow a wide variety of magical properties upon the everyday objects that surround them. A favorite item of such enchantment is the common robe. It is lightweight, affordable, and holds its enchantment well, thereby making it ideal equipment for a mage. Due to their magical heritage, however, only single-, dual-, and multi-class mages may wear these enchanted robes.
+
+STATISTICS:
+
+Weight: 3~
+@71 = ~Made for a dark elf wizard from Rilauven, the Robe of the Watcher is recognized among drow as a sign of great power. It is traditionally worn by the most talented practitioner of divination magic in Rilauven's academy of sorcery. Malavon was awarded the robe when he was still in good graces with his city.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: 3
+– Save vs. Spell: +2
+– Magic Resistance: +10%
+– Non-detectable by magical means such as Detect Invisibility and scrying
+– Immunity to umber hulk gaze
+
+Weight: 5~
+
+//---------------RINGELF
+@72 = ~Bone Ring~
+@73 = ~The Elfbone Ring of Kiran-Hai~
+@74 = ~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0~
+@75 = ~Upon cursory examination, this ring appears to be made of ivory. Study reveals that the thick band is actually made of well-tooled elf bone. It bears the repeating angular geometric patterns that the long-dead craftsmen of Myth Lharast were known for. Considered plain by modern elven standards, the ring was a gift to Kiran-Hai, Circle Singer of Angharradh and Ward Mistress of the Arboreal Tombs in Myth Lahl. The name of its creator has been lost. It is believed to have been stolen from the Arboreal Tombs some time after Myth Lharast fell.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Death: +2
+– Immunity to Finger of Death and Death Spell
+
+Weight: 0~
+
+//---------------BOOTMOA
+@76 = ~Boots~
+@77 = ~Boots of Moander~
+@78 = ~Boots are normally hand-made by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4~
+@79 = ~These patchwork boots of red and black leather were created by cultists of Moander, an ancient god of rot and decay. The boots were used by a number of the Darkbringer's faithful when they fought against Moander's numerous foes, many of whom worshipped nature deities. The boots were last claimed by Aldarra of Chauntea, who in turn gave them to a half-elven ranger friend, Liberon Twelvetrees.
+
+STATISTICS:
+
+Equipped abilities:
+– Immunity to entanglement
+
+Weight: 4~
+
+//---------------BOOTFOX
+@80 = ~Boots~
+@81 = ~Boots of the Fox~
+@82 = ~Boots are normally hand-made by cobblers. Common boots are made by using a form, but good boots are designed for the foot of an individual. 
+
+STATISTICS:
+
+Weight: 4~
+@83 = ~These gaudy red and green boots were worn by the rogue Elpham of Perrywine. Elpham was a pickpocket of exceptional talent who pressed his luck by taunting his victims shortly after taking their loot. After being caught twice, Elpham invested his money in having these boots made. Of course, Elpham came to an untimely end when he picked the pocket of the notoriously ill-tempered Red Wizard of Thay, Xain Morobdel. Elpham stole a pouch full of gems off of Xain's waist and danced off into the crowd shouting, "Why don't you try to chase me back to the Priador, baldy? Ha ha!" Xain, quietly fuming, promptly summoned four invisible stalkers and commanded them to "kill the idiot in the red and green boots."
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Increases the wearer's movement rate by 40%
+
+Weight: 4~
+
+//---------------AMULDEF
+@84 = ~Amulet~
+@85 = ~Scarab of Defense~
+@86 = ~A necklace is a piece of ornamental metal jewelry usually made of silver, gold, platinum, or other precious metal, and adorned with gems. A necklace is always worn on the neck and can be of any length.
+
+STATISTICS:
+
+Weight: 1~
+@87 = ~This type of amulet takes the form of a sculpted beetle and is typically only found in areas around Mulhorand. This particular scarab was crafted in Thay by Gulvak Anrak, a powerful enchanter of magical protective devices. Gulvak gave this scarab to an apprentice, Alik Banom, who was killed by Cormyrean soldiers in 1021 DR. According to sages, Alik started a fight with a Cormyrean knight who insulted Thay and the Red Wizards as a whole. Even though Alik was powerful, he was no match for the throng of Purple Dragons that came to the knight's aid.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Petrification/Polymorph: +2
+
+Weight: 1~
+
+//---------------BELTGON
+@88 = ~Girdle~
+@89 = ~Girdle of Gond~
+@90 = ~Girdles are generally similar to belts. Unlike belts, girdles are not used to hold up pants and dungarees, but to carry pouches, scabbards, and the like. 
+
+STATISTICS:
+
+Weight: 2~
+@91 = ~Gond, god of invention and artifice, is a deity rarely worshipped by traditional adventurers. Some thieves, however, revere Gond for his role in the development of locks, traps, and other complex machines. One such thief was the burglar Jurmar the Calm, who began his career as a locksmith. Known for his cool demeanor and steady hand, Jurmar paid priests of Gond to fashion this tool belt for him. Whenever Jurmar was stuck in a situation where he didn't have the right tool for a job, one of the small pouches on the belt would supply him with what he needed.
+
+STATISTICS:
+
+Equipped abilities:
+– Open Locks: +10%
+– Find Traps: +5%
+
+Weight: 2~
+
+//---------------SWANARM
+@92 = ~Plate Mail Armor~
+@93 = ~Black Swan Armor +2~
+@94 = ~Plate mail is a combination of chain armor with metal plates covering the vital areas such as the chest, abdomen, and groin. Similar in construction to bronze plate mail, true plate mail comprises chain and leather.
+
+STATISTICS:
+
+Armor Class: 3 (0 vs. slashing)
+Requires:
+ 12 Strength
+
+Weight: 50~
+@95 = ~This armor was made by the dwarven smith Karador and an elven enchanter known as Elameth of Five Trees. During the time of cooperation between the Hand of the Seldarine and Dorn's Deep, many wondrous items were produced. This suit of armor was one of them. Exceptionally light and beautiful, the armor was originally worn by a female elven marshal in the Severed Hand, which is why the orcs didn't take it when they sacked the towers. The armor was later stolen from the Hand by Maiden Ilmadia.
+
+STATISTICS:
+
+Equipped abilities:
+– Charisma: +1
+– Fire Resistance: +10%
+– Cold Resistance: +10%
+– Electrical Resistance: +10%
+– Acid Resistance: +10%
+
+Armor Class: 1 (-2 vs. slashing)
+Requires:
+ 12 Strength
+
+Weight: 20~
+
+//---------------CHAINBM
+@96 = ~Chain Mail~
+@97 = ~Baleful Mail +2~
+@98 = ~Chain mail is made of interlocking metal rings. It is always worn over a layer of padded fabric or soft leather to prevent chafing and lessen the impact of blows.
+
+STATISTICS:
+
+Armor Class: 5 (3 vs. slashing, 7 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 40~
+@99 = ~This armor was crafted in 1221 DR by a duergar smith working for a vengeful priest of Bane named Alerri of West Waterdeep. During Alerri's early days in the priesthood, he frequently provoked and attacked agents of Sune. Unfortunately for Alerri, Lady Firehair's followers employed charm magic to cease the Banite's antics. Once he had been charmed, Alerri was commanded to perform all sorts of embarrassing actions in the streets of Waterdeep. After many years, Alerri decided to honor his god of hate by creating a suit of armor that would protect him from charm magic. He communed with the spiritual minions of Bane to discover the materials and rituals necessary for the suit's creation. Following his master's instructions, he murdered thirteen married couples and had their wedding rings woven into the hem of the mail. He then killed thirteen elves and bathed in their blood, uttering prayers for thirteen hours. When he was finished, his armor protected him from the magic of the Sunites and filled him with irrepressible hate. Alerri went on a crusade against the agents of Sune, Llira, and Hanali Celanil for three years. His killing spree ended when elven archers and priests of Corellon Larethian laid a trap for him on a road going north from Waterdeep.
+
+STATISTICS:
+
+Equipped abilities:
+– Charisma: -2
+– Immunity to Dire Charm, Charm Person, Confusion, Command, and Rigid Thinking
+
+Armor Class: 3 (1 vs. slashing, 5 vs. crushing)
+Requires:
+ 8 Strength
+
+Weight: 45~
 
 
 

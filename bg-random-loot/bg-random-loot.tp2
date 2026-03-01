@@ -17,10 +17,10 @@ LANGUAGE
 // Component 1: Randomize Loot with base game items
 //////////////////////////////////////////////////
 
-BEGIN @69 DESIGNATED 21
+BEGIN @1069 DESIGNATED 21
 LABEL ~ww_bg_random_loot~
 
-PRINT @68
+PRINT @1068
 
 INCLUDE ~bg-random-loot/lib/random.tpa~
 
@@ -28,7 +28,7 @@ INCLUDE ~bg-random-loot/lib/random.tpa~
 // Component 2: Add new items and re-randomize loot including new items
 //////////////////////////////////////////////////
 
-BEGIN @70 DESIGNATED 22
+BEGIN @1070 DESIGNATED 22
 LABEL ~ww_bg_random_loot_new_items~
 
 REQUIRE_COMPONENT ~bg-random-loot.tp2~ 21 @1005
@@ -40,7 +40,7 @@ INCLUDE ~bg-random-loot/lib/random-new-items.tpa~
 // Component 3: Replace fake and weak potions
 //////////////////////////////////////////////////
 
-BEGIN @71 DESIGNATED 23
+BEGIN @1071 DESIGNATED 23
 LABEL ~ww_bg_random_loot_replace_weak_potions~
 
 REQUIRE_COMPONENT ~bg-random-loot.tp2~ 21 @1005
@@ -51,7 +51,7 @@ INCLUDE ~bg-random-loot/lib/replace-weak-potions.tpa~
 // Component 4: Randomize gems
 //////////////////////////////////////////////////
 
-BEGIN @72 DESIGNATED 24
+BEGIN @1072 DESIGNATED 24
 LABEL ~ww_bg_random_loot_random_gems~
 
 REQUIRE_COMPONENT ~bg-random-loot.tp2~ 21 @1005
@@ -62,7 +62,7 @@ INCLUDE ~bg-random-loot/lib/random-gems.tpa~
 // Component 5: Replace cheap items with junk
 //////////////////////////////////////////////////
 
-BEGIN @73 DESIGNATED 25
+BEGIN @1073 DESIGNATED 25
 LABEL ~ww_bg_random_loot_replace_cheap_items~
 
 REQUIRE_COMPONENT ~bg-random-loot.tp2~ 21 @1005
@@ -73,7 +73,7 @@ INCLUDE ~bg-random-loot/lib/replace-cheap-items.tpa~
 // Component 6: Add new items to stores (Nashkel and Carnival)
 //////////////////////////////////////////////////
 
-BEGIN @74 DESIGNATED 26
+BEGIN @1074 DESIGNATED 26
 LABEL ~ww_bg_random_loot_add_items_to_stores~
 
 REQUIRE_COMPONENT ~bg-random-loot.tp2~ 21 @1005
