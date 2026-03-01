@@ -1,11 +1,13 @@
 @1068 = ~You're about to install Random Loot by korootz. Please remember that (re)installing with different seeds will change your equipped items in existing old saves. It will be playable, but expect mess - you may need to re-equip most items. Starting a new game is highly recommended. Visit https://nexusmods.com/baldursgate/mods/107 for questions or suggestions.~
 
+// components
 @1069 = ~Random Loot (reshuffle items within the same tier)~
 @1070 = ~Add new items (+1 weapons) and re-randomize loot including these new items~
 @1071 = ~Replace fake and weak potions with antidotes (POTN20) and scrolls~
 @1072 = ~Randomize gems~
 @1073 = ~Replace most cheap gems, necklaces and rings with broken shield/armor/weapon and other junk~
-@1074 = ~Add new items to stores (Nashkel and Carnival)~
+@1074 = ~Add new items to stores (Nashkel, Carnival and Black Lily)~
+@1075 = ~Randomize unique EE items with best unique items~ // TODO
 
 @1080 = ~Please enter a number for the random seed to randomize base game items (for example, 3):~
 @1081 = ~Please enter a number for the random seed to re-randomize base game items with new items:~
