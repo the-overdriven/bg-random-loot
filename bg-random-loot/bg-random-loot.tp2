@@ -1,7 +1,7 @@
 BACKUP ~weidu_external/bg-random-loot/backup~
 SUPPORT ~https://www.nexusmods.com/baldursgate/mods/107~
 
-VERSION ~v2.2~
+VERSION ~v2.3~
 
 README ~bg-random-loot/readme-bg-random-loot.url~
   
@@ -70,7 +70,7 @@ REQUIRE_COMPONENT ~bg-random-loot.tp2~ 21 @1005
 INCLUDE ~bg-random-loot/lib/replace-cheap-items.tpa~
 
 //////////////////////////////////////////////////
-// Component 6: Add new items to stores (Nashkel and Carnival)
+// Component 6: Add new items to stores (Nashkel, Carnival, Black Lily)
 //////////////////////////////////////////////////
 
 BEGIN @1074 DESIGNATED 26
@@ -80,3 +80,15 @@ REQUIRE_COMPONENT ~bg-random-loot.tp2~ 21 @1005
 REQUIRE_COMPONENT ~bg-random-loot.tp2~ 22 @1004
 
 INCLUDE ~bg-random-loot/lib/add-items-to-stores.tpa~
+
+//////////////////////////////////////////////////
+// Component 7: Add random loot to monsters
+//////////////////////////////////////////////////
+
+BEGIN @1076 DESIGNATED 27
+LABEL ~ww_bg_random_loot_add_items_to_monsters~
+
+REQUIRE_COMPONENT ~bg-random-loot.tp2~ 21 @1005
+REQUIRE_COMPONENT ~bg-random-loot.tp2~ 22 @1004
+
+INCLUDE ~bg-random-loot/lib/random-monster-loot.tpa~

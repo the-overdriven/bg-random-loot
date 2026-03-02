@@ -8,6 +8,7 @@
 @1073 = ~Replace most cheap gems, necklaces and rings with broken shield/armor/weapon and other junk~
 @1074 = ~Add new items to stores (Nashkel, Carnival and Black Lily)~
 @1075 = ~Randomize unique EE items with best unique items~ // TODO
+@1076 = ~Add random loot to monsters~
 
 @1080 = ~Please enter a number for the random seed to randomize base game items (for example, 3):~
 @1081 = ~Please enter a number for the random seed to re-randomize base game items with new items:~

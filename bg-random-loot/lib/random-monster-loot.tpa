@@ -1,0 +1,14 @@
+COPY ~bg-random-loot/monsters/rndtres.2da~ ~override~
+COPY ~bg-random-loot/monsters/RNDMEL1.ITM~ ~override~
+COPY ~bg-random-loot/monsters/RNDMEL2.ITM~ ~override~
+COPY ~bg-random-loot/monsters/RNDMEL3.ITM~ ~override~
+COPY ~bg-random-loot/monsters/RNDMEL4.ITM~ ~override~
+
+ACTION_FOR_EACH creature IN ~KOBOLA_A~ ~KOBOLA_C~ ~KOBOLA_D~ ~KOBOLA_E~ BEGIN
+  COPY_EXISTING ~%creature%.CRE~ ~override~
+    ADD_CRE_ITEM ~RNDMEL1~ #0 #0 #0 NONE INV
+  IF_EXISTS
+END
+
+// seems to work!
+// TODO: change to weaker list
