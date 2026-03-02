@@ -4,11 +4,34 @@ COPY ~bg-random-loot/monsters/RNDMEL2.ITM~ ~override~
 COPY ~bg-random-loot/monsters/RNDMEL3.ITM~ ~override~
 COPY ~bg-random-loot/monsters/RNDMEL4.ITM~ ~override~
 
-ACTION_FOR_EACH creature IN ~KOBOLA_A~ ~KOBOLA_C~ ~KOBOLA_D~ ~KOBOLA_E~ BEGIN
+// used by rndtreas.2da
+// RNDLOOT2 = average
+// RNDLOOT3 = well off
+// RNDLOOT4 = wealthy
+
+// used explicitly
+// RNDMID1 -> RNDMID2
+// RNDMEL1 -> RNDMEL2
+// RNDMEL3 -> RNDMEL4
+
+// strong
+ACTION_FOR_EACH creature IN ~OGRE~ ~OGRE02~ ~OGREBERZ~ ~OGRECO~ ~OGREMA03~ ~OGREUNSH~ ~WYVERN~ ~WYVERNBI~ ~SKELWA~ BEGIN
   COPY_EXISTING ~%creature%.CRE~ ~override~
     ADD_CRE_ITEM ~RNDMEL1~ #0 #0 #0 NONE INV
   IF_EXISTS
 END
 
-// seems to work!
-// TODO: change to weaker list
+ACTION_FOR_EACH creature IN ~GOLEMF~ ~GOLEMF2~ ~BASILG~ ~BASILL~ ~DOPPLE~ ~DOPPGR~ ~ETTERC~ ~CRYPTCRA~ ~BATTHO~ ~STALKE~ BEGIN
+  COPY_EXISTING ~%creature%.CRE~ ~override~
+    ADD_CRE_ITEM ~RNDMEL3~ #0 #0 #0 NONE INV
+  IF_EXISTS
+END
+
+// mid
+ACTION_FOR_EACH creature IN ~WOLFWI~ ~SIRINE_A~ ~SIRINE_B~ ~SIRINE~ ~SPIDGI~ ~SPIDPH~ ~SPIDSW~ ~SPIDWR~ ~IRONELIT~ ~GNOLL_E~ ~GNOLL_EB~ ~GNOLTAL4~ ~GNOLL_A~ ~GNOLTAL1~ ~GNOLL_D~ ~GNOLTAL3~ ~GHOUL~ ~GHAST~ ~ANKHEGF~ ~ANKHEGG~ ~CARRIO~ ~OGREGR~ ~OGREGR_B~ ~OGREGR_C~ ~OGREGR_D~ ~OGREHA_B~ ~OGREBJOR~ ~OGREMIRI~ BEGIN
+  COPY_EXISTING ~%creature%.CRE~ ~override~
+    ADD_CRE_ITEM ~RNDMID1~ #0 #0 #0 NONE INV
+  IF_EXISTS
+END
+
+// weak are handled by rndtreas.2da

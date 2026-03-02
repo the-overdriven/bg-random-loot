@@ -65,7 +65,6 @@ COPY_RANDOM
      ~BLUN10.ITM~ // club +1 (+3 vs. unnatural creatures, basically all except "humanoids" and "animals")
      ~BLUN36.ITM~ // EE Club +1
      ~BLUN38.ITM~ // EE Night Club +1
-     ~BLUN41.ITM~ // EE The Stupefier +1
      // ~COMPS02.ITM~ // bastard sword +1
      // ~COMPS03.ITM~ // Kondar +1
      ~DAGG02.ITM~ // dagger +1
@@ -134,6 +133,7 @@ COPY_RANDOM
      ~HELM02.ITM~ // EE Helmet of Opposite Alignment (added earlier but droppable in EE)
      ~SW2H22.ITM~ // EE 2h sword, gold digger +1
      ~SW1H34.ITM~ // EE Albruin +1
+     ~BLUN41.ITM~ // EE The Stupefier +1
      //------------------------------------NEW ITEMS--------------------------------------
      // might be sold by Black Lily (half of them, meaning half amount of new items will never spawn)
      ~RINGELF.ITM~
@@ -268,6 +268,7 @@ COPY_RANDOM
      ~CLCK11.ITM~ // Mage Robe of...
      ~CLCK13.ITM~ // traveler's robe
      ~CLCK01.ITM~ // cloak of protection +1
+     ~RING06.ITM~ // ring of protection +1 (of princes)
      // ~BDAMUL24.ITM~ // amulet of protection +1
      // ~CHAN02.ITM~ // chain mail +1
      // ~BDBRAC09.ITM~ // gauntlets of weapon skill
