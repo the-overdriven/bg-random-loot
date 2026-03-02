@@ -1,4 +1,4 @@
-@1068 = ~You're about to install Random Loot by korootz. Please remember that (re)installing with different seeds will change your equipped items in existing old saves. It will be playable, but expect mess - you may need to re-equip most items. Starting a new game is highly recommended. Visit https://nexusmods.com/baldursgate/mods/107 for questions or suggestions.~
+@1068 = ~You're about to install Random Loot by korootz. Please remember that (re)installing with different seeds will change your equipped items in existing old saves. It will be playable, but expect mess - you may need to re-equip most items. Starting a new game is highly recommended. In case of future reinstalls, save your RANDOM_SEEDs to ensure item consistency. Visit https://nexusmods.com/baldursgate/mods/107 for questions or suggestions.~
 
 // components
 @1069 = ~Random Loot (reshuffle items within the same tier)~
@@ -12,8 +12,6 @@
 
 @1080 = ~Please enter a number for the random seed to randomize base game items (for example, 3):~
 @1081 = ~Please enter a number for the random seed to re-randomize base game items with new items:~
-
-// game and weidu share the 0-70 range; use 1000s for weidu and 2000s for game going forward
 
 @1002 = ~The functionality of this component is already provided by another mod~
 @1003 = ~This component has been deprecated.~
@@ -305,6 +303,41 @@ Requires:
  6 Strength
 
 Weight: 4~
+
+// ---------------RLBLUN07.ITM
+@100 = ~Morning Star~
+@101 = ~Morning Star of the Golem +1~
+@102 = ~The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. This particular one is mounted with a golden head that has been magically enhanced so as to improve performance and escape the malleability of gold.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 2d4+1 (crushing)
+Speed Factor: 6
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 10~
+@103 = ~The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. This particular one is mounted with a golden head that has been magically enhanced so as to improve performance and escape the malleability of gold.
+
+STATISTICS:
+
+Equipped abilities:
+– Magic Resistance: +3%
+
+THAC0: +1
+Damage: 2d4+1 (crushing)
+Speed Factor: 6
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 10~
+
+//______________________________Icewind Dale items______________________________
 
 
 // ---------------AX2H01.ITM
@@ -625,7 +658,759 @@ Requires:
 
 Weight: 45~
 
+// ---------------FLAILSK.ITM
+@104 = ~Flail~
+@105 = ~Skullflail +2~
+@106 = ~The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
 
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15~
+@107 = ~Skullflail, or "The Flail of Teeth" as it is more commonly known, was constructed in 1035 DR for the barbarian warlord Wychgar. During a battle in the northern wastes which became known as Hallowed Pass, Wychgar lost his three brothers to the orc army led by Kraag the Mighty. Wychgar was distraught and during the night he wandered the battlefield looking for their bodies to take away for proper burial. He stumbled across them and was visited by the brothers' spirits who were trapped between the land of the living and the land of the dead. Unable to help them leave he had their souls stored in the flail with the help of a shaman.
+
+The three heads of the flail are his brother's skulls, which are attached to the shaft by silver chains. The three skull-heads grin maniacally at their new life. When the flail is used in combat the three heads bite the target, tearing and rending flesh.
+
+STATISTICS:
+
+Combat abilities:
+– 10% chance of an additional 1d6 piercing damage
+
+THAC0: +2
+Damage: 1d6+2, +1d4 piercing from the biting skulls
+Damage Type: Crushing
+Speed Factor: 5
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 4~
+
+// ---------------SW1H45.ITM
+@108 = ~Katana~
+@109 = ~Darkened Glory +2~
+@110 = ~The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process that is more art form than anything else. This blade is an important facet of Kara-Turan culture. To touch or wield a samurai's katana is to insult the samurai and to incite his wrath. For a gaijin, or foreigner, to own such a blade is a rare occurrence. Either the gaijin is a greatly honored friend of an important minister, or the gaijin has murdered a samurai.
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 4
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 6~
+@111 = ~This weapon was originally owned by a young officer guarding a diplomatic envoy from Kara-Tur. When the envoy's caravan was ambushed by a small band of yuan-ti raiders, most of the guards were quickly dispatched during a surprise attack, save for one wagon and the young woman defending it. In wave after wave, the yuan-ti charged at the officer, and in wave after wave, they were cut down by the speed and fury of her steel. At last the leader of the yuan-ti raiders faced off with the young woman, and although he did finally overpower her, he was astonished by her skill. The katana she carried was recovered and later enchanted by a high priest of Sseth. The once graceful blade was tainted by dark magic and now guides those who wield it to inflict the severest of wounds upon their enemies.
+
+STATISTICS:
+
+Combat abilities:
+– +5% chance of scoring a critical hit (with this weapon only)
+– Casts Curse centered on the target each time a critical hit is scored
+
+THAC0: +2
+Damage: 1d10+2 (slashing)
+Speed Factor: 2
+Proficiency Type: Katana
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4~
+
+// ---------------SLAYER.ITM
+@112 = ~Spear~
+@113 = ~Slayer +3~
+@114 = ~One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d8 (piercing)
+Speed Factor: 8
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5~
+@115 = ~A fallen paladin called Matthain "Blackwatch" used this weapon to kill one hundred and one knights of his former king. Matthain's family, Chamberlain, had a long tradition of producing paladins of Tyr. Matthain's father, Garlan, slew a powerful high priest of Bane who had been posing a threat to the kingdom. The priest's evil magic brought him back from the dead. This priest, called "the Chamberlain Haunt," cursed the Chamberlain family to only produce stillborn children until he had been appeased. Matthain, as the heir to the family, took it upon himself to remove the curse. The Chamberlain Haunt told Matthain that he must kill one hundred and one knights of the king.
+
+Matthain began his grim task, slaughtering every knight he came across. He brought the skull and shield of each warrior to the Chamberlain Haunt as proof of his deed. The king dispatched bands of knights and heroes to kill Matthain, but he proved too difficult a foe. Finally, after three years of murdering, Matthain had killed one hundred knights. He told the Chamberlain Haunt that it was time to end the curse. The Chamberlain Haunt corrected him, reminding the fallen paladin that he had to kill one hundred and one knights of the king.
+
+Overcome with misery and regret, Matthain nodded and immediately threw himself on his own spear. With Matthain and Garlan dead, and the letter of his requirements fulfilled, the curse was ended and the Chamberlain Haunt was called to Acheron by Bane, screaming all the way.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d8+3 (piercing)
+Speed Factor: 3
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 2~
+
+// ---------------BITEME.ITM
+@116 = ~Spear~
+@117 = ~Spear of Kerish +3~
+@118 = ~One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d8 (piercing)
+Speed Factor: 8
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5~
+@119 = ~This spear is of unusual construction. The haft is crystal clear and is made of some unknown material. The spearhead itself appears to be an icicle surrounded by an aura of frost. A fine mist of ice crystals surrounds the entire weapon.
+
+STATISTICS:
+
+Equipped abilities:
+– Fire Resistance: +10%
+
+Combat abilities:
+– 5% chance of dealing +1d6 cold damage
+
+THAC0: +3
+Damage: 1d8+3 (piercing)
+Speed Factor: 5
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 2~
+
+// ---------------WHTASH.ITM
+@120 = ~Spear~
+@121 = ~The Spear of White Ash +3~
+@122 = ~One of the earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end. When the civilized races mastered metals, spearheads were made from iron and steel. Having reached this end, weaponsmiths began experimenting with different types of spearheads, thus leading to the development of certain polearm types.
+
+STATISTICS:
+
+Damage: 1d8 (piercing)
+Speed Factor: 8
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 5~
+@123 = ~Consecrated by Malarite priests hundreds of years ago, this spear was used on High Hunts in preparation for their bloody feasts. It was last in the hands of Old Hunter Wellin, who is believed to have died when he foolishly hunted dryads near the Cloakwood. The weapon is made from a single piece of ash wood topped with a cruel spearhead.
+
+STATISTICS:
+
+Combat abilities:
+– 5% of all hits cause an additional 1d6 points of piercing damage from the barbs on the spearhead
+
+THAC0: +3
+Damage: 1d8+3 (piercing)
+Speed Factor: 5
+Proficiency Type: Spear
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 2~
+
+// ---------------MORADIN.ITM
+@124 = ~Staff~
+@125 = ~Staff of Moradin's Breath +2~
+@126 = ~The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4~
+@127 = ~This staff was used sparingly by priests of Moradin during their darkest hours. Enchanted by several high priests, the Staff of Moradin's Breath has resurrected some of the greatest dwarven heroes of Dorn's Deep. It was last used to resurrect Creed Dorn, killed by elven archers and mages during a battle near Kuldahar Pass. The staff was hidden in Lower Dorn's Deep to prevent it from being stolen by orcs when they finally overran the dwarven defenses.
+
+STATISTICS:
+
+Charge abilities:
+– Resurrection
+  Raised target is fully healed
+  Range: Unlimited
+  Area of Effect: 1 creature
+
+THAC0: +2
+Damage: 1d6+2 (crushing)
+Speed Factor: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+
+// ---------------SPENSTAF.ITM
+@128 = ~Staff~
+@129 = ~Spendelard's Protector +1~
+@130 = ~The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length. High-quality quarterstaves are made of stout oak and are shod with metal at both ends. The quarterstaff must be wielded with both hands.
+
+STATISTICS:
+
+Damage: 1d6 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4~
+@131 = ~The wizard Spendelard was famous for his extremely utilitarian spells. While he was not threatened a great deal during his life, his rare but far-reaching travels often took him into dangerous situations. A staff of his making protected him on those occasions. He eventually acquired a staff that he found more to his liking and sold his worn Protector to a traveling druid of Chauntea.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +1
+– Save vs. Spell: +1
+
+THAC0: +1
+Damage: 1d6+1 (crushing)
+Speed Factor: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+
+// ---------------GIVING.ITM
+@132 = ~Morning Star~
+@133 = ~The Giving Star +3~
+@134 = ~The morning star is a wooden shaft topped with a metal head covered by a spiked iron sheath. Morning stars have an overall length of about four feet. Some such weapons have a round, oval, or cylindrical head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting. 
+
+STATISTICS:
+
+Damage: 2d4 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 12~
+@135 = ~This black and silver morning star was created by a Cormyrean necromancer called Dameth the Wan. Although it appears to be a sinister weapon, the unadorned surfaces of the morning star mask its dreadful power. The weapon was sold to a priest of Myrkul who put it to good use in his battles against adventurers. Eventually, however, the priest was overcome by a paladin of Lathander, who confiscated the item. When the mountain temple where the morning star was contained was sacked by giants in 1190 DR, the history of the weapon ended.
+
+STATISTICS:
+
+Combat abilities:
+– 10% of all hits cast Cure Light Wounds on the user and give +1 to Strength for 5 rounds
+
+THAC0: +3
+Damage: 2d4+3 (crushing)
+Speed Factor: 4
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 9~
+
+// ---------------ZZ05WE.ITM
+@136 = ~Mace~
+@137 = ~The Mace of Weal and Woe +1~
+@138 = ~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with a stone or iron head mounted on the end. The head design varies; some are spiked, others flanged, and still others have pyramidal knobs.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 8~
+@139 = ~Even without magical enchantment, this particular piece of weaponry could fetch a healthy price for its exquisite craftsmanship. The shaft of the mace is a bronze cylinder reinforced with a steel bar down the center and six thin bands of polished steel, three above the haft and three below the head. The head itself is egg-shaped and made of red-stained cherry wood reinforced by decorative arcing bronze bands. Steel flanges stick out from the head in an asymmetrical pattern. The two largest flanges bear extensive etching. One is a classical image of Tymora with the word "WEAL" in Thorass. The other is an image of Beshaba with the word "WOE." Despite the delicate materials used in the mace's construction, it is exceptionally sturdy. The history of the mace is largely a mystery.
+
+STATISTICS:
+
+Equipped abilities:
+– Saving Throws: +1
+
+Combat abilities:
+– 13% chance hit target is cursed for 6 rounds (-1 penalty to THAC0; lowered morale)
+
+THAC0: +1, +2 vs. lawful creatures
+Damage: 1d6+2, +3 vs. lawful creatures
+Damage Type: Crushing
+Speed Factor: 6
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~
+
+// ---------------IBOWMESS
+@140 = ~Longbow~
+@141 = ~Messenger of Sseth +1~
+@142 = ~The longbow is similar to the shortbow, except that the staff is about as tall as the archer is, usually six to six-and-a-half feet. It has better range and accuracy than the shortbow, but a slower Speed Factor.
+
+STATISTICS:
+
+THAC0: +1
+Speed Factor: 7
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 3~
+@143 = ~This wicked bow was crafted thousands of years ago for a powerful yuan-ti archer named Apali. The number of men, women, and children Apali killed with the aid of the bow is almost unbelievable, as the soldier waged war against humans for hundreds of years before he was finally laid low in Chessenta by a priest of Assuran, god of vengeance. Apali had killed the priest's great-great-grandfather in Chult over a hundred years earlier. The item is easily recognized because of the red and black banding on the grip and the carved snake heads at the ends of the bow. The red and black bandings represent Apali's family, from a caste of priests. The snake heads represent Sseth, the god of the yuan-ti.
+
+STATISTICS:
+
+Combat abilities:
+– 3 attacks per round
+
+THAC0: +2
+Damage: +1
+Speed Factor: 3
+Proficiency Type: Longbow
+Type: Two-handed
+Requires:
+ 12 Strength
+
+Weight: 3~
+
+// ---------------VALIANT.ITM
+@144 = ~Scimitar~
+@145 = ~Valiant +2~
+@146 = ~The scimitar is closely related to the saber, a single-edged curved sword with protective hilt. The blade has a greater curve to it and is tapered to an elongated, sharp point. The origins of the scimitar are largely unknown; however, they have been very popular in the southern region of the realms.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Speed Factor: 5
+Type: One-handed
+Requires:
+ 8 Strength
+
+Weight: 4~
+@147 = ~This legendary blade was wielded for a short time by the warrior Ilban of Elturel. It is from his exploits in Calimshan that the weapon gained its name. Before Ilban, however, Valiant was in the possession of a holy slayer from distant Zakhara. According to sages, the light sword was crafted to serve an order of assassins. Valiant's owners survived through many incredible ordeals, mostly because of the magic of the weapon. The weapon was lost in Calimshan when a holy slayer pursued a pasha's blasphemous agents to Calimport. The scimitar remained in the hands of Baris Cabal for about a dozen years before the band was broken up by Ilban and his companions. Ilban's exploits took Valiant into battle against sandmen, giant scorpions, desert raiders, evil sorcerers, and the demonic servants of Celan Harad.
+
+STATISTICS:
+
+Combat abilities:
+– 1 extra attack per round
+
+THAC0: +2
+Damage: 1d8+2 (slashing)
+Speed Factor: 0
+Proficiency Type: Scimitar/Wakizashi/Ninjatō
+Type: One-handed
+Requires:
+ 8 Strength
+
+Weight: 4~
+
+// ---------------EREVAIN.ITM
+@148 = ~Broad Sword~
+@149 = ~Erevain's Broad Sword +2~
+@150 = ~The broad sword is a heavy military sword with a double-edged blade. Overall sword length is about three-and-a-half feet, and the sword is designed mostly for cutting. Most broad swords have a basket hilt or a shell guard. A favored cavalry weapon, the broad sword is known in different cultures by different names, usually dependent on the hilt configuration. The heavier blade of the broad sword makes it slightly slower and more damaging than a long sword.
+
+STATISTICS:
+
+Damage: 2d4 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4~
+@151 = ~This broad sword used to belong to Erevain Blacksheaf, a wandering elf from Evereska. It was made in 1221 DR by Evereskan Greycloaks. Erevain's sword was unusual among his people, who normally favor lighter swords.
+
+STATISTICS:
+
+Equipped abilities:
+– Save vs. Wand: +2
+– Acid Resistance: +10%
+
+THAC0: +2
+Damage: 2d4+2 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4~
+
+// ---------------JHOSWD2.ITM
+@152 = ~Long sword~
+@153 = ~Aihonen~
+@154 = ~These swords are usually referred to as double-edged swords, war swords, or military swords. In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture and may vary within the same culture depending on the era. Among the most common characteristics of all long swords is their length, which ranges from thirty-five inches to forty-seven inches. In the latter case, the blade is known to take up forty inches of the total length. Most long swords have a double-edged blade and a sharp point at the tip. Despite the tip, the long sword is designed for slashing, not thrusting.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 5
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 4~
+@155 = ~This once-shattered blade lay in the breast of Icasaracht, the last of the white dragon matriarchs that ruled the Spine of the World. It was wielded by Aihonen, a distant ancestor of Jhonen the fisherman in Easthaven—the sword has lain at the bottom of the lake for almost a century, waiting to be returned to one of its wielder's bloodline. How it has been restored to its original state is unknown, but whatever the reason, it looks like a powerful weapon that can help you free Easthaven from Brother Poquelin. 
+
+The blade seems to draw its strength from Lac Dinneshere itself. As long as the wielder is within a dragon's flight distance of the lake, the blade is a fearsome weapon. 
+
+STATISTICS:
+
+Equipped abilities:
+– Maximum Hit Points: +5
+– Fire Resistance: +25%
+– Cold Resistance: +25%
+
+THAC0: +1, +5 within a dragon's flight distance of Lac Dinneshere
+Damage: 1d8+1, +5 within a dragon's flight distance of Lac Dinneshere
+Damage Type: Slashing
+Speed Factor: 2
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 6 Strength
+
+Weight: 3~
+
+// ---------------U2HAM3A.ITM
+@156 = ~War Hammer~
+@157 = ~Sanctified War Hammer +2~
+@158 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about 18 inches long.
+
+STATISTICS:
+
+Damage: 1d4+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6~
+@159 = ~Like others of its type, this war hammer is made entirely of steel, with a bone-crushing hammer mounted upon an 18-in. shaft. It has also been bestowed with a small number of magical properties, however, thus making it more effective in combat.
+
+STATISTICS:
+
+Equipped abilities:
+– Memorize 2 additional 1st-level priest spells 
+– Memorize 1 additional 2nd-level priest spell
+
+THAC0: +2
+Damage: 1d4+3 (crushing)
+Speed Factor: 3
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6~
+
+// ---------------REDEMT.ITM
+@160 = ~War Hammer~
+@161 = ~Redemption +3~
+@162 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand. Maces and flails are two previous examples of this—the war hammer is another. The horseman's war hammer is the descendent of the Lucerne hammer. It is made entirely of steel, with rondels protecting and strengthening the grip. (Rondels are small disks of metal, often shaped into decorative designs.) The shaft is about 18 inches long.
+
+STATISTICS:
+
+Damage: 1d4+1 (crushing)
+Speed Factor: 4
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6~
+@163 = ~This war hammer was enchanted by the church of Torm to return charmed wayward combatants to their standard allegiance. High priests of Torm typically held the hammer in battle, keeping an eye out for anyone who might be swayed to attack his or her comrades through magic. Redemption was lost when the last high priest to hold the weapon, Ardo Meller, was killed in the Battle of Black Lawns, 1230 DR. It is believed that agents of the draconic god Tchazzar dragged the weapon from the scene.
+
+STATISTICS:
+
+Equipped abilities:
+– Dispels charm and dire charm effects on hit
+
+THAC0: +3
+Damage: 1d4+4 (crushing)
+Speed Factor: 1
+Proficiency Type: War Hammer
+Type: One-handed
+Requires:
+ 9 Strength
+
+Weight: 6~
+
+// ---------------CAIRN.ITM
+@164 = ~Two-Handed Sword~
+@165 = ~Cairn Blade +3~
+@166 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15~
+@167 = ~Named for its ability to lay warriors low, the Cairn Blade was used by the mercenary Adal Kerrn. Kerrn was a skilled heavy infantryman. He and his company, Kerrn's Breakers, hired themselves out to all sorts of warlords, bandits, wizards, and religious leaders. They were typically placed at the front of the battlefield, where they would intercept charging heavy cavalry units and break their formation. Kerrn died in 1054 DR when he accidentally killed the horse of a heavily armored foe. The horse fell on top of Kerrn, killing him. In the madness of the battle that followed, most of his comrades were routed. Though Kerrn's body was never found, the group that had employed him at the time, the church of Helm, recovered his distinctive sword.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d10+3 (slashing)
+Speed Factor: 6
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 20~
+
+// ---------------KRESWRD.ITM
+@168 = ~Two-Handed Sword~
+@169 = ~Kresselack's Sword +1~
+@170 = ~The two-handed sword is a derivative of the long sword. Weaponsmiths have always looked for ways to improve existing weapons. In an effort to improve the long sword, the blade was lengthened. Eventually, the handle had to be extended and two hands became necessary to properly swing the sword. The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 10
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 15~
+@171 = ~Kresselack, the barbarian king, once wielded this sword to aid him in his conquest of the northern lands. It is not known, however, how he originally acquired the weapon. Most scholars believe Kresselack simply found the weapon in one of his many conquests. However, rumors do persist that the sword was the creation of some powerful wizard and was commissioned by Kresselack himself. The truth of the matter will never be known.
+
+STATISTICS:
+
+Equipped abilities:
+– Cold Resistance: +10%
+
+THAC0: +1
+Damage: 1d10+1 (slashing)
+Speed Factor: 8
+Proficiency Type: Two-handed Sword
+Type: Two-handed
+Requires:
+ 14 Strength
+
+Weight: 12~
+
+// ---------------UFLAL2A.ITM
+@172 = ~Flail~
+@173 = ~Crooked Flail +1~
+@174 = ~The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Damage: 1d6+1 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 13 Strength
+
+Weight: 15~
+@175 = ~The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link. The weapon was originally used as a tool for threshing grain.
+
+STATISTICS:
+
+Combat abilities:
+– 50% chance of dealing +1d4 piercing damage
+
+THAC0: +1
+Damage: 1d6+2 (crushing)
+Speed Factor: 7
+Proficiency Type: Flail/Morning Star
+Type: One-handed
+Requires:
+ 11 Strength
+
+Weight: 15~
+
+// ---------------SPINE.ITM
+@176 = ~Dagger~
+@177 = ~Spinesheath +1~
+@178 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2 
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+@179 = ~The ghastly name of this weapon is taken from its first owner's fondness for burying it in the backs of his enemies. The long stiletto blade was designed specifically to punch through armor. The assassin Beledor of Calimport used this weapon to kill dozens of people before he succumbed to the poison of an easily bribed servant.
+
+STATISTICS:
+
+THAC0: +5
+Damage: 1d4+1 (piercing)
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 4 Strength
+
+Weight: 1~
+
+// ---------------J2HAXE.ITM
+@180 = ~Two-Handed Axe~
+@181 = ~Joril's Axe +3~
+@182 = ~This mighty weapon consists of a haft several feet long, topped with a heavy blade. The axe may be double-bitted, with blades on both sides of the haft, or it may only have a single blade. It is an unwieldy weapon, but a skilled warrior can strike blows of tremendous strength with it.
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 9
+Proficiency Type: Axe
+Type: Two-handed
+Requires:
+ 10 Strength
+
+Weight: 10~
+@183 = ~This mighty weapon consists of a five- to six-foot haft with a heavy blade. The axe is double-bitted, with blades on both sides of the haft. It is an unwieldy weapon, but a skilled warrior can strike blows of tremendous strength with it.
+
+Joril Frostbeard, the frost giant leader, wielded this axe. The weapon has been enchanted with several beneficial magics.
+
+STATISTICS:
+
+Equipped abilities:
+– Dexterity: -1
+– Constitution: +1
+
+THAC0: +3
+Damage: 1d12+3 (slashing)
+Speed Factor: 9
+Proficiency Type: Axe
+Type: Two-handed
+Requires:
+ 10 Strength
+
+Weight: 10~
+
+// ---------------LONESOM.ITM
+@184 = ~Two-Handed Axe~
+@185 = ~Lonesome Road +3~
+@186 = ~This mighty weapon consists of a haft several feet long, topped with a heavy blade. The axe may be double-bitted, with blades on both sides of the haft, or it may only have a single blade. It is an unwieldy weapon, but a skilled warrior can strike blows of tremendous strength with it.
+
+STATISTICS:
+
+Damage: 1d10 (slashing)
+Speed Factor: 9
+Proficiency Type: Axe
+Type: Two-handed
+Requires:
+ 10 Strength
+
+Weight: 10~
+@187 = ~This was the weapon of a cursed soul, doomed to wander the length and breadth of Faerûn for his crimes against the elves of Myth Drannor. Denell Harband was a human involved with the creation of the "Halfaxe Trail." Under the orders of his commander, Halvan the Dark, he forged ahead through elven forests despite protests and repeated attacks. When he was finally captured by the elves, he stated emphatically that he was free of guilt because he was just following his orders. The elven council deemed that Denell be placed under a High Geas to carry his axe from the Sword Coast of Faerûn to its borders in the east, and from the Great Glacier to Lurien. It took Denell thirty years to complete his task. When he finished, he was an accomplished warrior, weathered and beaten by years on foreign roads. On his way back to his home, he passed by Harrowdale and saw a wooden statue of Halvan the Dark raised proudly in a small town square. With a single-handed blow, he lodged his huge axe into Halvan's forehead. Never breaking stride, he returned to his hut, where he lived out the rest of his days as a reclusive farmer.
+
+STATISTICS:
+
+Equipped abilities:
+– Constitution: +1
+
+THAC0: +3
+Damage: 1d10+3 (slashing)
+Speed Factor: 6
+Proficiency Type: Axe
+Type: Two-handed
+Requires:
+ 10 Strength
+
+Weight: 10~
+
+// ---------------CELEBRA.ITM
+@188 = ~Battle Axe~
+@189 = ~The Celebrant's Blade +3~
+@190 = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~
+@191 = ~This beautiful axe was carefully made by Briath Silverhand, a master craftsman and devoted worshipper of Moradin. Briath created the weapon to celebrate the completion of a glorious monument to his god, the father of the dwarven race. He placed it in the monument should a hero need it to liberate Dorn's Deep at some future date.
+
+STATISTICS:
+
+THAC0: +3
+Damage: 1d8+3 (slashing)
+Speed Factor: 3
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 5~
+
+// ---------------U1HAX3B.ITM
+@192 = ~Battle Axe~
+@193 = ~Battle Axe +2: Defender~
+@194 = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes.
+
+STATISTICS:
+
+Damage: 1d8 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~
+@195 = ~Besides its superb craftsmanship, tiny runes of power can be seen etched all along the surface. It's obvious a lot of time and effort went into its creation, and although not apparent at first, a slight blue glow can be seen emanating from the runes.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+– Missile Resistance: +10%
+
+THAC0: +2
+Damage: 1d8+2 (slashing)
+Speed Factor: 7
+Proficiency Type: Axe
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 7~
 
 // ---------------example
 // @33 = ~Ninjatō~

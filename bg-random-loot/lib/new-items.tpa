@@ -61,6 +61,13 @@ COPY ~bg-random-loot/itm/RLSW1H49.ITM~ ~override~
   SAY UNIDENTIFIED_DESC @35
   SAY DESC @36
 
+// Morning Star of the Golem +1
+COPY ~bg-random-loot/itm/RLBLUN07.ITM~ ~override~
+  SAY NAME1 @100
+  SAY NAME2 @101
+  SAY UNIDENTIFIED_DESC @102
+  SAY DESC @103
+
 //______________________________Icewind Dale items______________________________
 
 // two-handed axe
@@ -70,7 +77,7 @@ COPY ~bg-random-loot/itm/AX2H01.ITM~ ~override~
   SAY NAME2 @38
   SAY UNIDENTIFIED_DESC @39
 
-// ELFGLOV.ITM
+// ELFGLOV.ITM gloves
 COPY ~bg-random-loot/itm/GBRAC06.BAM~ ~override~
 COPY ~bg-random-loot/itm/IBRAC11.BAM~ ~override~
 COPY ~bg-random-loot/itm/ELFGLOV.ITM~ ~override~
@@ -86,7 +93,7 @@ COPY ~bg-random-loot/itm/SERPSCA.ITM~ ~override~
   SAY UNIDENTIFIED_DESC @46
   SAY DESC @47
 
-// BELTBEA.ITM
+// BELTBEA.ITM belt of beatification
 COPY ~bg-random-loot/itm/IBELTBEA.BAM~ ~override~
 COPY ~bg-random-loot/itm/BELTBEA.ITM~ ~override~
   SAY NAME1 @48
@@ -102,7 +109,7 @@ COPY ~bg-random-loot/itm/cdwuff.ITM~ ~override~
   SAY UNIDENTIFIED_DESC @54
   SAY DESC @55
 
-// KAYGLOV.ITM
+// KAYGLOV.ITM gloves (+1 dex)
 COPY ~bg-random-loot/itm/IBRAC18.BAM~ ~override~
 COPY ~bg-random-loot/itm/KAYGLOV.ITM~ ~override~
   SAY NAME1 @56
@@ -166,7 +173,7 @@ COPY ~bg-random-loot/itm/AMULDEF.ITM~ ~override~
   SAY UNIDENTIFIED_DESC @86
   SAY DESC @87
 
-// BELTGON.ITM
+// BELTGON.ITM belt
 COPY ~bg-random-loot/itm/IBELTGON.BAM~ ~override~
 COPY ~bg-random-loot/itm/BELTGON.ITM~ ~override~
   SAY NAME1 @88
@@ -189,3 +196,187 @@ COPY ~bg-random-loot/itm/CHAINBM.ITM~ ~override~
   SAY NAME2 @97
   SAY UNIDENTIFIED_DESC @98
   SAY DESC @99
+
+// Skullflail +2
+COPY ~bg-random-loot/itm/IFLAILSK.BAM~ ~override~
+COPY ~bg-random-loot/itm/FLAILSK.ITM~ ~override~
+  SAY NAME1 @104
+  SAY NAME2 @105
+  SAY UNIDENTIFIED_DESC @106
+  SAY DESC @107
+
+// Darkened Glory +2
+COPY ~bg-random-loot/itm/ISW1H75.BAM~ ~override~
+COPY ~bg-random-loot/itm/SW1H45.ITM~ ~override~
+  SAY NAME1 @108
+  SAY NAME2 @109
+  SAY UNIDENTIFIED_DESC @110
+  SAY DESC @111
+
+// Slayer +3
+COPY ~bg-random-loot/itm/ISLAYER.BAM~ ~override~
+COPY ~bg-random-loot/itm/SLAYER.ITM~ ~override~
+  SAY NAME1 @112
+  SAY NAME2 @113
+  SAY UNIDENTIFIED_DESC @114
+  SAY DESC @115
+
+// Spear of Kerish +3
+COPY ~bg-random-loot/itm/IBITEME.BAM~ ~override~
+COPY ~bg-random-loot/itm/BITEME.ITM~ ~override~
+  SAY NAME1 @116
+  SAY NAME2 @117
+  SAY UNIDENTIFIED_DESC @118
+  SAY DESC @119
+
+// The Spear of White Ash +3
+COPY ~bg-random-loot/itm/IWHTASH.BAM~ ~override~
+COPY ~bg-random-loot/itm/WHTASH.ITM~ ~override~
+  SAY NAME1 @120
+  SAY NAME2 @121
+  SAY UNIDENTIFIED_DESC @122
+  SAY DESC @123
+
+// Staff of Moradin's Breath +2
+COPY ~bg-random-loot/itm/IMORADIN.BAM~ ~override~
+COPY ~bg-random-loot/itm/MORADIN.ITM~ ~override~
+  SAY NAME1 @124
+  SAY NAME2 @125
+  SAY UNIDENTIFIED_DESC @126
+  SAY DESC @127
+
+// Staff Spendelard's Protector +1~
+COPY ~bg-random-loot/itm/ISPENSTA.BAM~ ~override~
+COPY ~bg-random-loot/itm/SPENSTAF.ITM~ ~override~
+  SAY NAME1 @128
+  SAY NAME2 @129
+  SAY UNIDENTIFIED_DESC @130
+  SAY DESC @131
+
+// The Giving Star +3
+COPY ~bg-random-loot/itm/IGIVING.BAM~ ~override~
+COPY ~bg-random-loot/itm/GIVING.ITM~ ~override~
+  SAY NAME1 @132
+  SAY NAME2 @133
+  SAY UNIDENTIFIED_DESC @134
+  SAY DESC @135
+
+// The Mace of Weal and Woe +1
+COPY ~bg-random-loot/itm/IZZ05WE.BAM~ ~override~
+COPY ~bg-random-loot/itm/ZZ05WE.ITM~ ~override~
+  SAY NAME1 @136
+  SAY NAME2 @137
+  SAY UNIDENTIFIED_DESC @138
+  SAY DESC @139
+
+// Longbow Messenger of Sseth +1
+COPY ~bg-random-loot/itm/IBOWMESS.BAM~ ~override~
+COPY ~bg-random-loot/itm/BOWMESS.ITM~ ~override~
+  SAY NAME1 @140
+  SAY NAME2 @141
+  SAY UNIDENTIFIED_DESC @142
+  SAY DESC @143
+
+// Scimitar Valiant +2
+COPY ~bg-random-loot/itm/IVALIANT.BAM~ ~override~
+COPY ~bg-random-loot/itm/VALIANT.ITM~ ~override~
+  SAY NAME1 @144
+  SAY NAME2 @145
+  SAY UNIDENTIFIED_DESC @146
+  SAY DESC @147
+
+// Erevain's Broad Sword +2
+COPY ~bg-random-loot/itm/IEREVAIN.BAM~ ~override~
+COPY ~bg-random-loot/itm/EREVAIN.ITM~ ~override~
+  SAY NAME1 @148
+  SAY NAME2 @149
+  SAY UNIDENTIFIED_DESC @150
+  SAY DESC @151
+
+// Long Sword Aihonen
+COPY ~bg-random-loot/itm/IJHOSWD2.BAM~ ~override~
+COPY ~bg-random-loot/itm/JHOSWD2.ITM~ ~override~
+  SAY NAME1 @152
+  SAY NAME2 @153
+  SAY UNIDENTIFIED_DESC @154
+  SAY DESC @155
+
+// Sanctified War Hammer +2
+COPY ~bg-random-loot/itm/IMAUL.BAM~ ~override~
+COPY ~bg-random-loot/itm/U2HAM3A.ITM~ ~override~
+  SAY NAME1 @156
+  SAY NAME2 @157
+  SAY UNIDENTIFIED_DESC @158
+  SAY DESC @159
+
+// War Hammer Redemption +3
+COPY ~bg-random-loot/itm/IREDEMT.BAM~ ~override~
+COPY ~bg-random-loot/itm/REDEMT.ITM~ ~override~
+  SAY NAME1 @160
+  SAY NAME2 @161
+  SAY UNIDENTIFIED_DESC @162
+  SAY DESC @163
+
+// Cairn Blade +3 (Two-Handed Sword)
+COPY ~bg-random-loot/itm/ICAIRN.BAM~ ~override~
+COPY ~bg-random-loot/itm/CAIRN.ITM~ ~override~
+  SAY NAME1 @164
+  SAY NAME2 @165
+  SAY UNIDENTIFIED_DESC @166
+  SAY DESC @167
+
+// Kresselack's Sword +1
+COPY ~bg-random-loot/itm/IKRESWRD.BAM~ ~override~
+COPY ~bg-random-loot/itm/KRESWRD.ITM~ ~override~
+  SAY NAME1 @168
+  SAY NAME2 @169
+  SAY UNIDENTIFIED_DESC @170
+  SAY DESC @171
+
+// Crooked Flail +1
+COPY ~bg-random-loot/itm/IBLUN02.BAM~ ~override~
+COPY ~bg-random-loot/itm/UFLAL2A.ITM~ ~override~
+  SAY NAME1 @172
+  SAY NAME2 @173
+  SAY UNIDENTIFIED_DESC @174
+  SAY DESC @175
+
+// Spinesheath +1
+COPY ~bg-random-loot/itm/ISPINE.BAM~ ~override~
+COPY ~bg-random-loot/itm/SPINE.ITM~ ~override~
+  SAY NAME1 @176
+  SAY NAME2 @177
+  SAY UNIDENTIFIED_DESC @178
+  SAY DESC @179
+
+// Joril's Axe +3
+COPY ~bg-random-loot/itm/IJ2HAXE.BAM~ ~override~
+COPY ~bg-random-loot/itm/J2HAXE.ITM~ ~override~
+  SAY NAME1 @180
+  SAY NAME2 @181
+  SAY UNIDENTIFIED_DESC @182
+  SAY DESC @183
+
+// Two-Handed Axe Lonesome Road +3
+COPY ~bg-random-loot/itm/ILONESOM.BAM~ ~override~
+COPY ~bg-random-loot/itm/LONESOM.ITM~ ~override~
+  SAY NAME1 @184
+  SAY NAME2 @185
+  SAY UNIDENTIFIED_DESC @186
+  SAY DESC @187
+
+// Axe The Celebrant's Blade +3
+COPY ~bg-random-loot/itm/ICELEBRA.BAM~ ~override~
+COPY ~bg-random-loot/itm/CELEBRA.ITM~ ~override~
+  SAY NAME1 @188
+  SAY NAME2 @189
+  SAY UNIDENTIFIED_DESC @190
+  SAY DESC @191
+
+// Battle Axe +2: Defender
+COPY ~bg-random-loot/itm/IAX1H02.BAM~ ~override~
+COPY ~bg-random-loot/itm/U1HAX3B.ITM~ ~override~
+  SAY NAME1 @192
+  SAY NAME2 @193
+  SAY UNIDENTIFIED_DESC @194
+  SAY DESC @195

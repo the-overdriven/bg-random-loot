@@ -112,6 +112,36 @@ COPY_RANDOM
 
 // _______________________________________________________________________________________
 
+// new unique items added by EE or mid-level items
+COPY_RANDOM 
+     ~BLUN37.ITM~ // EE Mighty Oak +2
+     ~HALB13.ITM~ // EE The Chesley Crusher +2
+     ~STAF18.ITM~ // EE Quarterstaff +2
+     ~SLNG11.ITM~ // EE Sling of Unerring Accuracy (improves THAC0 but lowers dmg)
+     ~SPER05.ITM~ // EE Spear +2
+     ~HAMM13.ITM~ // EE Hammer of Dawn +1
+     ~LEAT25.ITM~ // EE Rugged Leathers +2
+     ~CHAN12.ITM~ // EE Elven Chain Mail
+     ~SHLD33.ITM~ // EE Buckley's Buckler (+1 CON)
+     ~AMUL25.ITM~ // EE Amulet of Spell Warding (+2 to saves vs spells)
+     ~BELT16.ITM~ // EE Belt of Antipode (100% resist frost, but -100% to fire)
+     ~RSBRAC.ITM~ // EE Glimmering Bands (+2 to hit bonus)
+     ~NEBELT01.ITM~ // EE Adoy's Belt (+5 to saves vs polymorph/pertification) 
+     ~BELT15.ITM~ // EE Big-Fisted Belt (cursed, 19 str, 6 int)
+     ~SW1H23.ITM~ // EE Rashad's Talon (Scimitar +2)
+     ~HELM02.ITM~ // EE Helmet of Opposite Alignment (added earlier but droppable in EE)
+     ~SW2H22.ITM~ // EE 2h sword, gold digger +1
+     ~SW1H34.ITM~ // EE Albruin +1
+     //------------------------------------NEW ITEMS--------------------------------------
+     // might be sold by Black Lily (half of them, meaning half amount of new items will never spawn)
+     // in this case, 2 items will never spawn
+     ~RINGELF.ITM~
+     ~AMULDEF.ITM~
+     ~BELTGON.ITM~
+     ~BOOTMOA.ITM~
+
+// _______________________________________________________________________________________
+
 // best unique items
 COPY_RANDOM 
      // best buyable magical items (Beregost: smith & Feldepost, High Hedge, Sorcerer Soundries, Ulgoth's Beard)
@@ -192,36 +222,6 @@ COPY_RANDOM
      ~ARGENT.ITM~
      ~SWANARM.ITM~
      ~CHAINBM.ITM~
-
-// _______________________________________________________________________________________
-
-// new unique items added by EE (should be unique)
-COPY_RANDOM 
-     ~BLUN37.ITM~ // EE Mighty Oak +2
-     ~HALB13.ITM~ // EE The Chesley Crusher +2
-     ~STAF18.ITM~ // EE Quarterstaff +2
-     ~SLNG11.ITM~ // EE Sling of Unerring Accuracy (improves THAC0 but lowers dmg)
-     ~SPER05.ITM~ // EE Spear +2
-     ~HAMM13.ITM~ // EE Hammer of Dawn +1
-     ~LEAT25.ITM~ // EE Rugged Leathers +2
-     ~CHAN12.ITM~ // EE Elven Chain Mail
-     ~SHLD33.ITM~ // EE Buckley's Buckler (+1 CON)
-     ~AMUL25.ITM~ // EE Amulet of Spell Warding (+2 to saves vs spells)
-     ~BELT16.ITM~ // EE Belt of Antipode (100% resist frost, but -100% to fire)
-     ~RSBRAC.ITM~ // EE Glimmering Bands (+2 to hit bonus)
-     ~NEBELT01.ITM~ // EE Adoy's Belt (+5 to saves vs polymorph/pertification) 
-     ~BELT15.ITM~ // EE Big-Fisted Belt (cursed, 19 str, 6 int)
-     ~SW1H23.ITM~ // EE Rashad's Talon (Scimitar +2)
-     ~HELM02.ITM~ // EE Helmet of Opposite Alignment (added earlier but droppable in EE)
-     ~SW2H22.ITM~ // EE 2h sword, gold digger +1
-     ~SW1H34.ITM~ // EE Albruin +1
-     //------------------------------------NEW ITEMS--------------------------------------
-     // might be sold by Black Lily (half of them, meaning half amount of new items will never spawn)
-     // in this case, 2 items will never spawn
-     ~RINGELF.ITM~
-     ~AMULDEF.ITM~
-     ~BELTGON.ITM~
-     ~BOOTMOA.ITM~
 
 // _______________________________________________________________________________________
 

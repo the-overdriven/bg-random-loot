@@ -135,7 +135,7 @@ COPY_RANDOM
 
 // _______________________________________________________________________________________
 
-// new unique items added by EE
+// new unique items added by EE or mid-level items
 COPY_RANDOM 
      ~BLUN37.ITM~ // EE Mighty Oak +2
      ~HALB13.ITM~ // EE The Chesley Crusher +2
@@ -230,20 +230,6 @@ COPY_RANDOM
 
 // _______________________________________________________________________________________
 
-// wands (all except magic missile wand)
-COPY_RANDOM 
-     ~WAND11.ITM~ // 
-     ~WAND08.ITM~ // 
-     ~WAND09.ITM~ // 
-     ~WAND04.ITM~ // 
-     ~WAND10.ITM~ // 
-     ~WAND07.ITM~ // 
-     ~WAND06.ITM~ // 
-     ~WAND05.ITM~ // 
-     ~WAND02.ITM~ // 
-
-// _______________________________________________________________________________________
-
 // less powerful items 
 COPY_RANDOM 
      // items that don't appear in game (to reduce item spam)
@@ -278,7 +264,21 @@ COPY_RANDOM
 
 // _______________________________________________________________________________________
 
-// scrolls per lvl
+// wands (all except magic missile wand)
+COPY_RANDOM 
+     ~WAND11.ITM~ // 
+     ~WAND08.ITM~ // 
+     ~WAND09.ITM~ // 
+     ~WAND04.ITM~ // 
+     ~WAND10.ITM~ // 
+     ~WAND07.ITM~ // 
+     ~WAND06.ITM~ // 
+     ~WAND05.ITM~ // 
+     ~WAND02.ITM~ // 
+
+// _______________________________________________________________________________________
+
+// magic scrolls
 COPY_RANDOM 
      // ~BDALNT01.ITM~ // 
      // ~BDALNT02.ITM~ // 
