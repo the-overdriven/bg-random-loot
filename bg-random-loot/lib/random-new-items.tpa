@@ -109,6 +109,8 @@ COPY_RANDOM
      ~RLSW1H44.ITM~
      ~RLSW1H47.ITM~
      ~RLSW1H49.ITM~
+     ~UFLAL2A.ITM~ // Crooked Flail +1
+     ~RLBLUN07.ITM~ // Morning star of the Golem
 
 // _______________________________________________________________________________________
 
@@ -134,11 +136,14 @@ COPY_RANDOM
      ~SW1H34.ITM~ // EE Albruin +1
      //------------------------------------NEW ITEMS--------------------------------------
      // might be sold by Black Lily (half of them, meaning half amount of new items will never spawn)
-     // in this case, 2 items will never spawn
      ~RINGELF.ITM~
      ~AMULDEF.ITM~
      ~BELTGON.ITM~
      ~BOOTMOA.ITM~
+     ~KRESWRD.ITM~ // ~Kresselack's Sword +1~
+     ~U2HAM3A.ITM~ // ~Sanctified War Hammer +2~
+     ~EREVAIN.ITM~ // ~Erevain's Broad Sword +2~
+     ~SPENSTAF.ITM~ // ~Spendelard's Protector +1~
 
 // _______________________________________________________________________________________
 
@@ -214,7 +219,6 @@ COPY_RANDOM
 
      //------------------------------------NEW ITEMS--------------------------------------
      // might be sold by Black Lily (half of them, meaning half amount of new items will never spawn)
-     // in this case, 3 items will never spawn
 
      ~MYSTERY.ITM~
      ~WATCHER.ITM~
@@ -222,6 +226,25 @@ COPY_RANDOM
      ~ARGENT.ITM~
      ~SWANARM.ITM~
      ~CHAINBM.ITM~
+     ~FLAILSK.ITM~ // ~Skullflail +2~
+     ~SW1H45.ITM~ // ~Darkened Glory +2~
+     ~SLAYER.ITM~ // ~Slayer +3~
+     ~BITEME.ITM~ // ~Spear of Kerish +3~
+     ~WHTASH.ITM~ // ~The Spear of White Ash +3~
+     ~MORADIN.ITM~ // ~Staff of Moradin's Breath +2~
+     ~GIVING.ITM~ // ~The Giving Star +3~
+     ~ZZ05WE.ITM~ // ~The Mace of Weal and Woe +1~
+     ~BOWMESS.ITM~ // ~Messenger of Sseth +1~
+     ~VALIANT.ITM~ // ~Valiant +2~
+     ~JHOSWD2.ITM~ // ~Aihonen~
+     ~REDEMT.ITM~ // ~Redemption +3~
+     ~CAIRN.ITM~ // ~Cairn Blade +3~
+     ~SPINE.ITM~ // ~Spinesheath +1~
+     ~J2HAXE.ITM~ // ~Joril's Axe +3~
+     ~LONESOM.ITM~ // ~Lonesome Road +3~
+     ~CELEBRA.ITM~ // ~The Celebrant's Blade +3~
+     ~U1HAX3B.ITM~ // ~Battle Axe +2: Defender~
+
 
 // _______________________________________________________________________________________
 
