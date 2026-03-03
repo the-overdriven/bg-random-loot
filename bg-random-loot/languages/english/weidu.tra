@@ -9,6 +9,7 @@
 @1074 = ~Add new items to stores (Nashkel, Carnival and Black Lily)~
 @1075 = ~Randomize unique EE items with best unique items~ // TODO
 @1076 = ~Add random loot to monsters~
+@1077 = ~Remove trash monster loot (i.e. kobold's dagger or hogboglin's leather armor)~
 
 @1080 = ~Please enter a number for the random seed to randomize base game items (for example, 3):~
 @1081 = ~Please enter a number for the random seed to re-randomize base game items with new items:~
@@ -1074,7 +1075,7 @@ Requires:
  6 Strength
 
 Weight: 4~
-@155 = ~This once-shattered blade lay in the breast of Icasaracht, the last of the white dragon matriarchs that ruled the Spine of the World. It was wielded by Aihonen, a distant ancestor of Jhonen the fisherman in Easthaven—the sword has lain at the bottom of the lake for almost a century, waiting to be returned to one of its wielder's bloodline. How it has been restored to its original state is unknown, but whatever the reason, it looks like a powerful weapon that can help you free Easthaven from Brother Poquelin. 
+@155 = ~This once-shattered blade lay in the breast of Icasaracht, the last of the white dragon matriarchs that ruled the Spine of the World. It was wielded by Aihonen, a distant ancestor of Jhonen the fisherman in Easthaven—the sword has lain at the bottom of the lake for almost a century, waiting to be returned to one of its wielder's bloodline. How it has been restored to its original state is unknown.
 
 The blade seems to draw its strength from Lac Dinneshere itself. As long as the wielder is within a dragon's flight distance of the lake, the blade is a fearsome weapon. 
 

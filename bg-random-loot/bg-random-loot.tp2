@@ -1,7 +1,7 @@
 BACKUP ~weidu_external/bg-random-loot/backup~
 SUPPORT ~https://www.nexusmods.com/baldursgate/mods/107~
 
-VERSION ~v2.3~
+VERSION ~v3.0~
 
 README ~bg-random-loot/readme-bg-random-loot.url~
   
@@ -92,3 +92,12 @@ REQUIRE_COMPONENT ~bg-random-loot.tp2~ 21 @1005
 REQUIRE_COMPONENT ~bg-random-loot.tp2~ 22 @1004
 
 INCLUDE ~bg-random-loot/lib/random-monster-loot.tpa~
+
+//////////////////////////////////////////////////
+// Component 8: Remove trash monster loot
+//////////////////////////////////////////////////
+
+BEGIN @1077 DESIGNATED 28
+LABEL ~ww_bg_random_loot_remove_trash_monster_loot~
+
+INCLUDE ~bg-random-loot/lib/remove-trash-monster-loot.tpa~

@@ -280,6 +280,8 @@ COPY_RANDOM
      ~RING21.ITM~ // ring of infravision
      ~SLNG02.ITM~ // sling +1
      ~BRAC07.ITM~ // Brawling Hands (dex: 18)
+     ~BRAC01.ITM~ // Bracers of Defense AC 8
+     ~BRAC02.ITM~ // Bracers of Defense AC 7
      //------------------------------------NEW ITEMS--------------------------------------
      // might be sold in Nashkel
      ~ELFGLOV.ITM~

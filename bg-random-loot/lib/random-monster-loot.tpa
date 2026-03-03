@@ -4,7 +4,7 @@ COPY ~bg-random-loot/monsters/RNDMEL2.ITM~ ~override~
 COPY ~bg-random-loot/monsters/RNDMEL3.ITM~ ~override~
 COPY ~bg-random-loot/monsters/RNDMEL4.ITM~ ~override~
 
-// used by rndtreas.2da
+// used by rndtreas.2da (ammunition + antidote for now)
 // RNDLOOT2 = average
 // RNDLOOT3 = well off
 // RNDLOOT4 = wealthy
@@ -14,20 +14,19 @@ COPY ~bg-random-loot/monsters/RNDMEL4.ITM~ ~override~
 // RNDMEL1 -> RNDMEL2
 // RNDMEL3 -> RNDMEL4
 
-// strong
+// strong (weapons +1)
 ACTION_FOR_EACH creature IN ~OGRE~ ~OGRE02~ ~OGREBERZ~ ~OGRECO~ ~OGREMA03~ ~OGREUNSH~ ~WYVERN~ ~WYVERNBI~ ~SKELWA~ BEGIN
   COPY_EXISTING ~%creature%.CRE~ ~override~
     ADD_CRE_ITEM ~RNDMEL1~ #0 #0 #0 NONE INV
   IF_EXISTS
 END
-
 ACTION_FOR_EACH creature IN ~GOLEMF~ ~GOLEMF2~ ~BASILG~ ~BASILL~ ~DOPPLE~ ~DOPPGR~ ~ETTERC~ ~CRYPTCRA~ ~BATTHO~ ~STALKE~ BEGIN
   COPY_EXISTING ~%creature%.CRE~ ~override~
     ADD_CRE_ITEM ~RNDMEL3~ #0 #0 #0 NONE INV
   IF_EXISTS
 END
 
-// mid
+// mid (less powerful magic items)
 ACTION_FOR_EACH creature IN ~WOLFWI~ ~SIRINE_A~ ~SIRINE_B~ ~SIRINE~ ~SPIDGI~ ~SPIDPH~ ~SPIDSW~ ~SPIDWR~ ~IRONELIT~ ~GNOLL_E~ ~GNOLL_EB~ ~GNOLTAL4~ ~GNOLL_A~ ~GNOLTAL1~ ~GNOLL_D~ ~GNOLTAL3~ ~GHOUL~ ~GHAST~ ~ANKHEGF~ ~ANKHEGG~ ~CARRIO~ ~OGREGR~ ~OGREGR_B~ ~OGREGR_C~ ~OGREGR_D~ ~OGREHA_B~ ~OGREBJOR~ ~OGREMIRI~ BEGIN
   COPY_EXISTING ~%creature%.CRE~ ~override~
     ADD_CRE_ITEM ~RNDMID1~ #0 #0 #0 NONE INV
