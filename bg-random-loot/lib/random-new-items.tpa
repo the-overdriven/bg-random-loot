@@ -134,6 +134,7 @@ COPY_RANDOM
      ~SW2H22.ITM~ // EE 2h sword, gold digger +1
      ~SW1H34.ITM~ // EE Albruin +1
      ~BLUN41.ITM~ // EE The Stupefier +1
+     ~SW1H09.ITM~ // The Whistling Sword +2
      //------------------------------------NEW ITEMS--------------------------------------
      // might be sold by Black Lily (half of them, meaning half amount of new items will never spawn)
      ~RINGELF.ITM~

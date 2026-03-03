@@ -155,6 +155,7 @@ COPY_RANDOM
      ~SW2H22.ITM~ // EE 2h sword, gold digger +1
      ~SW1H34.ITM~ // EE Albruin +1
      ~BLUN41.ITM~ // EE The Stupefier +1
+     ~SW1H09.ITM~ // The Whistling Sword +2
 
 // _______________________________________________________________________________________
 
@@ -454,7 +455,7 @@ COPY_RANDOM
      ~SCRL6L.ITM~ // 
      ~SCRL6M.ITM~ // 
      ~SCRL6N.ITM~ // 
-     // ~SCRL6O.ITM~ // Bigby
+     ~SCRL6O.ITM~ // Secret Word
      ~SCRL6P.ITM~ // 
      ~SCRL6R.ITM~ // 
      ~SCRL6S.ITM~ // 
@@ -532,8 +533,8 @@ COPY_RANDOM
      ~SCRLAJ.ITM~ // 
      ~SCRLAL.ITM~ // 
      ~SCRLAUTO.ITM~ // autograph xd
-     ~SCRLB1.ITM~ // 
-     ~SCRLB2.ITM~ // 
+     // ~SCRLB1.ITM~ // Bigby
+     // ~SCRLB2.ITM~ // Bigby
      ~SCRLB4.ITM~ // 
      // ~SCRLDRA.ITM~ // 
      // ~SCRLJALA.ITM~ // 
@@ -545,7 +546,7 @@ COPY_RANDOM
      // ~SCRLZHA.ITM~ // 
      // ~SCRLZY.ITM~ // 
      // ~SCRLZZ.ITM~ // 
-     // ~TTSCRL01.ITM~ // Bigby
+     ~TTSCRL01.ITM~ // Flame Arrow
      ~TTSCRL02.ITM~ // Ray of Enfeeblement
 
 // _______________________________________________________________________________________
