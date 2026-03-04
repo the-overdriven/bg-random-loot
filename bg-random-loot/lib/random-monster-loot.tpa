@@ -1,3 +1,4 @@
+COPY ~bg-random-loot/monsters/rndtreas.2da~ ~override~
 COPY ~bg-random-loot/monsters/rndtres.2da~ ~override~
 COPY ~bg-random-loot/monsters/RNDMEL1.ITM~ ~override~
 COPY ~bg-random-loot/monsters/RNDMEL2.ITM~ ~override~
