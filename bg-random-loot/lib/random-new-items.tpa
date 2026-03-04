@@ -126,7 +126,7 @@ COPY_RANDOM
      ~SHLD33.ITM~ // EE Buckley's Buckler (+1 CON)
      ~AMUL25.ITM~ // EE Amulet of Spell Warding (+2 to saves vs spells)
      ~BELT16.ITM~ // EE Belt of Antipode (100% resist frost, but -100% to fire)
-     ~RSBRAC.ITM~ // EE Glimmering Bands (+2 to hit bonus)
+     // ~RSBRAC.ITM~ // EE Rasaad's Glimmering Bands (+2 to hit bonus)
      ~NEBELT01.ITM~ // EE Adoy's Belt (+5 to saves vs polymorph/pertification) 
      ~BELT15.ITM~ // EE Big-Fisted Belt (cursed, 19 str, 6 int)
      ~SW1H23.ITM~ // EE Rashad's Talon (Scimitar +2)
