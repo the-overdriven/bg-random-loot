@@ -10,6 +10,9 @@ ACTION_READLN user_seed
 RANDOM_SEED %user_seed%
 
 // balance prices of vanilla items, probably won't work after randomization, TODO
+// COPY_EXISTING ~bg-random-loot/itm/BOOT01.ITM~ ~override~ // 2300 -> 13000
+// COPY_EXISTING ~bg-random-loot/itm/SPER05.ITM~ ~override~ // 1500 -> 3500
+
 // non-magical weapons
 // mages can wield swords!
 COPY_RANDOM 
@@ -157,6 +160,7 @@ COPY_RANDOM
      ~SW1H34.ITM~ // EE Albruin +1
      ~BLUN41.ITM~ // EE The Stupefier +1
      ~SW1H09.ITM~ // The Whistling Sword +2
+     ~BOOT05.ITM~ // The Boots of Grounding
 
 // _______________________________________________________________________________________
 
@@ -177,7 +181,6 @@ COPY_RANDOM
      ~MISC2P.ITM~ // the captive audience
      // ~RING05.ITM~ // sandthief's ring, one charge only!
      // ~AMUL17.ITM~ // greenstone amulet, do not use, has only one charge
-     ~AMUL14.ITM~ // protector +1
      ~BOW02.ITM~ // composite longbow +1
      ~XBOW06.ITM~ // Light Crossbow of Speed (the army scythe +1)
      ~XBOW03.ITM~ // Heavy Crossbow of Accuracy
@@ -221,6 +224,7 @@ COPY_RANDOM
      // ~BDSW1H22.ITM~ // Severance +2
      // ~BAG31.ITM~ // Bag of Holding - do not try! it will crash the game
      ~PLAT24.ITM~ // EE The Magma Bulwark +2
+     ~RING22.ITM~ // Honorary Ring of Sune
 
      // tomes
      ~BOOK03.ITM~ // con
@@ -266,6 +270,7 @@ COPY_RANDOM
      ~BRAC07.ITM~ // Brawling Hands (dex: 18)
      ~BRAC01.ITM~ // Bracers of Defense AC 8
      ~BRAC02.ITM~ // Bracers of Defense AC 7
+     ~AMUL14.ITM~ // protector +1
 
 // _______________________________________________________________________________________
 
