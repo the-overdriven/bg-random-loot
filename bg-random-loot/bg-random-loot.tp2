@@ -101,3 +101,12 @@ BEGIN @1077 DESIGNATED 28
 LABEL ~ww_bg_random_loot_remove_trash_monster_loot~
 
 INCLUDE ~bg-random-loot/lib/remove-trash-monster-loot.tpa~
+
+//////////////////////////////////////////////////
+// Component 9: Block monster respawns
+//////////////////////////////////////////////////
+
+BEGIN @1078 DESIGNATED 29
+LABEL ~ww_bg_random_loot_block_respawns~
+
+INCLUDE ~bg-random-loot/lib/block-respawns.tpa~

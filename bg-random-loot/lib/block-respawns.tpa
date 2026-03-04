@@ -1,0 +1,22 @@
+ACTION_FOR_EACH area IN
+  ~AR0900~ ~AR1400~ ~AR2300~ ~AR2200~
+  ~AR2100~ ~AR1800~ ~AR1700~ ~AR1600~ ~AR2400~
+  ~AR2900~ ~AR3000~ ~AR2800~ ~AR2700~ ~AR3100~
+  ~AR3200~ ~AR3300~ ~AR3400~ ~AR3500~ ~AR4000~
+  ~AR4500~ ~AR3900~ ~AR4400~ ~AR4300~ ~AR3800~
+  ~AR4200~ ~AR3700~ ~AR3600~ ~AR4100~ ~AR4700~
+  ~AR4900~ ~AR0500~ ~AR5000~ ~AR5500~ ~AR5400~
+  ~AR5300~ ~AR5200~ ~AR4700~ ~AR4600~ ~AR5100~
+BEGIN
+  COPY_EXISTING ~%area%.are~ ~override~
+    READ_LONG 0x60 spawn_off
+    READ_LONG 0x64 spawn_num
+    SET idx = 0
+    WHILE (idx < spawn_num) BEGIN
+      SET current_spawn = spawn_off + (idx * 200)
+      READ_SHORT (current_spawn + 0x7a) spawn_method
+      WRITE_SHORT (current_spawn + 0x7a) (spawn_method BOR 2)
+      SET idx = idx + 1
+    END
+  BUT_ONLY
+END
