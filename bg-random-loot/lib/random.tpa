@@ -9,6 +9,7 @@ ACTION_READLN user_seed
 // Use the variable provided by the user
 RANDOM_SEED %user_seed%
 
+// balance prices of vanilla items, probably won't work after randomization, TODO
 // non-magical weapons
 // mages can wield swords!
 COPY_RANDOM 
