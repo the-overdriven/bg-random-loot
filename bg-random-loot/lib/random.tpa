@@ -9,9 +9,9 @@ ACTION_READLN user_seed
 // Use the variable provided by the user
 RANDOM_SEED %user_seed%
 
-// balance prices of vanilla items, probably won't work after randomization, TODO
-// COPY_EXISTING ~bg-random-loot/itm/BOOT01.ITM~ ~override~ // 2300 -> 13000
-// COPY_EXISTING ~bg-random-loot/itm/SPER05.ITM~ ~override~ // 1500 -> 3500
+// balance prices of vanilla items
+COPY_EXISTING ~bg-random-loot/itm/BOOT01.ITM~ ~override~ // 2300 -> 13000
+COPY_EXISTING ~bg-random-loot/itm/SPER05.ITM~ ~override~ // 1500 -> 3500
 
 // non-magical weapons
 // mages can wield swords!
