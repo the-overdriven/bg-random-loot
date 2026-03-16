@@ -470,6 +470,33 @@ COPY_EXISTING ~AR4400.are~ ~override~
   END
 BUT_ONLY
 
+// AR3352: Algernon
+COPY_EXISTING ~AR3352.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  // Loop backwards (from last actor to the first) to prevent offset/index shifting issues
+  FOR (idx = actor_count - 1; idx >= 0; --idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    
+    // Convert to uppercase to ensure case-insensitive matching
+    TO_UPPER cre_resref 
+
+    // Use PATCH_MATCH to easily check against a list of resrefs
+    PATCH_MATCH ~%cre_resref%~ WITH
+      ~ALGERN~ BEGIN
+        LPF fj_are_structure
+          INT_VAR fj_delete_mode = idx
+          STR_VAR fj_structure_type = ~actor~
+        END
+      END
+      DEFAULT
+        // Do nothing if the actor doesn't match your list
+    END
+  END
+BUT_ONLY
+
 //----------------------- move to random location -------------------------
 
 RANDOM_SEED TIME
@@ -495,17 +522,16 @@ BEGIN
   BUT_ONLY
 END
 
-// 1. Define the Location Pool
-ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_area BEGIN 0=>~AR2900~ 1=>~AR4300~ 2=>~AR2700~ 3=>~AR4000~ 4=>~AR0400~ 5=>~AR4500~ 6=>~AR3802~ 7=>~AR1800~ 8=>~AR5100~ 9=>~AR3900~ 10=>~AR5202~ 11=>~AR3200~ 12=>~AR1900~ 13=>~AR1900~ 14=>~AR2400~ 15=>~AR5300~ 16=>~AR5300~ 17=>~AR4400~ END
-ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_x    BEGIN 0=>1815     1=>1670     2=>1155     3=>3890     4=>4802     5=>1427     6=>232      7=>2796     8=>1312     9=>1671     10=>183      11=>1412     12=>1763     13=>4416     14=>4262     15=>1160     16=>4215     17=>4044     END
-ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_y    BEGIN 0=>2225     1=>3555     2=>490      3=>1200     4=>213      5=>2398     6=>219      7=>3065     8=>539      9=>3042     10=>189      11=>913      12=>3093     13=>2953     14=>3230     15=>2630     16=>3439     17=>1130     END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_area BEGIN 0=>~AR2900~ 1=>~AR4300~ 2=>~AR2700~ 3=>~AR4000~ 4=>~AR0400~ 5=>~AR4500~ 6=>~AR3802~ 7=>~AR1800~ 8=>~AR5100~ 9=>~AR3900~ 10=>~AR5202~ 11=>~AR3200~ 12=>~AR1900~ 13=>~AR1900~ 14=>~AR2400~ 15=>~AR5300~ 16=>~AR5300~ 17=>~AR4400~ 18=>~AR3352~ 19=>~AR2303~ 20=>~AR5100~ 21=>~AR5100~ 22=>~AR5200~ 23=>~AR4900~ END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_x    BEGIN 0=>1815     1=>1670     2=>1155     3=>3890     4=>4802     5=>1427     6=>232      7=>2796     8=>1312     9=>1671     10=>183      11=>1412     12=>1763     13=>4416     14=>4262     15=>1160     16=>4215     17=>4044     18=>406      19=>1188     20=>255      21=>4153     22=>2636     23=>3595     END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_y    BEGIN 0=>2225     1=>3555     2=>490      3=>1200     4=>213      5=>2398     6=>219      7=>3065     8=>539      9=>3042     10=>189      11=>913      12=>3093     13=>2953     14=>3230     15=>2630     16=>3439     17=>1130     18=>764      19=>761      20=>3585     21=>3155     22=>1160     23=>1190     END
 
 // 2. Define the NPC Pool
-ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_name BEGIN 0=>~Borda~ 1=>~Meilum~ 2=>~Denak~ 3=>~Kirian~ 4=>~Narcillicus~ 5=>~Sendai~ 6=>~Ludrug~ 7=>~Neville~ 8=>~Baruk~ 9=>~Teyngan~ 10=>~Zargal~ 11=>~Shoal~ 12=>~Zhurlong~ 13=>~Cattack~ 14=>~Arghain~ 14=>~Vax~ 15=>~Larry~ 16=>~Ioin~ END
-ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_res  BEGIN 0=>~BORDA~ 1=>~MEILUM~ 2=>~DENAK~ 3=>~KIRIAN~ 4=>~NARCIL~      5=>~SENDAI~ 6=>~GNOLL5~ 7=>~NEVILL~  8=>~BARUK~ 9=>~TEYNGA~  10=>~ZARGAL~ 11=>~SHOAL~ 12=>~HOBGZHUR~ 13=>~CATTAC~  14=>~ARGHAI~  14=>~VAX~ 15=>~LARRY~ 16=>~CANTO~ END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_name BEGIN 0=>~Borda~ 1=>~Meilum~ 2=>~Denak~ 3=>~Kirian~ 4=>~Narcillicus~ 5=>~Sendai~ 6=>~Ludrug~ 7=>~Neville~ 8=>~Baruk~ 9=>~Teyngan~ 10=>~Zargal~ 11=>~Shoal~ 12=>~Zhurlong~ 13=>~Cattack~ 14=>~Arghain~ 14=>~Vax~ 15=>~Larry~ 16=>~Ioin~  17=>~Algernon~ END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_res  BEGIN 0=>~BORDA~ 1=>~MEILUM~ 2=>~DENAK~ 3=>~KIRIAN~ 4=>~NARCIL~      5=>~SENDAI~ 6=>~GNOLL5~ 7=>~NEVILL~  8=>~BARUK~ 9=>~TEYNGA~  10=>~ZARGAL~ 11=>~SHOAL~ 12=>~HOBGZHUR~ 13=>~CATTAC~  14=>~ARGHAI~  14=>~VAX~ 15=>~LARRY~ 16=>~CANTO~ 17=>~ALGERN~   END
 
-OUTER_SET num_locs = 18
-OUTER_SET num_npcs = 17
+OUTER_SET num_locs = 24 // TODO: add some old locations
+OUTER_SET num_npcs = 18
 
 // 3. Initialize Index Array for Shuffling
 OUTER_FOR (i = 0; i < num_locs; i += 1) BEGIN
@@ -533,7 +559,7 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
   OUTER_SET    x     = $loc_x(~%s_idx%~)
   OUTER_SET    y     = $loc_y(~%s_idx%~)
 
-  PRINT ~Randomizing: %name% moved to %area% [%x%, %y%]~
+  PRINT ~Randomizing: moving %name% to %area% [%x%, %y%]~
 
   LAF PLACE_RANDOM_NPC
     INT_VAR px = x py = y
@@ -620,6 +646,34 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
     END
   END
 
+  // If the leader is ZARGAL, pull the rest of the group to the same spot
+  ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "ZARGAL") BEGIN
+    // Place GELTIK
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x + 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Geltik~ pres = ~GELTIK~
+    END
+    // Place MALKAX
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x - 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Malkax~ pres = ~MALKAX~
+    END
+  END
+
+  // If the leader is Teyngan, pull the rest of the group to the same spot
+  ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "TEYNGA") BEGIN
+    // Place JEMBY
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x + 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Jemby~ pres = ~JEMBY~
+    END
+    // Place ZEKAR
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x - 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Zekar~ pres = ~ZEKAR~
+    END
+  END
+
   // If the leader is GNOLL5 (Ludrug), pull the rest of the group to the same spot
   ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "GNOLL5") BEGIN
     // Place GNOLL5A x2
@@ -700,6 +754,8 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
   END
 END
 
+PRINT ~Patching dynamically created enemies~
+
 // patch for Neville's hobgoblins
 COPY_EXISTING ~NEVILL.DLG~ ~override~
   DECOMPILE_AND_PATCH BEGIN
@@ -718,6 +774,14 @@ BUT_ONLY
 COPY_EXISTING ~ARGHAI.DLG~ ~override~
   DECOMPILE_AND_PATCH BEGIN
     REPLACE_TEXTUALLY ~CreateCreature("OGREHA",\[[0-9]+\.[0-9]+\],S)~ ~CreateCreature("OGREHA",[-1.-1],S)~
+  END
+BUT_ONLY
+
+// patch for Narcils's jellies
+COPY_EXISTING ~NARCIL.DLG~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~CreateCreature("JELLYGR",\[[0-9]+\.[0-9]+\],S)~ ~CreateCreature("JELLYGR",[-1.-1],S)~
+	REPLACE_TEXTUALLY ~CreateCreature("JELLMU",\[[0-9]+\.[0-9]+\],S)~ ~CreateCreature("JELLMU",[-1.-1],S)~
   END
 BUT_ONLY
 
