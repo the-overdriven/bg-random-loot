@@ -9,7 +9,7 @@ ACTION_READLN user_seed
 // Use the variable provided by the user
 RANDOM_SEED %user_seed%
 
-// balance prices of vanilla items
+// balance prices of vanilla items, TODO: move to separate component in future
 COPY_EXISTING ~bg-random-loot/itm/BOOT01.ITM~ ~override~ // 2300 -> 13000
 COPY_EXISTING ~bg-random-loot/itm/SPER05.ITM~ ~override~ // 1500 -> 3500
 
@@ -106,7 +106,6 @@ COPY_RANDOM
      // ~SW1H14.ITM~ // short sword +1
      // ~SW1H19.ITM~ // cursed
      ~SW1H22.ITM~ // EE Scimitar +1
-     ~SW1H24.ITM~ // long sword +1 (+2 vs regenerating creatures, +3 vs cold-using creatures, +4 vs undead)
      ~SW1H44.ITM~ // EE Katana +1
      ~SW1H47.ITM~ // EE Wakizashi +1
      ~SW1H49.ITM~ // EE Ninja-To +1
@@ -161,6 +160,7 @@ COPY_RANDOM
      ~BLUN41.ITM~ // EE The Stupefier +1
      ~SW1H09.ITM~ // The Whistling Sword +2
      ~BOOT05.ITM~ // The Boots of Grounding
+     ~SW1H24.ITM~ // long sword +1 (+2 vs regenerating creatures, +3 vs cold-using creatures, +4 vs undead)
 
 // _______________________________________________________________________________________
 

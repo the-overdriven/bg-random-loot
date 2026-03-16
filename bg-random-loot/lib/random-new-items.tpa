@@ -85,7 +85,6 @@ COPY_RANDOM
      // ~SW1H14.ITM~ // short sword +1
      // ~SW1H19.ITM~ // cursed
      ~SW1H22.ITM~ // EE Scimitar +1
-     ~SW1H24.ITM~ // long sword +1 (+2 vs regenerating creatures, +3 vs cold-using creatures, +4 vs undead)
      ~SW1H44.ITM~ // EE Katana +1
      ~SW1H47.ITM~ // EE Wakizashi +1
      ~SW1H49.ITM~ // EE Ninja-To +1
@@ -136,6 +135,7 @@ COPY_RANDOM
      ~BLUN41.ITM~ // EE The Stupefier +1
      ~SW1H09.ITM~ // The Whistling Sword +2
      ~BOOT05.ITM~ // The Boots of Grounding
+     ~SW1H24.ITM~ // long sword +1 (+2 vs regenerating creatures, +3 vs cold-using creatures, +4 vs undead)
      //------------------------------------NEW ITEMS--------------------------------------
      // might be sold by Black Lily (half of them, meaning half amount of new items will never spawn)
      ~RINGELF.ITM~
@@ -246,7 +246,6 @@ COPY_RANDOM
      ~LONESOM.ITM~ // ~Lonesome Road +3~
      ~CELEBRA.ITM~ // ~The Celebrant's Blade +3~
      ~U1HAX3B.ITM~ // ~Battle Axe +2: Defender~
-
 
 // _______________________________________________________________________________________
 
