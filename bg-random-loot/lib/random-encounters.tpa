@@ -477,7 +477,7 @@ BUT_ONLY
 RANDOM_SEED TIME
 
 DEFINE_ACTION_FUNCTION PLACE_RANDOM_NPC
-  INT_VAR px = 0 py = 0 panim = 0
+  INT_VAR px = 0 py = 0
   STR_VAR parea = ~~ pname = ~~ pres = ~~
 BEGIN
   COPY_EXISTING ~%parea%.are~ ~override~
@@ -487,7 +487,6 @@ BEGIN
         fj_loc_y       = py
         fj_dest_x      = px
         fj_dest_y      = py
-        fj_animation   = panim
         fj_orientation = 0
         fj_schedule    = "-1"
       STR_VAR
@@ -506,7 +505,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_y    BEGIN 0=>2225     1=>3555     2=>490   
 // 2. Define the NPC Pool
 ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_name BEGIN 0=>~Borda~ 1=>~Meilum~ 2=>~Denak~ 3=>~Kirian~ 4=>~Narcillicus~ 5=>~Sendai~ 6=>~Ludrug~ 7=>~Neville~ 8=>~Baruk~ 9=>~Teyngan~ 10=>~Zargal~ 11=>~Shoal~ 12=>~Zhurlong~ 13=>~Cattack~ 14=>~Arghain~ 14=>~Vax~ 15=>~Zal~ 16=>~Larry~ 17=>~Ioin~ END
 ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_res  BEGIN 0=>~BORDA~ 1=>~MEILUM~ 2=>~DENAK~ 3=>~KIRIAN~ 4=>~NARCIL~      5=>~SENDAI~ 6=>~GNOLL5~ 7=>~NEVILL~  8=>~BARUK~ 9=>~TEYNGA~  10=>~ZARGAL~ 11=>~SHOAL~ 12=>~HOBGZHUR~ 13=>~CATTAC~  14=>~ARGHAI~  14=>~VAX~ 15=>~ZAL~ 16=>~LARRY~ 17=>~CANTO~ END
-// ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_anim BEGIN 0=>0x6301  1=>0x7001   2=>0x7001  3=>0x7001   4=>0x7001        5=>0x7001   6=>0x7001   7=>0x7001    8=>0x7001  9=>0x7001    10=>0x7001   11=>0x7001  12=>0x7001     13=>0x7001    14=>0x7001    14=>0x7001 14=>0x7001   END
 
 OUTER_SET num_locs = 18
 OUTER_SET num_npcs = 18
@@ -530,7 +528,6 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
   // Grab NPC data
   OUTER_SPRINT name $npc_name(~%i%~)
   OUTER_SPRINT res  $npc_res(~%i%~)
-  // OUTER_SET    anim = $npc_anim(~%i%~)
 
   // Grab a unique location index from the shuffled list
   OUTER_SET    s_idx = $loc_indices(~%i%~)
@@ -541,7 +538,7 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
   PRINT ~Randomizing: %name% moved to %area% [%x%, %y%]~
 
   LAF PLACE_RANDOM_NPC
-    INT_VAR px = x py = y // panim = anim
+    INT_VAR px = x py = y
     STR_VAR parea = EVAL ~%area%~ pname = EVAL ~%name%~ pres = EVAL ~%res%~
   END
 END
