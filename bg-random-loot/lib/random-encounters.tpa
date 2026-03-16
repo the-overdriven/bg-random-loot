@@ -1,6 +1,6 @@
 //----------------------- remove actors first -------------------------
 
-// AR3000: DENAK
+// AR3000: DENAK group
 COPY_EXISTING ~AR3000.are~ ~override~
   READ_LONG  0x54 actor_offset
   READ_SHORT 0x58 actor_count
@@ -27,7 +27,7 @@ COPY_EXISTING ~AR3000.are~ ~override~
   END
 BUT_ONLY
 
-// AR3500: KIRIAN
+// AR3500: KIRIAN group
 COPY_EXISTING ~AR3500.are~ ~override~
   READ_LONG  0x54 actor_offset
   READ_SHORT 0x58 actor_count
@@ -53,8 +53,6 @@ COPY_EXISTING ~AR3500.are~ ~override~
     END
   END
 BUT_ONLY
-
-
 
 // AR4500: MEILUM
 COPY_EXISTING ~AR4500.are~ ~override~
@@ -102,7 +100,7 @@ COPY_EXISTING ~AR5000.are~ ~override~
   END
 BUT_ONLY
 
-// AR5300: SENDAI
+// AR5300: SENDAI group
 COPY_EXISTING ~AR5300.are~ ~override~
   READ_LONG  0x54 actor_offset
   READ_SHORT 0x58 actor_count
@@ -129,7 +127,7 @@ COPY_EXISTING ~AR5300.are~ ~override~
   END
 BUT_ONLY
 
-// AR5300: VAX
+// AR5300: VAX group
 COPY_EXISTING ~AR5300.are~ ~override~
   READ_LONG  0x54 actor_offset
   READ_SHORT 0x58 actor_count
@@ -156,7 +154,7 @@ COPY_EXISTING ~AR5300.are~ ~override~
   END
 BUT_ONLY
 
-// AR5300: LARRY DARRYL DARRYL
+// AR5300: LARRY, DARRYL and DARRYL
 COPY_EXISTING ~AR5300.are~ ~override~
   READ_LONG  0x54 actor_offset
   READ_SHORT 0x58 actor_count
@@ -183,7 +181,7 @@ COPY_EXISTING ~AR5300.are~ ~override~
   END
 BUT_ONLY
 
-// AR5200: LUDRUG
+// AR5200: LUDRUG group
 COPY_EXISTING ~AR5200.are~ ~override~
   READ_LONG  0x54 actor_offset
   READ_SHORT 0x58 actor_count
@@ -275,7 +273,7 @@ COPY_EXISTING ~AR4100.are~ ~override~
 
     // Use PATCH_MATCH to easily check against a list of resrefs
     PATCH_MATCH ~%cre_resref%~ WITH
-      ~BARUK~ ~GNOLL5A~ BEGIN
+      ~BARUK~ BEGIN
         LPF fj_are_structure
           INT_VAR fj_delete_mode = idx
           STR_VAR fj_structure_type = ~actor~
@@ -287,7 +285,7 @@ COPY_EXISTING ~AR4100.are~ ~override~
   END
 BUT_ONLY
 
-// AR4200: TEYNGAN
+// AR4200: TEYNGAN group
 COPY_EXISTING ~AR4200.are~ ~override~
   READ_LONG  0x54 actor_offset
   READ_SHORT 0x58 actor_count
@@ -314,7 +312,7 @@ COPY_EXISTING ~AR4200.are~ ~override~
   END
 BUT_ONLY
 
-// AR3700: ZARGAL
+// AR3700: ZARGAL group
 COPY_EXISTING ~AR3700.are~ ~override~
   READ_LONG  0x54 actor_offset
   READ_SHORT 0x58 actor_count
@@ -364,7 +362,7 @@ COPY_EXISTING ~AR3100.are~ ~override~
   END
 BUT_ONLY
 
-// AR3800: ZHURLONG
+// AR3800: ZHURLONG group
 COPY_EXISTING ~AR3800.are~ ~override~
   READ_LONG  0x54 actor_offset
   READ_SHORT 0x58 actor_count
@@ -391,7 +389,7 @@ COPY_EXISTING ~AR3800.are~ ~override~
   END
 BUT_ONLY
 
-// AR3400: CATTACK
+// AR3400: CATTACK group
 COPY_EXISTING ~AR3400.are~ ~override~
   READ_LONG  0x54 actor_offset
   READ_SHORT 0x58 actor_count
@@ -445,7 +443,7 @@ COPY_EXISTING ~AR4400.are~ ~override~
   END
 BUT_ONLY
 
-// AR4400: IOIN
+// AR4400: IOIN group
 COPY_EXISTING ~AR4400.are~ ~override~
   READ_LONG  0x54 actor_offset
   READ_SHORT 0x58 actor_count
@@ -498,16 +496,16 @@ BEGIN
 END
 
 // 1. Define the Location Pool
-ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_area BEGIN 0=>~AR2900~ 1=>~AR4300~ 2=>~AR2700~ 3=>~AR4000~ 4=>~AR0400~ 5=>~AR4500~ 6=>~AR3802~ 7=>~AR1800~ 8=>~AR5100~ 9=>~AR3900~ 10=>~AR4400~ 11=>~AR3200~ 12=>~AR1900~ 13=>~AR1900~ 14=>~AR2400~ 15=>~AR5300~ 16=>~AR5300~ 17=>~AR4400~ END
-ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_x    BEGIN 0=>1815     1=>1670     2=>1155     3=>3890     4=>4802     5=>1427     6=>232      7=>2796     8=>1312     9=>1671     10=>985      11=>1412     12=>1763     13=>4416     14=>4262     15=>1160     16=>4215     17=>4044     END
-ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_y    BEGIN 0=>2225     1=>3555     2=>490      3=>1200     4=>213      5=>2398     6=>219      7=>3065     8=>539      9=>3042     10=>3220     11=>913      12=>3093     13=>2953     14=>3230     15=>2630     16=>3439     17=>1130     END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_area BEGIN 0=>~AR2900~ 1=>~AR4300~ 2=>~AR2700~ 3=>~AR4000~ 4=>~AR0400~ 5=>~AR4500~ 6=>~AR3802~ 7=>~AR1800~ 8=>~AR5100~ 9=>~AR3900~ 10=>~AR5202~ 11=>~AR3200~ 12=>~AR1900~ 13=>~AR1900~ 14=>~AR2400~ 15=>~AR5300~ 16=>~AR5300~ 17=>~AR4400~ END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_x    BEGIN 0=>1815     1=>1670     2=>1155     3=>3890     4=>4802     5=>1427     6=>232      7=>2796     8=>1312     9=>1671     10=>183      11=>1412     12=>1763     13=>4416     14=>4262     15=>1160     16=>4215     17=>4044     END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_y    BEGIN 0=>2225     1=>3555     2=>490      3=>1200     4=>213      5=>2398     6=>219      7=>3065     8=>539      9=>3042     10=>189      11=>913      12=>3093     13=>2953     14=>3230     15=>2630     16=>3439     17=>1130     END
 
 // 2. Define the NPC Pool
-ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_name BEGIN 0=>~Borda~ 1=>~Meilum~ 2=>~Denak~ 3=>~Kirian~ 4=>~Narcillicus~ 5=>~Sendai~ 6=>~Ludrug~ 7=>~Neville~ 8=>~Baruk~ 9=>~Teyngan~ 10=>~Zargal~ 11=>~Shoal~ 12=>~Zhurlong~ 13=>~Cattack~ 14=>~Arghain~ 14=>~Vax~ 15=>~Zal~ 16=>~Larry~ 17=>~Ioin~ END
-ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_res  BEGIN 0=>~BORDA~ 1=>~MEILUM~ 2=>~DENAK~ 3=>~KIRIAN~ 4=>~NARCIL~      5=>~SENDAI~ 6=>~GNOLL5~ 7=>~NEVILL~  8=>~BARUK~ 9=>~TEYNGA~  10=>~ZARGAL~ 11=>~SHOAL~ 12=>~HOBGZHUR~ 13=>~CATTAC~  14=>~ARGHAI~  14=>~VAX~ 15=>~ZAL~ 16=>~LARRY~ 17=>~CANTO~ END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_name BEGIN 0=>~Borda~ 1=>~Meilum~ 2=>~Denak~ 3=>~Kirian~ 4=>~Narcillicus~ 5=>~Sendai~ 6=>~Ludrug~ 7=>~Neville~ 8=>~Baruk~ 9=>~Teyngan~ 10=>~Zargal~ 11=>~Shoal~ 12=>~Zhurlong~ 13=>~Cattack~ 14=>~Arghain~ 14=>~Vax~ 15=>~Larry~ 16=>~Ioin~ END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_res  BEGIN 0=>~BORDA~ 1=>~MEILUM~ 2=>~DENAK~ 3=>~KIRIAN~ 4=>~NARCIL~      5=>~SENDAI~ 6=>~GNOLL5~ 7=>~NEVILL~  8=>~BARUK~ 9=>~TEYNGA~  10=>~ZARGAL~ 11=>~SHOAL~ 12=>~HOBGZHUR~ 13=>~CATTAC~  14=>~ARGHAI~  14=>~VAX~ 15=>~LARRY~ 16=>~CANTO~ END
 
 OUTER_SET num_locs = 18
-OUTER_SET num_npcs = 18
+OUTER_SET num_npcs = 17
 
 // 3. Initialize Index Array for Shuffling
 OUTER_FOR (i = 0; i < num_locs; i += 1) BEGIN
@@ -541,6 +539,165 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
     INT_VAR px = x py = y
     STR_VAR parea = EVAL ~%area%~ pname = EVAL ~%name%~ pres = EVAL ~%res%~
   END
+  
+  // If the leader is DENAK, pull the rest of the group to the same spot
+  ACTION_IF ("%res%" STRING_EQUAL_CASE "DENAK") BEGIN
+    // Place Brendan
+    LAF PLACE_RANDOM_NPC 
+      INT_VAR px = (x + 25) py = (y + 25) 
+      STR_VAR parea = EVAL ~%area%~ pname = ~Brenda~ pres = ~BRENDA~ 
+    END
+    // Place Lasala
+    LAF PLACE_RANDOM_NPC 
+      INT_VAR px = (x - 25) py = (y + 25) 
+      STR_VAR parea = EVAL ~%area%~ pname = ~Lasala~ pres = ~LASALA~ 
+    END
+    // Place Diana
+    LAF PLACE_RANDOM_NPC 
+      INT_VAR px = (x + 25) py = (y - 25) 
+      STR_VAR parea = EVAL ~%area%~ pname = ~Diana~ pres = ~DIANA~ 
+    END
+  END
+  
+  // If the leader is KIRIAN, pull the rest of the group to the same spot
+  ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "KIRIAN") BEGIN
+    // Place LINDIN
+    LAF PLACE_RANDOM_NPC 
+      INT_VAR px = (x + 30) py = (y + 30) 
+      STR_VAR parea = EVAL ~%area%~ pname = ~Lindin~ pres = ~LINDIN~ 
+    END
+    // Place BAERIN
+    LAF PLACE_RANDOM_NPC 
+      INT_VAR px = (x - 30) py = (y + 30) 
+      STR_VAR parea = EVAL ~%area%~ pname = ~Baerin~ pres = ~BAERIN~ 
+    END
+    // Place PETER
+    LAF PLACE_RANDOM_NPC 
+      INT_VAR px = (x + 30) py = (y - 30) 
+      STR_VAR parea = EVAL ~%area%~ pname = ~Peter~ pres = ~PETER~ 
+    END
+  END
+  
+  // If the leader is SENDAI, pull the rest of the group to the same spot
+  ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "SENDAI") BEGIN
+    // Place ALEXAN
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x + 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Alexander~ pres = ~ALEXAN~
+    END
+    // Place BAERIN
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x - 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Baerin~ pres = ~BAERIN~
+    END
+    // Place PETER
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x + 30) py = (y - 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Peter~ pres = ~PETER~
+    END
+  END
+
+  // If the leader is VAX, pull the rest of the group to the same spot
+  ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "VAX") BEGIN
+    // Place ZAL
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x + 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Zal~ pres = ~ZAL~
+    END
+  END
+
+  // If the leader is LARRY, pull the rest of the group to the same spot
+  ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "LARRY") BEGIN
+    // Place DARRYL
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x + 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Darryl~ pres = ~DARRYL~
+    END
+    // Place DARRYL2
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x - 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Darryl2~ pres = ~DARRYL2~
+    END
+  END
+
+  // If the leader is GNOLL5 (Ludrug), pull the rest of the group to the same spot
+  ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "GNOLL5") BEGIN
+    // Place GNOLL5A x2
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x + 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Gnoll5a~ pres = ~GNOLL5A~
+    END
+	LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x - 30) py = (y - 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Gnoll5a~ pres = ~GNOLL5A~
+    END
+  END
+
+  // If the leader is HOBGZHUR, pull the rest of the group to the same spot
+  ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "HOBGZHUR") BEGIN
+    // Place HOBGOB
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x + 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Hobgob~ pres = ~HOBGOB~
+    END
+    // Place HOBGOB_B
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x - 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Hobgob_b~ pres = ~HOBGOB_B~
+    END
+    // Place HOBGOBA
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x + 30) py = (y - 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Hobgoba~ pres = ~HOBGOBA~
+    END
+  END
+
+  // If the leader is CATTAC, pull the rest of the group to the same spot
+  ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "CATTAC") BEGIN
+    // Place BHOBGOB x7
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x + 15) py = (y + 15)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Bhobgob~ pres = ~BHOBGOB~
+    END
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x - 15) py = (y - 15)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Bhobgob~ pres = ~BHOBGOB~
+    END
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x + 15) py = (y - 15)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Bhobgob~ pres = ~BHOBGOB~
+    END
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x - 15) py = (y + 15)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Bhobgob~ pres = ~BHOBGOB~
+    END
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x + 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Bhobgob~ pres = ~BHOBGOB~
+    END
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x - 30) py = (y - 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Bhobgob~ pres = ~BHOBGOB~
+    END
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x + 30) py = (y - 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Bhobgob~ pres = ~BHOBGOB~
+    END
+  END
+
+  // If the leader is CANTO, pull the rest of the group to the same spot
+  ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "CANTO") BEGIN
+    // Place DRIBBE
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x + 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Dribbe~ pres = ~DRIBBE~
+    END
+    // Place BILLY
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x - 30) py = (y + 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Billy~ pres = ~BILLY~
+    END
+  END
 END
 
 // patch for Neville's hobgoblins
@@ -561,5 +718,24 @@ BUT_ONLY
 COPY_EXISTING ~ARGHAI.DLG~ ~override~
   DECOMPILE_AND_PATCH BEGIN
     REPLACE_TEXTUALLY ~CreateCreature("OGREHA",\[[0-9]+\.[0-9]+\],S)~ ~CreateCreature("OGREHA",[-1.-1],S)~
+  END
+BUT_ONLY
+
+// deactivate trash mob spawn at AR4500 [1488, 2336] as it collides with [1427, 2398]
+PRINT ~Deactivating trash mob spawn at AR4500 [1488, 2336]~
+COPY_EXISTING ~AR4500.are~ ~override~
+  READ_LONG 0x60 spawn_off
+  READ_LONG 0x64 spawn_num
+  SET idx = 0
+  WHILE (idx < spawn_num) BEGIN
+    SET current_spawn = spawn_off + (idx * 200)
+    READ_SHORT (current_spawn + 0x20) spawn_x
+    READ_SHORT (current_spawn + 0x22) spawn_y
+    PATCH_IF (spawn_x = 1488 AND spawn_y = 2336) BEGIN
+      WRITE_SHORT (current_spawn + 0x86) 0
+      SET idx = spawn_num
+    END ELSE BEGIN
+      SET idx = idx + 1
+    END
   END
 BUT_ONLY
