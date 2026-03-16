@@ -1,0 +1,420 @@
+//----------------------- remove actors first -------------------------
+
+// AR3000: DENAK
+COPY_EXISTING ~AR3000.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~DENAK~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+// AR3500: KIRIAN
+COPY_EXISTING ~AR3500.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~KIRIAN~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+// AR4500: MEILUM
+COPY_EXISTING ~AR4500.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~MEILUM~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+// AR5000: NARCILLICUS
+COPY_EXISTING ~AR5000.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~NARCILLICUS~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+// AR5300: SENDAI
+COPY_EXISTING ~AR5300.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~SENDAI~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+// AR5200: LUDRUG
+COPY_EXISTING ~AR5200.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~LUDRUG~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+// AR4700: BORDA
+COPY_EXISTING ~AR4700.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~BORDA~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+// AR4600: NEVILLE
+COPY_EXISTING ~AR4600.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~NEVILLE~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+// AR4100: BARUK
+COPY_EXISTING ~AR4100.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~BARUK~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+// AR4200: TEYNGAN
+COPY_EXISTING ~AR4200.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~TEYNGAN~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+// AR3700: ZARGAL
+COPY_EXISTING ~AR3700.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~ZARGAL~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+// AR3100: SHOAL
+COPY_EXISTING ~AR3100.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~SHOAL~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+// AR3800: ZHURLONG
+COPY_EXISTING ~AR3800.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~ZHURLONG~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+// AR3400: CATTACK
+COPY_EXISTING ~AR3400.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~CATTACK~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+// AR4400: ARGHAIN
+COPY_EXISTING ~AR4400.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  SET found_idx = "-1"
+  FOR (idx = 0; idx < actor_count; ++idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~ARGHAIN~) BEGIN
+      SET found_idx = idx
+      SET idx = actor_count
+    END
+  END
+
+  PATCH_IF (found_idx >= 0) BEGIN
+    LPF fj_are_structure
+      INT_VAR fj_delete_mode = found_idx
+      STR_VAR fj_structure_type = ~actor~
+    END
+  END
+BUT_ONLY
+
+//----------------------- move to random location -------------------------
+
+RANDOM_SEED TIME
+
+DEFINE_ACTION_FUNCTION PLACE_RANDOM_NPC
+  INT_VAR px = 0 py = 0 panim = 0
+  STR_VAR parea = ~~ pname = ~~ pres = ~~
+BEGIN
+  COPY_EXISTING ~%parea%.are~ ~override~
+    LPF fj_are_structure
+      INT_VAR
+        fj_loc_x       = px
+        fj_loc_y       = py
+        fj_dest_x      = px
+        fj_dest_y      = py
+        fj_animation   = panim
+        fj_orientation = 0
+        fj_schedule    = "-1"
+      STR_VAR
+        fj_structure_type = ~actor~
+        fj_name           = EVAL ~%pname%~
+        fj_cre_resref     = EVAL ~%pres%~
+    END
+  BUT_ONLY
+END
+
+// 1. Define the Location Pool
+ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_area BEGIN 0=>~AR2900~ 1=>~AR4300~ 2=>~AR2700~ 3=>~AR4000~ 4=>~AR0400~ 5=>~AR4500~ 6=>~AR3802~ 7=>~AR1800~ 8=>~AR5100~ 9=>~AR3900~ 10=>~AR4400~ 11=>~AR3200~ 12=>~AR1900~ 13=>~AR1900~ 14=>~AR2400~ END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_x    BEGIN 0=>1815     1=>1670     2=>1155     3=>3890     4=>4802     5=>1427     6=>232      7=>2796     8=>1312     9=>1671     10=>985      11=>1412     12=>1763     13=>4416     14=>4262     END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_y    BEGIN 0=>2225     1=>3555     2=>490      3=>1200     4=>213      5=>2398     6=>219      7=>3065     8=>539      9=>3042     10=>3220     11=>913      12=>3093     13=>2953     14=>3230     END
+
+// 2. Define the NPC Pool
+ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_name BEGIN 0=>~Borda~ 1=>~Meilum~ 2=>~Denak~ 3=>~Kirian~ 4=>~Narcillicus~ 5=>~Sendai~ 6=>~Ludrug~ 7=>~Neville~ 8=>~Baruk~ 9=>~Teyngan~ 10=>~Zargal~ 11=>~Shoal~ 12=>~Zhurlong~ 13=>~Cattack~ 14=>~Arghain~ END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_res  BEGIN 0=>~BORDA~ 1=>~MEILUM~ 2=>~DENAK~ 3=>~KIRIAN~ 4=>~NARCIL~      5=>~SENDAI~ 6=>~GNOLL5~ 7=>~NEVILL~  8=>~BARUK~ 9=>~TEYNGA~  10=>~ZARGAL~ 11=>~SHOAL~ 12=>~ZHURLO~   13=>~CATTAC~  14=>~ARGHAI~ END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_anim BEGIN 0=>0x6301  1=>0x7001   2=>0x7001  3=>0x7001   4=>0x7001        5=>0x7001   6=>0x7001   7=>0x7001    8=>0x7001  9=>0x7001    10=>0x7001   11=>0x7001  12=>0x7001     13=>0x7001    14=>0x7001   END
+
+OUTER_SET num_locs = 15
+OUTER_SET num_npcs = 15
+
+// 3. Initialize Index Array for Shuffling
+OUTER_FOR (i = 0; i < num_locs; i += 1) BEGIN
+  OUTER_SET $loc_indices(~%i%~) = i
+END
+
+// 4. Fisher-Yates Shuffle
+RANDOM_SEED TIME
+OUTER_FOR (i = num_locs - 1; i > 0; i -= 1) BEGIN
+  OUTER_SET j = RANDOM(0 i)
+  OUTER_SET temp = $loc_indices(~%i%~)
+  OUTER_SET $loc_indices(~%i%~) = $loc_indices(~%j%~)
+  OUTER_SET $loc_indices(~%j%~) = temp
+END
+
+// 5. Sequential Assignment
+OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
+  // Grab NPC data
+  OUTER_SPRINT name $npc_name(~%i%~)
+  OUTER_SPRINT res  $npc_res(~%i%~)
+  OUTER_SET    anim = $npc_anim(~%i%~)
+
+  // Grab a unique location index from the shuffled list
+  OUTER_SET    s_idx = $loc_indices(~%i%~)
+  OUTER_SPRINT area  $loc_area(~%s_idx%~)
+  OUTER_SET    x     = $loc_x(~%s_idx%~)
+  OUTER_SET    y     = $loc_y(~%s_idx%~)
+
+  PRINT ~Randomizing: %name% is moving to %area% [%x%, %y%]~
+
+  LAF PLACE_RANDOM_NPC
+    INT_VAR px = x py = y panim = anim
+    STR_VAR parea = EVAL ~%area%~ pname = EVAL ~%name%~ pres = EVAL ~%res%~
+  END
+END

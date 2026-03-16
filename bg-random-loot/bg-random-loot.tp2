@@ -110,3 +110,13 @@ BEGIN @1078 DESIGNATED 29
 LABEL ~ww_bg_random_loot_block_respawns~
 
 INCLUDE ~bg-random-loot/lib/block-respawns.tpa~
+
+
+//////////////////////////////////////////////////
+// Component 10: Randomize encounters
+//////////////////////////////////////////////////
+
+BEGIN @1079 DESIGNATED 30
+LABEL ~ww_bg_random_loot_randomize-encounters~
+
+INCLUDE ~bg-random-loot/lib/random-encounters.tpa~

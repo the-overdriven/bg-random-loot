@@ -11,6 +11,7 @@
 @1076 = ~Add random loot to monsters~
 @1077 = ~Remove trash monster loot (i.e. kobold's dagger or hogboglin's leather armor)~
 @1078 = ~Block monster respawns~
+@1079 = ~Randomize encounters~
 
 @1080 = ~Please enter a number for the random seed to randomize base game items (for example, 3):~
 @1081 = ~Please enter a number for the random seed to re-randomize base game items with new items:~
