@@ -1,5 +1,7 @@
 //----------------------- remove actors first -------------------------
 
+PRINT ~Removing NPC from old locations~
+
 // AR3000: DENAK group
 COPY_EXISTING ~AR3000.are~ ~override~
   READ_LONG  0x54 actor_offset
@@ -86,7 +88,7 @@ COPY_EXISTING ~AR5000.are~ ~override~
   FOR (idx = 0; idx < actor_count; ++idx) BEGIN
     SET off = actor_offset + (idx * 0x110)
     READ_ASCII (off + 0x80) cre_resref (8) NULL
-    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~NARCILLICUS~) BEGIN
+    PATCH_IF (~%cre_resref%~ STRING_EQUAL_CASE ~NARCIL~) BEGIN
       SET found_idx = idx
       SET idx = actor_count
     END
@@ -115,7 +117,7 @@ COPY_EXISTING ~AR5300.are~ ~override~
 
     // Use PATCH_MATCH to easily check against a list of resrefs
     PATCH_MATCH ~%cre_resref%~ WITH
-      ~SENDAI~ ~ALEXAN~ ~BAERIN~ ~PETER~ BEGIN
+      ~SENDAI~ ~ALEXAN~ ~BAERIN~ ~PETER~ ~DELGOD~ BEGIN
         LPF fj_are_structure
           INT_VAR fj_delete_mode = idx
           STR_VAR fj_structure_type = ~actor~
@@ -362,7 +364,7 @@ COPY_EXISTING ~AR3100.are~ ~override~
   END
 BUT_ONLY
 
-// AR3800: ZHURLONG group
+// AR3800: ZHURLONG's HOBGOBLIN group
 COPY_EXISTING ~AR3800.are~ ~override~
   READ_LONG  0x54 actor_offset
   READ_SHORT 0x58 actor_count
@@ -497,6 +499,169 @@ COPY_EXISTING ~AR3352.are~ ~override~
   END
 BUT_ONLY
 
+// AR0300: Larze
+COPY_EXISTING ~AR0300.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  // Loop backwards (from last actor to the first) to prevent offset/index shifting issues
+  FOR (idx = actor_count - 1; idx >= 0; --idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    
+    // Convert to uppercase to ensure case-insensitive matching
+    TO_UPPER cre_resref 
+
+    // Use PATCH_MATCH to easily check against a list of resrefs
+    PATCH_MATCH ~%cre_resref%~ WITH
+      ~LARZE~ BEGIN
+        LPF fj_are_structure
+          INT_VAR fj_delete_mode = idx
+          STR_VAR fj_structure_type = ~actor~
+        END
+      END
+      DEFAULT
+        // Do nothing if the actor doesn't match your list
+    END
+  END
+BUT_ONLY
+
+// AR0006: Rinnie
+COPY_EXISTING ~AR0006.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  // Loop backwards (from last actor to the first) to prevent offset/index shifting issues
+  FOR (idx = actor_count - 1; idx >= 0; --idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    
+    // Convert to uppercase to ensure case-insensitive matching
+    TO_UPPER cre_resref 
+
+    // Use PATCH_MATCH to easily check against a list of resrefs
+    PATCH_MATCH ~%cre_resref%~ WITH
+      ~RINNIE~ BEGIN
+        LPF fj_are_structure
+          INT_VAR fj_delete_mode = idx
+          STR_VAR fj_structure_type = ~actor~
+        END
+      END
+      DEFAULT
+        // Do nothing if the actor doesn't match your list
+    END
+  END
+BUT_ONLY
+
+// AR3100: Surgeon
+COPY_EXISTING ~AR3100.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  // Loop backwards (from last actor to the first) to prevent offset/index shifting issues
+  FOR (idx = actor_count - 1; idx >= 0; --idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    
+    // Convert to uppercase to ensure case-insensitive matching
+    TO_UPPER cre_resref 
+
+    // Use PATCH_MATCH to easily check against a list of resrefs
+    PATCH_MATCH ~%cre_resref%~ WITH
+      ~SURGEO~ BEGIN
+        LPF fj_are_structure
+          INT_VAR fj_delete_mode = idx
+          STR_VAR fj_structure_type = ~actor~
+        END
+      END
+      DEFAULT
+        // Do nothing if the actor doesn't match your list
+    END
+  END
+BUT_ONLY
+
+// AR3500: Tamah
+COPY_EXISTING ~AR3500.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  // Loop backwards (from last actor to the first) to prevent offset/index shifting issues
+  FOR (idx = actor_count - 1; idx >= 0; --idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    
+    // Convert to uppercase to ensure case-insensitive matching
+    TO_UPPER cre_resref 
+
+    // Use PATCH_MATCH to easily check against a list of resrefs
+    PATCH_MATCH ~%cre_resref%~ WITH
+      ~TAMAH~ BEGIN
+        LPF fj_are_structure
+          INT_VAR fj_delete_mode = idx
+          STR_VAR fj_structure_type = ~actor~
+        END
+      END
+      DEFAULT
+        // Do nothing if the actor doesn't match your list
+    END
+  END
+BUT_ONLY
+
+// AR4800: Noober
+COPY_EXISTING ~AR4800.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  // Loop backwards (from last actor to the first) to prevent offset/index shifting issues
+  FOR (idx = actor_count - 1; idx >= 0; --idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    
+    // Convert to uppercase to ensure case-insensitive matching
+    TO_UPPER cre_resref 
+
+    // Use PATCH_MATCH to easily check against a list of resrefs
+    PATCH_MATCH ~%cre_resref%~ WITH
+      ~NOOBER~ BEGIN
+        LPF fj_are_structure
+          INT_VAR fj_delete_mode = idx
+          STR_VAR fj_structure_type = ~actor~
+        END
+      END
+      DEFAULT
+        // Do nothing if the actor doesn't match your list
+    END
+  END
+BUT_ONLY
+
+// AR0131: Forthel August
+COPY_EXISTING ~AR0131.are~ ~override~
+  READ_LONG  0x54 actor_offset
+  READ_SHORT 0x58 actor_count
+
+  // Loop backwards (from last actor to the first) to prevent offset/index shifting issues
+  FOR (idx = actor_count - 1; idx >= 0; --idx) BEGIN
+    SET off = actor_offset + (idx * 0x110)
+    READ_ASCII (off + 0x80) cre_resref (8) NULL
+    
+    // Convert to uppercase to ensure case-insensitive matching
+    TO_UPPER cre_resref 
+
+    // Use PATCH_MATCH to easily check against a list of resrefs
+    PATCH_MATCH ~%cre_resref%~ WITH
+      ~FORTHE~ BEGIN
+        LPF fj_are_structure
+          INT_VAR fj_delete_mode = idx
+          STR_VAR fj_structure_type = ~actor~
+        END
+      END
+      DEFAULT
+        // Do nothing if the actor doesn't match your list
+    END
+  END
+BUT_ONLY
+
+
 //----------------------- move to random location -------------------------
 
 RANDOM_SEED TIME
@@ -522,16 +687,16 @@ BEGIN
   BUT_ONLY
 END
 
-ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_area BEGIN 0=>~AR2900~ 1=>~AR4300~ 2=>~AR2700~ 3=>~AR4000~ 4=>~AR0400~ 5=>~AR4500~ 6=>~AR3802~ 7=>~AR1800~ 8=>~AR5100~ 9=>~AR3900~ 10=>~AR5202~ 11=>~AR3200~ 12=>~AR1900~ 13=>~AR1900~ 14=>~AR2400~ 15=>~AR5300~ 16=>~AR5300~ 17=>~AR4400~ 18=>~AR3352~ 19=>~AR2303~ 20=>~AR5100~ 21=>~AR5100~ 22=>~AR5200~ 23=>~AR4900~ END
-ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_x    BEGIN 0=>1815     1=>1670     2=>1155     3=>3890     4=>4802     5=>1427     6=>232      7=>2796     8=>1312     9=>1671     10=>183      11=>1412     12=>1763     13=>4416     14=>4262     15=>1160     16=>4215     17=>4044     18=>406      19=>1188     20=>255      21=>4153     22=>2636     23=>3595     END
-ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_y    BEGIN 0=>2225     1=>3555     2=>490      3=>1200     4=>213      5=>2398     6=>219      7=>3065     8=>539      9=>3042     10=>189      11=>913      12=>3093     13=>2953     14=>3230     15=>2630     16=>3439     17=>1130     18=>764      19=>761      20=>3585     21=>3155     22=>1160     23=>1190     END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_area BEGIN 0=>~AR2900~  1=>~AR4300~  2=>~AR2700~  3=>~AR4000~  4=>~AR0400~  5=>~AR4500~  6=>~AR3802~  7=>~AR1800~  8=>~AR5100~  9=>~AR3900~  10=>~AR5202~ 11=>~AR3200~ 12=>~AR1900~ 13=>~AR1900~ 14=>~AR2400~ 15=>~AR5300~ 16=>~AR5300~ 17=>~AR4400~ 18=>~AR3352~ 19=>~AR2303~ 20=>~AR5100~ 21=>~AR5100~ 22=>~AR5200~ 23=>~AR4900~ 24=>~AR3000~ 25=>~AR5300~ 26=>~AR4200~ 27=>~AR3700~ 28=>~AR3100~ 29=>~AR3338~ 30=>~AR4700~ 31=>~AR0118~ 32=>~AR5000~ END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_x    BEGIN 0=>1815      1=>1670      2=>1155      3=>3890      4=>4802      5=>1427      6=>232       7=>2796      8=>1312      9=>1671      10=>183      11=>1412     12=>1763     13=>4416     14=>4262     15=>1160     16=>4215     17=>4044     18=>406      19=>1188     20=>255      21=>4153     22=>2636     23=>3595     24=>1869     25=>2540     26=>800      27=>1715     28=>2864     29=>422      30=>780      31=>301      32=>3296     END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_y    BEGIN 0=>2225      1=>3555      2=>490       3=>1200      4=>213       5=>2398      6=>219       7=>3065      8=>539       9=>3042      10=>189      11=>913      12=>3093     13=>2953     14=>3230     15=>2630     16=>3439     17=>1130     18=>764      19=>761      20=>3585     21=>3155     22=>1160     23=>1190     24=>2019     25=>1444     26=>1685     27=>1515     28=>3254     29=>322      30=>2760     31=>322      32=>2323     END
 
 // 2. Define the NPC Pool
-ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_name BEGIN 0=>~Borda~ 1=>~Meilum~ 2=>~Denak~ 3=>~Kirian~ 4=>~Narcillicus~ 5=>~Sendai~ 6=>~Ludrug~ 7=>~Neville~ 8=>~Baruk~ 9=>~Teyngan~ 10=>~Zargal~ 11=>~Shoal~ 12=>~Zhurlong~ 13=>~Cattack~ 14=>~Arghain~ 14=>~Vax~ 15=>~Larry~ 16=>~Ioin~  17=>~Algernon~ END
-ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_res  BEGIN 0=>~BORDA~ 1=>~MEILUM~ 2=>~DENAK~ 3=>~KIRIAN~ 4=>~NARCIL~      5=>~SENDAI~ 6=>~GNOLL5~ 7=>~NEVILL~  8=>~BARUK~ 9=>~TEYNGA~  10=>~ZARGAL~ 11=>~SHOAL~ 12=>~HOBGZHUR~ 13=>~CATTAC~  14=>~ARGHAI~  14=>~VAX~ 15=>~LARRY~ 16=>~CANTO~ 17=>~ALGERN~   END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_name BEGIN 0=>~Borda~ 1=>~Meilum~ 2=>~Denak~ 3=>~Kirian~ 4=>~Narcillicus~ 5=>~Sendai~ 6=>~Ludrug~ 7=>~Neville~ 8=>~Baruk~ 9=>~Teyngan~ 10=>~Zargal~ 11=>~Shoal~ 12=>~HOBGZHUR~ 13=>~Cattack~ 14=>~Arghain~ 14=>~Vax~ 15=>~Larry~ 16=>~Ioin~  17=>~Algernon~ 18=>~Larze~ 19=>~Rinnie~ 20=>~Surgeon~ 21=>~Tamah~ 22=>~Forthel~ 23=>~Noober~ 24=>~Cow~ 25=>~Cat~ END
+ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_res  BEGIN 0=>~BORDA~ 1=>~MEILUM~ 2=>~DENAK~ 3=>~KIRIAN~ 4=>~NARCIL~      5=>~SENDAI~ 6=>~GNOLL5~ 7=>~NEVILL~  8=>~BARUK~ 9=>~TEYNGA~  10=>~ZARGAL~ 11=>~SHOAL~ 12=>~HOBGZHUR~ 13=>~CATTAC~  14=>~ARGHAI~  14=>~VAX~ 15=>~LARRY~ 16=>~CANTO~ 17=>~ALGERN~   18=>~LARZE~ 19=>~RINNIE~ 20=>~SURGEO~  21=>~TAMAH~ 22=>~FORTHE~ 23=>~NOOBER~ 24=>~COW~ 25=>~CAT~ END
 
-OUTER_SET num_locs = 24 // TODO: add some old locations
-OUTER_SET num_npcs = 18
+OUTER_SET num_locs = 33
+OUTER_SET num_npcs = 26
 
 // 3. Initialize Index Array for Shuffling
 OUTER_FOR (i = 0; i < num_locs; i += 1) BEGIN
@@ -620,6 +785,11 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
     LAF PLACE_RANDOM_NPC
       INT_VAR px = (x + 30) py = (y - 30)
       STR_VAR parea = EVAL ~%area%~ pname = ~Peter~ pres = ~PETER~
+    END
+    // Place DELGOD
+    LAF PLACE_RANDOM_NPC
+      INT_VAR px = (x - 30) py = (y - 30)
+      STR_VAR parea = EVAL ~%area%~ pname = ~Delgod~ pres = ~DELGOD~
     END
   END
 
@@ -782,6 +952,22 @@ COPY_EXISTING ~NARCIL.DLG~ ~override~
   DECOMPILE_AND_PATCH BEGIN
     REPLACE_TEXTUALLY ~CreateCreature("JELLYGR",\[[0-9]+\.[0-9]+\],S)~ ~CreateCreature("JELLYGR",[-1.-1],S)~
 	REPLACE_TEXTUALLY ~CreateCreature("JELLMU",\[[0-9]+\.[0-9]+\],S)~ ~CreateCreature("JELLMU",[-1.-1],S)~
+  END
+BUT_ONLY
+
+// dialogue patch for Larze (don't mention Baldur's Gate city)
+COPY_EXISTING ~LARZE.DLG~ ~override~
+  // 1. Create the new string and get its new StrRef number
+  SET new_strref = RESOLVE_STR_REF (~Huurm. I be Larze. You be <CHARNAME>. Don't try deny it. You should not have come here. You given many warning before, but you ignore them. Now you must pay. Sorry, but Larze must kill.~)
+
+  // 2. Search the DLG for the old StrRef and replace it
+  READ_LONG 0x08 state_count
+  READ_LONG 0x0c state_offset
+  FOR (i = 0; i < state_count; i += 1) BEGIN
+    READ_LONG (state_offset + (i * 0x10)) current_strref
+    PATCH_IF (current_strref = 18259) BEGIN
+      WRITE_LONG (state_offset + (i * 0x10)) new_strref
+    END
   END
 BUT_ONLY
 
