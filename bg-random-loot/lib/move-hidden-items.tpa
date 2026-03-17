@@ -27,7 +27,7 @@ COPY_EXISTING ~AR5300.are~ ~override~	// Removes Chromatic Orb and Cloudkill
 BUT_ONLY
 
 COPY_EXISTING ~AR5500.are~ ~override~	// Removes Ring of Fire Resistance
-	LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "BDRING12" END 
+	LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "RING02" END 
 BUT_ONLY
 
 COPY_EXISTING ~AR4400.are~ ~override~	// Removes water opal
@@ -67,7 +67,7 @@ COPY_EXISTING ~HALACA.cre~ ~override~
 BUT_ONLY
 
 COPY_EXISTING ~ZEELA.cre~ ~override~
-  ADD_CRE_ITEM ~BDRING12~ #1 #0 #0 ~NONE~ ~LRING~ EQUIP
+  ADD_CRE_ITEM ~RING02~ #1 #0 #0 ~NONE~ ~LRING~ EQUIP
 BUT_ONLY
 
 COPY_EXISTING ~TELKA.cre~ ~override~
