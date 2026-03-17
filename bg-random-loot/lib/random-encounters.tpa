@@ -691,22 +691,17 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
   
   // If the leader is SENDAI, pull the rest of the group to the same spot
   ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "SENDAI") BEGIN
-    // Place ALEXAN
+    // Place Alexander
     LAF PLACE_RANDOM_NPC
       INT_VAR px = (x + 30) py = (y + 30)
       STR_VAR parea = EVAL ~%area%~ pname = ~Alexander~ pres = ~ALEXAN~
     END
-    // Place BAERIN
-    LAF PLACE_RANDOM_NPC
-      INT_VAR px = (x - 30) py = (y + 30)
-      STR_VAR parea = EVAL ~%area%~ pname = ~Baerin~ pres = ~BAERIN~
-    END
-    // Place PETER
+    // Place Peter
     LAF PLACE_RANDOM_NPC
       INT_VAR px = (x + 30) py = (y - 30)
       STR_VAR parea = EVAL ~%area%~ pname = ~Peter~ pres = ~PETER~
     END
-    // Place DELGOD
+    // Place Delgod
     LAF PLACE_RANDOM_NPC
       INT_VAR px = (x - 30) py = (y - 30)
       STR_VAR parea = EVAL ~%area%~ pname = ~Delgod~ pres = ~DELGOD~
