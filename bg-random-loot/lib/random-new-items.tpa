@@ -3,7 +3,7 @@
 // change RANDOM_SEED if you want a different random arrangement
 // warning: changing midgame will change your equipped items
 // warning: adding more items to item pools will also do that
-PRINT @1081
+PRINT @1068
 ACTION_READLN user_seed
 
 // Use the variable provided by the user
@@ -265,7 +265,7 @@ COPY_RANDOM
      ~DAGG02.ITM~ // dagger +1
      ~SHLD17.ITM~ // buckler +1
      ~CLCK09.ITM~ // Mage Robe of...
-     ~CLCK11.ITM~ // Mage Robe of...
+     ~CLCK10.ITM~ // Mage Robe of...
      ~CLCK11.ITM~ // Mage Robe of...
      ~CLCK13.ITM~ // traveler's robe
      ~CLCK01.ITM~ // cloak of protection +1
