@@ -136,6 +136,8 @@ COPY_RANDOM
      ~SW1H09.ITM~ // The Whistling Sword +2
      ~BOOT05.ITM~ // The Boots of Grounding
      ~SW1H24.ITM~ // long sword +1 (+2 vs regenerating creatures, +3 vs cold-using creatures, +4 vs undead)
+     ~BRAC04.ITM~ // The Dale's Protector (THAC0: +2 with missile weapons)
+     ~BOOT03.ITM~ // The Frost's Embrace (+50% cold res)
      //------------------------------------NEW ITEMS--------------------------------------
      // might be sold by Black Lily (half of them, meaning half amount of new items will never spawn)
      ~RINGELF.ITM~
@@ -210,6 +212,8 @@ COPY_RANDOM
      // ~BAG31.ITM~ // Bag of Holding - do not try! it will crash the game
      ~PLAT24.ITM~ // EE The Magma Bulwark +2
      ~RING22.ITM~ // Honorary Ring of Sune
+     ~HELM04.ITM~ // Gift of Peace
+     ~RING08.ITM~ // Evermemory
 
      // tomes
      ~BOOK03.ITM~ // con
