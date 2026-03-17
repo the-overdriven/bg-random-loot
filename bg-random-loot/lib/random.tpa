@@ -163,6 +163,7 @@ COPY_RANDOM
      ~SW1H24.ITM~ // long sword +1 (+2 vs regenerating creatures, +3 vs cold-using creatures, +4 vs undead)
      ~BRAC04.ITM~ // The Dale's Protector (THAC0: +2 with missile weapons)
      ~BOOT03.ITM~ // The Frost's Embrace (+50% cold res)
+     ~BLUN39.ITM~ // EE The Thresher +2
 
 // _______________________________________________________________________________________
 
@@ -177,7 +178,6 @@ COPY_RANDOM
      ~PLAT04.ITM~ // Full Plate Armor
      ~LEAT08.ITM~ // Shadow Armor +3
      ~MISC75.ITM~ // Dagger of Venom +2
-     ~BLUN39.ITM~ // EE The Thresher +2
      ~CLCK03.ITM~ // Cloak of Displacement
      ~STAF08.ITM~ // Aule'a Staff +3
      ~MISC2P.ITM~ // the captive audience
