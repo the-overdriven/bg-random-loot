@@ -20,7 +20,7 @@ LANGUAGE
 BEGIN @1069 DESIGNATED 21
 LABEL ~ww_bg_random_loot~
 
-PRINT @1068
+PRINT @1066
 
 INCLUDE ~bg-random-loot/lib/random.tpa~
 
