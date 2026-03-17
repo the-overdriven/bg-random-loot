@@ -120,3 +120,12 @@ BEGIN @1079 DESIGNATED 30
 LABEL ~ww_bg_random_loot_randomize-encounters~
 
 INCLUDE ~bg-random-loot/lib/random-encounters.tpa~
+
+//////////////////////////////////////////////////
+// Component 11: Move hidden free items
+//////////////////////////////////////////////////
+
+BEGIN @1080 DESIGNATED 31
+LABEL ~ww_bg_random_loot_move_hidden~
+
+INCLUDE ~bg-random-loot/lib/move-hidden-items.tpa~

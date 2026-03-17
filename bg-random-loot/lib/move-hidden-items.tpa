@@ -1,0 +1,171 @@
+// 1. remove hidden items
+
+COPY_EXISTING ~AR2700.are~ ~override~	// Removes MISC42 (diamond)
+	LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "MISC42" END 
+BUT_ONLY
+
+COPY_EXISTING ~AR2800.are~ ~override~	// Removes RING06 (Ring of Protection +1)
+	LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "RING06" END 
+BUT_ONLY
+
+COPY_EXISTING ~AR2300.are~ ~override~	// Removes RING08 (Evermemory)
+	LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "RING08" END 
+BUT_ONLY
+
+COPY_EXISTING ~AR5400.are~ ~override~	// Removes WAND06 (Wand of Frost)
+	LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "WAND06" END 
+BUT_ONLY
+
+COPY_EXISTING ~AR4800.are~ ~override~	// Removes PLAT06 (Ankheg plate mail) and pearl
+	LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "PLAT06" END 
+	LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "MISC36" END 
+BUT_ONLY
+
+COPY_EXISTING ~AR5300.are~ ~override~	// Removes Chromatic Orb and Cloudkill
+	LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "SCRL83" END 
+	LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "SCRL2E" END 
+BUT_ONLY
+
+COPY_EXISTING ~AR5500.are~ ~override~	// Removes Ring of Fire Resistance
+	LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "BDRING12" END 
+BUT_ONLY
+
+COPY_EXISTING ~AR4400.are~ ~override~	// Removes water opal
+	LPF DELETE_AREA_ITEM STR_VAR item_to_delete = "MISC39" END 
+BUT_ONLY
+
+// 2. assign removed items to enemies
+
+COPY_EXISTING ~TARNES.cre~ ~override~
+  ADD_CRE_ITEM ~MISC42~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+BUT_ONLY
+
+COPY_EXISTING ~KARLAT.cre~ ~override~
+  ADD_CRE_ITEM ~RING06~ #1 #0 #0 ~NONE~ ~LRING~ EQUIP
+BUT_ONLY
+
+COPY_EXISTING ~NEIRA.cre~ ~override~
+  ADD_CRE_ITEM ~RING08~ #1 #0 #0 ~NONE~ ~LRING~ EQUIP
+BUT_ONLY
+
+COPY_EXISTING ~NIMBUL.cre~ ~override~
+  ADD_CRE_ITEM ~WAND06~ #1 #0 #0 ~NONE~ ~INV~
+BUT_ONLY
+
+COPY_EXISTING ~MORVIN.cre~ ~override~
+  REMOVE_CRE_ITEM ~CHAN01~
+  REMOVE_CRE_ITEM ~CHAN04~
+  ADD_CRE_ITEM ~PLAT06~ #1 #0 #0 ~IDENTIFIED~ ~ARMOR~ EQUIP
+BUT_ONLY
+
+COPY_EXISTING ~DRAKAR.cre~ ~override~
+  ADD_CRE_ITEM ~MISC36~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+BUT_ONLY
+
+COPY_EXISTING ~HALACA.cre~ ~override~
+  ADD_CRE_ITEM ~SCRL83~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+BUT_ONLY
+
+COPY_EXISTING ~ZEELA.cre~ ~override~
+  ADD_CRE_ITEM ~BDRING12~ #1 #0 #0 ~NONE~ ~LRING~ EQUIP
+BUT_ONLY
+
+COPY_EXISTING ~TELKA.cre~ ~override~
+  ADD_CRE_ITEM ~MISC39~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+BUT_ONLY
+
+COPY_EXISTING ~LARZE.cre~ ~override~
+  ADD_CRE_ITEM ~SCRL2E~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+BUT_ONLY
+
+// 3. add items to hidden containers
+
+COPY_EXISTING ~AR2700.are~ ~override~
+  LPF ADD_AREA_ITEM 
+    INT_VAR 
+    container_to_add_to = 1 
+    STR_VAR 
+    item_to_add = ~RNDLOOT4~ 
+  END
+BUT_ONLY
+
+COPY_EXISTING ~AR2800.are~ ~override~
+  LPF ADD_AREA_ITEM 
+    INT_VAR 
+    container_to_add_to = 3 
+    STR_VAR 
+    item_to_add = ~RNDLOOT4~ 
+  END
+BUT_ONLY
+
+COPY_EXISTING ~AR2300.are~ ~override~
+  LPF ADD_AREA_ITEM 
+    INT_VAR 
+    container_to_add_to = 1 
+    STR_VAR 
+    item_to_add = ~RNDLOOT4~ 
+  END
+BUT_ONLY
+
+COPY_EXISTING ~AR5400.are~ ~override~
+  LPF ADD_AREA_ITEM 
+    INT_VAR 
+    container_to_add_to = 1 
+    STR_VAR 
+    item_to_add = ~RNDLOOT4~ 
+  END
+BUT_ONLY
+
+COPY_EXISTING ~AR4800.are~ ~override~
+  LPF ADD_AREA_ITEM 
+    INT_VAR 
+    container_to_add_to = 7
+    STR_VAR 
+    item_to_add = ~RNDLOOT4~ 
+  END
+BUT_ONLY
+
+COPY_EXISTING ~AR5300.are~ ~override~
+  LPF ADD_AREA_ITEM 
+    INT_VAR 
+    container_to_add_to = 1 
+    STR_VAR 
+    item_to_add = ~RNDLOOT4~ 
+  END
+  LPF ADD_AREA_ITEM 
+    INT_VAR 
+    container_to_add_to = 1 
+    STR_VAR 
+    item_to_add = ~SCRL6Z~ 
+  END
+BUT_ONLY
+
+COPY_EXISTING ~AR5500.are~ ~override~
+  LPF ADD_AREA_ITEM 
+    INT_VAR 
+    container_to_add_to = 1 
+    STR_VAR 
+    item_to_add = ~RNDLOOT4~ 
+  END
+  LPF ADD_AREA_ITEM 
+    INT_VAR 
+    container_to_add_to = 1 
+    STR_VAR 
+    item_to_add = ~SCRL6Y~ 
+  END
+BUT_ONLY
+
+COPY_EXISTING ~AR4400.are~ ~override~
+  LPF ADD_AREA_ITEM 
+    INT_VAR 
+    container_to_add_to = 1 
+    STR_VAR 
+    item_to_add = ~RNDLOOT4~ 
+  END
+  LPF ADD_AREA_ITEM 
+    INT_VAR 
+    container_to_add_to = 1 
+    STR_VAR 
+    item_to_add = ~SCRL6X~ 
+  END
+BUT_ONLY
