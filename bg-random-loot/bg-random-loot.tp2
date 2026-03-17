@@ -1,7 +1,7 @@
 BACKUP ~weidu_external/bg-random-loot/backup~
 SUPPORT ~https://www.nexusmods.com/baldursgate/mods/107~
 
-VERSION ~v3.0~
+VERSION ~v4.0~
 
 README ~bg-random-loot/readme-bg-random-loot.url~
   
@@ -110,7 +110,6 @@ BEGIN @1078 DESIGNATED 29
 LABEL ~ww_bg_random_loot_block_respawns~
 
 INCLUDE ~bg-random-loot/lib/block-respawns.tpa~
-
 
 //////////////////////////////////////////////////
 // Component 10: Randomize encounters

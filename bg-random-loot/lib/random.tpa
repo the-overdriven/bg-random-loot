@@ -275,6 +275,8 @@ COPY_RANDOM
      ~BRAC01.ITM~ // Bracers of Defense AC 8
      ~BRAC02.ITM~ // Bracers of Defense AC 7
      ~AMUL14.ITM~ // protector +1
+     ~MISC2M.ITM~ // stone
+     ~MISC2J.ITM~ // stone
 
 // _______________________________________________________________________________________
 
