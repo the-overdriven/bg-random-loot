@@ -1,5 +1,52 @@
-COPY ~bg-random-loot/sto/STO4803.STO~ ~override~
-COPY ~bg-random-loot/sto/STO4901.STO~ ~override~
-COPY ~bg-random-loot/sto/STO4908.STO~ ~override~
-COPY ~bg-random-loot/sto/STO4909.STO~ ~override~
-COPY ~bg-random-loot/sto/STOBLACK.STO~ ~override~ // AR0153
+// AR0153 (Black Lily)
+COPY_EXISTING ~STOBLACK.STO~ ~override~
+  
+  // Loop for the items with 1 in stock
+  PATCH_FOR_EACH item IN
+    ~CLCK01~ ~BOOTFOX~ ~WATCHER~ ~MYSTERY~ ~SLNG11~ ~AMULDEF~ 
+    ~RINGELF~ ~VALIANT~ ~JHOSWD2~ ~REDEMT~ ~CAIRN~ ~SPINE~ 
+    ~J2HAXE~ ~LONESOM~ ~CELEBRA~ ~U1HAX3B~ ~EREVAIN~ ~SPENSTAF~ 
+  BEGIN
+    ADD_STORE_ITEM ~%item%~ #0 #0 #0 ~IDENTIFIED&UNSTEALABLE~ #1
+  END
+
+  // Special case for SERPSCA with 15 in stock
+  ADD_STORE_ITEM ~SERPSCA~ #0 #0 #0 ~IDENTIFIED&UNSTEALABLE~ #15
+BUT_ONLY
+
+// AR4803 (Nashkel)
+COPY_EXISTING ~STO4803.STO~ ~override~
+  PATCH_FOR_EACH item IN 
+    ~ELFGLOV~ ~RLHALB02~ ~RLBLUN05~ ~RLSW1H44~ ~RLBLUN07~
+  BEGIN
+    ADD_STORE_ITEM ~%item%~ #0 #0 #0 ~IDENTIFIED&UNSTEALABLE~ #1
+  END
+  ADD_STORE_ITEM ~SERPSCA~ #0 #0 #0 ~IDENTIFIED&UNSTEALABLE~ #10
+BUT_ONLY
+
+// STO4901 (carnival)
+COPY_EXISTING ~STO4901.STO~ ~override~
+  PATCH_FOR_EACH item IN 
+    ~RLSTAF02~ ~RLSPER02~
+  BEGIN
+    ADD_STORE_ITEM ~%item%~ #0 #0 #0 ~IDENTIFIED&UNSTEALABLE~ #1
+  END
+BUT_ONLY
+
+// STO4908 (carnival)
+COPY_EXISTING ~STO4908.STO~ ~override~
+  PATCH_FOR_EACH item IN 
+    ~RLSW1H22~ ~RLSW1H02~
+  BEGIN
+    ADD_STORE_ITEM ~%item%~ #0 #0 #0 ~IDENTIFIED&UNSTEALABLE~ #1
+  END
+BUT_ONLY
+
+// STO4909 (carnival)
+COPY_EXISTING ~STO4909.STO~ ~override~
+  PATCH_FOR_EACH item IN 
+    ~RLSW1H47~ ~RLSW1H49~
+  BEGIN
+    ADD_STORE_ITEM ~%item%~ #0 #0 #0 ~IDENTIFIED&UNSTEALABLE~ #1
+  END
+BUT_ONLY
