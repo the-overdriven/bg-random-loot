@@ -240,14 +240,15 @@ COPY_RANDOM
 
 // _______________________________________________________________________________________
 
-// less powerful items 
+// less powerful items (no uniques)
 COPY_RANDOM 
-     // items that don't appear in game (to reduce item spam)
-     // some of these items won't appear in game at all
+     // items that don't appear in game or are useless
      ~MISC61.ITM~ // wine
      // ~MISC91.ITM~ // grapes
      ~MISC02.ITM~ // mirror
      ~MISC74.ITM~ // candle
+     ~MISC2M.ITM~ // stone
+     ~MISC2J.ITM~ // stone
      // ~BDMISC40.ITM~ // sack of grain
      // OTHER
      ~WAND12.ITM~ // magic missiles
@@ -275,8 +276,6 @@ COPY_RANDOM
      ~BRAC01.ITM~ // Bracers of Defense AC 8
      ~BRAC02.ITM~ // Bracers of Defense AC 7
      ~AMUL14.ITM~ // protector +1
-     ~MISC2M.ITM~ // stone
-     ~MISC2J.ITM~ // stone
 
 // _______________________________________________________________________________________
 
