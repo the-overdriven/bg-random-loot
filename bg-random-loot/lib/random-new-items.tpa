@@ -255,7 +255,7 @@ COPY_RANDOM
 
 // less powerful items (no uniques)
 COPY_RANDOM 
-     // items that don't appear in game or are useless
+     // items that don't appear in game and/or useless
      ~MISC61.ITM~ // wine
      // ~MISC91.ITM~ // grapes
      ~MISC02.ITM~ // mirror
@@ -267,7 +267,6 @@ COPY_RANDOM
      ~WAND12.ITM~ // magic missiles
      ~WAND03.ITM~ // magic missiles
      ~HELM05.ITM~ // helm of infravision
-     ~DAGG02.ITM~ // dagger +1
      ~SHLD17.ITM~ // buckler +1
      ~CLCK09.ITM~ // Mage Robe of...
      ~CLCK10.ITM~ // Mage Robe of...
