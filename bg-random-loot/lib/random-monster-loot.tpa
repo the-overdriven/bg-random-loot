@@ -1,5 +1,4 @@
 COPY ~bg-random-loot/monsters/rndtreas.2da~ ~override~
-COPY ~bg-random-loot/monsters/rndtres.2da~ ~override~
 COPY ~bg-random-loot/monsters/RNDMEL1.ITM~ ~override~
 COPY ~bg-random-loot/monsters/RNDMEL2.ITM~ ~override~
 COPY ~bg-random-loot/monsters/RNDMEL3.ITM~ ~override~
@@ -14,6 +13,21 @@ COPY ~bg-random-loot/monsters/RNDMEL4.ITM~ ~override~
 // RNDMID1 -> RNDMID2
 // RNDMEL1 -> RNDMEL2
 // RNDMEL3 -> RNDMEL4
+
+APPEND ~rndtres.2da~ 
+~
+RNDMEL1 RNDMEL2   RNDMEL2   RNDMEL2   DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK
+RNDMEL2 111       112       113       114       115       116       117       118       119       120       121       122       123       124       125       126       127       128       SW1H05    SW1H08    SW1H22    SW1H24    SW1H44    SW1H47    SW1H49    SW1H79    SW2H02    RLBLUN05  RLHALB02  RLSPER02  RLSTAF02  RLSW1H22  RLSW1H02  RLSW1H44  RLSW1H47  RLSW1H49  137       138       139       140
+
+RNDMEL3  RNDMEL4   RNDMEL4   RNDMEL4   DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK
+RNDMEL4  45        AX1H02    AX1H19    BLUN03    BLUN05    BLUN07    BLUN10    BLUN36    BLUN38    BLUN41    DAGG02    DAGG09    HALB02    HAMM02    HAMM04    SPER02    SW1H02    SW1H03    46        47        48        49        50        51        52        53        54        55        56        57        58        59        60        61        62        63        64        65        66        67
+
+RNDLOOT2 AROW02*3  BOLT02*3  BULL02*3  DART02*3  AROW02*4  BOLT02*4  BULL02*4  DART02*4  POTN20    MISC61    MISC74    13        14        15        16        17        18        19        20        21        22        23        24        25        26        27        28        29        30        31        32        33        34        35        36        37        38        39        40        41
+RNDLOOT3 AROW02*3  BOLT02*3  BULL02*3  DART02*3  AROW02*4  BOLT02*4  BULL02*4  DART02*4  POTN20    MISC61    MISC02    MISC74    45        46        47        48        49        50        51        52        53        54        55        56        57        58        59        60        61        62        63        64        65        66        67        68        69        70        71        72
+RNDLOOT4 AROW02*3  BOLT02*3  BULL02*3  DART02*3  AROW02*4  BOLT02*4  BULL02*4  DART02*4  POTN20    MISC61    MISC02    MISC74    MISC2M    MISC2J    78        79        80        81        82        83        84        85        86        87        88        89        90        91        92        93        94        95        96        97        98        99        100       101       102       103
+
+RNDMID1  RNDMID2   RNDMID2   RNDMID2   DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK  DW#BLANK
+RNDMID2  MISC61    MISC02    MISC74    WAND12    WAND03    HELM05    DAGG02    SHLD17    CLCK09    CLCK11    CLCK11    CLCK13    CLCK01    CLCK04    CLCK06    RING21    SLNG02    BRAC07    RING06    CLCK04    CLCK06    RING21    SLNG02    BRAC07    ELFGLOV   30        31        32        33        34        35        36        37        38        39        40        41        42        43        44      ~ UNLESS ~RNDMEL1~
 
 // strong (weapons +1)
 ACTION_FOR_EACH creature IN ~WYVERN~ ~WYVERNBI~ ~SKELWA~ ~GOLEMF~ ~GOLEMF2~ ~BASILG~ ~BASILL~ BEGIN
