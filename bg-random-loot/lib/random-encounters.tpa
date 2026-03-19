@@ -611,19 +611,18 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_area BEGIN 0=>~AR2900~ 1=>~AR4300~ 2=>~AR270
 ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_x    BEGIN 0=>1815     1=>1670     2=>1155     3=>3890     4=>4802     5=>1427     6=>232      7=>2796     8=>1312     9=>1671     10=>183      11=>1412     12=>1763     13=>4416     14=>4262     15=>1160     16=>4215     17=>4044     18=>406      19=>1188     20=>255      21=>4153     22=>2636     23=>3595     24=>1869     25=>2540     26=>800      27=>1715     28=>2864     29=>422      30=>780      31=>301      32=>3296     33=>4062     34=>1800     END
 ACTION_DEFINE_ASSOCIATIVE_ARRAY loc_y    BEGIN 0=>2225     1=>3555     2=>490      3=>1200     4=>213      5=>2398     6=>219      7=>3065     8=>539      9=>3042     10=>189      11=>913      12=>3093     13=>2953     14=>3230     15=>2630     16=>3439     17=>1130     18=>764      19=>761      20=>3585     21=>3155     22=>1160     23=>1190     24=>2019     25=>1444     26=>1685     27=>1515     28=>3254     29=>322      30=>2760     31=>322      32=>2323     33=>1013     34=>2555     END
 
-// 2. Define the NPC Pool
 ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_name BEGIN 0=>~Borda~ 1=>~Meilum~ 2=>~Denak~ 3=>~Kirian~ 4=>~Narcillicus~ 5=>~Sendai~ 6=>~Ludrug~ 7=>~Neville~ 8=>~Baruk~ 9=>~Teyngan~ 10=>~Zargal~ 11=>~Shoal~ 12=>~HOBGZHUR~ 13=>~Cattack~ 14=>~Arghain~ 14=>~Vax~ 15=>~Larry~ 16=>~Ioin~  17=>~Algernon~ 18=>~Larze~ 19=>~Rinnie~ 20=>~Surgeon~ 21=>~Tamah~ 22=>~Forthel~ 23=>~Noober~ 24=>~Bos~ 25=>~Felis~ END
 ACTION_DEFINE_ASSOCIATIVE_ARRAY npc_res  BEGIN 0=>~BORDA~ 1=>~MEILUM~ 2=>~DENAK~ 3=>~KIRIAN~ 4=>~NARCIL~      5=>~SENDAI~ 6=>~GNOLL5~ 7=>~NEVILL~  8=>~BARUK~ 9=>~TEYNGA~  10=>~ZARGAL~ 11=>~SHOAL~ 12=>~HOBGZHUR~ 13=>~CATTAC~  14=>~ARGHAI~  14=>~VAX~ 15=>~LARRY~ 16=>~CANTO~ 17=>~ALGERN~   18=>~LARZE~ 19=>~RINNIE~ 20=>~SURGEO~  21=>~TAMAH~ 22=>~FORTHE~  23=>~NOOBER~ 24=>~COW~ 25=>~CAT~   END
 
 OUTER_SET num_locs = 35
 OUTER_SET num_npcs = 26
 
-// 3. Initialize Index Array for Shuffling
+// Initialize Index Array for Shuffling
 OUTER_FOR (i = 0; i < num_locs; i += 1) BEGIN
   OUTER_SET $loc_indices(~%i%~) = i
 END
 
-// 4. Fisher-Yates Shuffle
+// Fisher-Yates Shuffle
 RANDOM_SEED TIME
 OUTER_FOR (i = num_locs - 1; i > 0; i -= 1) BEGIN
   OUTER_SET j = RANDOM(0 i)
@@ -632,7 +631,7 @@ OUTER_FOR (i = num_locs - 1; i > 0; i -= 1) BEGIN
   OUTER_SET $loc_indices(~%j%~) = temp
 END
 
-// 5. Sequential Assignment
+// Sequential Assignment
 OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
   // Grab NPC data
   OUTER_SPRINT name $npc_name(~%i%~)
@@ -651,7 +650,7 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
     STR_VAR parea = EVAL ~%area%~ pname = EVAL ~%name%~ pres = EVAL ~%res%~
   END
   
-  // If the leader is DENAK, pull the rest of the group to the same spot
+  // If the leader is DENAK, pull the rest of their group to the same spot
   ACTION_IF ("%res%" STRING_EQUAL_CASE "DENAK") BEGIN
     // Place Brendan
     LAF PLACE_RANDOM_NPC 
@@ -670,7 +669,7 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
     END
   END
   
-  // If the leader is KIRIAN, pull the rest of the group to the same spot
+  // If the leader is KIRIAN, pull the rest of their group to the same spot
   ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "KIRIAN") BEGIN
     // Place LINDIN
     LAF PLACE_RANDOM_NPC 
@@ -689,7 +688,7 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
     END
   END
   
-  // If the leader is SENDAI, pull the rest of the group to the same spot
+  // If the leader is SENDAI, pull the rest of their group to the same spot
   ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "SENDAI") BEGIN
     // Place Alexander
     LAF PLACE_RANDOM_NPC
@@ -708,7 +707,7 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
     END
   END
 
-  // If the leader is VAX, pull the rest of the group to the same spot
+  // If the leader is VAX, pull the rest of their group to the same spot
   ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "VAX") BEGIN
     // Place ZAL
     LAF PLACE_RANDOM_NPC
@@ -717,7 +716,7 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
     END
   END
 
-  // If the leader is LARRY, pull the rest of the group to the same spot
+  // If the leader is LARRY, pull the rest of their group to the same spot
   ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "LARRY") BEGIN
     // Place DARRYL
     LAF PLACE_RANDOM_NPC
@@ -731,7 +730,7 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
     END
   END
 
-  // If the leader is ZARGAL, pull the rest of the group to the same spot
+  // If the leader is ZARGAL, pull the rest of their group to the same spot
   ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "ZARGAL") BEGIN
     // Place GELTIK
     LAF PLACE_RANDOM_NPC
@@ -745,7 +744,7 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
     END
   END
 
-  // If the leader is Teyngan, pull the rest of the group to the same spot
+  // If the leader is Teyngan, pull the rest of their group to the same spot
   ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "TEYNGA") BEGIN
     // Place JEMBY
     LAF PLACE_RANDOM_NPC
@@ -759,7 +758,7 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
     END
   END
 
-  // If the leader is GNOLL5 (Ludrug), pull the rest of the group to the same spot
+  // If the leader is GNOLL5 (Ludrug), pull the rest of their group to the same spot
   ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "GNOLL5") BEGIN
     // Place GNOLL5A x2
     LAF PLACE_RANDOM_NPC
@@ -772,7 +771,7 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
     END
   END
 
-  // If the leader is HOBGZHUR, pull the rest of the group to the same spot
+  // If the leader is HOBGZHUR, pull the rest of their group to the same spot
   ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "HOBGZHUR") BEGIN
     // Place HOBGOB
     LAF PLACE_RANDOM_NPC
@@ -791,7 +790,7 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
     END
   END
 
-  // If the leader is CATTAC, pull the rest of the group to the same spot
+  // If the leader is CATTAC, pull the rest of their group to the same spot
   ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "CATTAC") BEGIN
     // Place BHOBGOB x7
     LAF PLACE_RANDOM_NPC
@@ -824,7 +823,7 @@ OUTER_FOR (i = 0; i < num_npcs; i += 1) BEGIN
     END
   END
 
-  // If the leader is CANTO (Ioin), pull the rest of the group to the same spot
+  // If the leader is CANTO (Ioin), pull the rest of their group to the same spot
   ELSE ACTION_IF ("%res%" STRING_EQUAL_CASE "CANTO") BEGIN
     // Place DRIBBE
     LAF PLACE_RANDOM_NPC
